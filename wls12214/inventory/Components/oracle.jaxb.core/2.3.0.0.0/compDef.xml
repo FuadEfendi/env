@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.jaxb.core" version="2.3.0.0.0" description="Oracle JAXB Core" gdr-version="1.8.4.0" groupId="com.oracle.fmwshare" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="jrf.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <file size="68177" dest="com.sun.org.apache.xml.internal.resolver.jar" id="com.sun.org.apache.xml.internal:resolver" patchable="true" group="com.sun.org.apache.xml.internal" artifact="resolver" version="20050927"/>
+         <file size="255352" dest="com.sun.xml.bind.jaxb-core.jar" id="com.sun.xml.bind:jaxb-core" patchable="true" group="com.sun.xml.bind" artifact="jaxb-core" version="2.3.0-b170202.1032"/>
+      </directory>
+   </file-map>
+   <default-pom-override groupId="com.oracle.fmwshare"/>
+   <libraries>
+      <library name="oracle.jaxb.core" type="none" visibility="none" suppress-version="true" size="323529">
+         <entry explode="true" include-parent="false" name="modules/com.sun.org.apache.xml.internal.resolver.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.bind.jaxb-core.jar"/>
+      </library>
+   </libraries>
+</component-def>

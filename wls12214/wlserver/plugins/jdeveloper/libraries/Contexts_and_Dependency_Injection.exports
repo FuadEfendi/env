@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<lib-exports owner="weblogic" xmlns="http://xmlns.oracle.com/ide/export">
+    <package name="javax.interceptor"/>
+    <package name="javax.inject"/>
+    <package name="javax.enterprise.util"/>
+    <package name="javax.enterprise.inject.spi"/>
+    <package name="javax.enterprise.inject"/>
+    <package name="javax.enterprise.event"/>
+    <package name="javax.enterprise.context.spi"/>
+    <package name="javax.enterprise.context"/>
+    <package name="javax.decorator"/>
+</lib-exports>

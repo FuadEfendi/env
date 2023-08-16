@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library id="oracle.coherence" name="Oracle Coherence" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <description>Oracle Coherence</description>
+  <classpath export="library">../../../lib/coherence.jar</classpath>
+  <export-specification>coherence-exports.xml</export-specification>
+  <docpath>../../../doc</docpath>
+</library>

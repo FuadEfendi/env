@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+
+<!-- 
+ Copyright (c) 2013, 2015, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     cie.xml - <one-line expansion of the name>
+
+   DESCRIPTION
+     <short description of component this file declares/defines>
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+
+-->
+<!DOCTYPE component SYSTEM "component.dtd">
+<component name="FMWCONFIG" description="Common Infrastructure Services" messageclass="com.oracle.cie.update.plugin.CIEPluginResourceBundle">
+  <install application="DMS Application"/>  
+  <libraries>
+    <library path="$OH/plugins/upgrade/com.oracle.cie.upgrade-plugin_1.4.0.0.jar"/>
+  </libraries>
+  <plugin name="CIE_SCHEMA_PLUGIN" class="com.oracle.cie.update.plugin.CIESchemaPlugin" type="schema" featureset="cieStb_rcu">
+    <schema name="STB" datasource-list="LocalSvcTblDataSource" type="Oracle Database, Oracle Database enabled for edition-based redefinition, Microsoft SQL Server, IBM DB2,  MySQL" schemapass="yes" newversion="12.2.1.3.0"/>
+  </plugin>
+  <plugin name="CIE_CONFIG_PLUGIN" readinessonly="yes" class="com.oracle.cie.update.plugin.CIEConfigPlugin" type="config">
+  </plugin>
+</component>
+

@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<feature-set-def name="wls_securityCore" version="12.2.1.4.0" display-name="WLS Core Security Modules" display-name-key="featureset.display.name" description-key="featureset.description" xmlns:ns2="http://xmlns.oracle.com/cie/gdr/dei" xmlns:ns3="http://xmlns.oracle.com/cie/gdr/nfo" xmlns:ns4="http://xmlns.oracle.com/cie/gdr/rgy" xmlns="http://xmlns.oracle.com/cie/gdr/ftr">
+   <components>
+      <component name="oracle.wls.security.core" version="12.2.1.4.0"/>
+   </components>
+</feature-set-def>

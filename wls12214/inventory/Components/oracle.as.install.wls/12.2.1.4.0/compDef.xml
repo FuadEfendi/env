@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.as.install.wls" version="12.2.1.4.0" description="Oracle Fusion Middleware WLS Installer Metadata Files" description-key="component.description" gdr-version="1.8.5.0" pom-gen="false" groupId="com.oracle.weblogic" patch-level="1" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="asinst.wls.install.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="mw" mode="750" patchable="true">
+            <directory dest="wls" mode="750" patchable="true">
+               <directory dest="metadata" mode="750" patchable="true">
+                  <file size="1120" dest="QuickStartConfig.xml" mode="640"/>
+                  <file size="4240" dest="log-config.xml" mode="640"/>
+                  <file size="2250" dest="QuickStart.xml" mode="640"/>
+                  <file size="2000" dest="install.properties" mode="640"/>
+               </directory>
+               <directory dest="jlib" mode="750" patchable="true">
+                  <file size="407837" dest="wlsinstall-nextgen.jar" mode="640"/>
+               </directory>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*\.bat"/>
+         <permission mode="750" regex=".*\.cmd"/>
+         <permission mode="750" regex=".*\.dll"/>
+         <permission mode="750" regex=".*\.exe"/>
+         <permission mode="750" regex=".*\.sh"/>
+         <permission mode="750" regex=".*\.so"/>
+         <permission mode="640" regex=".*"/>
+      </file-perms>
+   </file-map>
+</component-def>

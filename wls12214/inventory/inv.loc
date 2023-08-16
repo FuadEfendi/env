@@ -1,0 +1,4 @@
+#Oracle Installer Location File Location
+#Wed Aug 16 12:02:46 EDT 2023
+inst_group=
+inventory_loc=C\:\\Program Files\\Oracle\\Inventory

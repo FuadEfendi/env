@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<feature-set-def name="wls_commonServices" version="12.2.1.4.0" display-name="Core Application Server Jars Which Are Shared Among Core Engine, WebLogic Server and CAM" display-name-key="featureset.display.name" description-key="featureset.description" xmlns:ns2="http://xmlns.oracle.com/cie/gdr/dei" xmlns:ns3="http://xmlns.oracle.com/cie/gdr/nfo" xmlns:ns4="http://xmlns.oracle.com/cie/gdr/rgy" xmlns="http://xmlns.oracle.com/cie/gdr/ftr">
+   <components>
+      <component name="oracle.wls.common.cam" version="12.2.1.4.0"/>
+   </components>
+   <components>
+      <component name="oracle.wls.common.nodemanager" version="12.2.1.4.0"/>
+   </components>
+   <components>
+      <component name="oracle.wls.common.cam.wlst" version="12.2.1.4.0"/>
+   </components>
+   <components>
+      <component name="oracle.wls.shared.with.cam" version="12.2.1.4.0"/>
+   </components>
+   <dependencies>
+      <and>
+         <requires name="thirdPartyMain_orgApacheAntAntBundle" version="1.10.5.0.0">
+            <version-range min="1.10.5.0.0" min-inclusive="true" max="999999999999999.999999999999999.999999999999999.999999999999999.999999999999999" max-inclusive="true"/>
+         </requires>
+         <requires name="thirdParty_orgApacheAntAntBundle" version="1.10.5.0.0"/>
+         <requires name="thirdPartyMain_antContribAntContribVb" version="1.0.0.0.3">
+            <version-range min="1.0.0.0.3" min-inclusive="true" max="999999999999999.999999999999999.999999999999999.999999999999999.999999999999999" max-inclusive="true"/>
+         </requires>
+         <requires name="thirdParty_antContribAntContribVb" version="1.0.0.0.3"/>
+         <requires name="wls_securityCore" version="12.2.1.4.0">
+            <version-range min="12.2.1.4.0" min-inclusive="true" max="12.2.1.5.0" max-inclusive="false"/>
+         </requires>
+         <requires name="xmlbeans" version="2.6.0.6.0">
+            <version-range min="2.6.0.0.0" min-inclusive="true" max="2.6.6.0.0" max-inclusive="false"/>
+         </requires>
+      </and>
+   </dependencies>
+</feature-set-def>

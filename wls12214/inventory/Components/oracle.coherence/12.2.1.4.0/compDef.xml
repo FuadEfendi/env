@@ -1,0 +1,230 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.coherence" version="12.2.1.4.0" description="Oracle Coherence" gdr-version="1.8.4.0" pom-gen="static-poms-only" groupId="com.oracle.coherence" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="coherence.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="bin" mode="750" patchable="true">
+            <file size="853" dest="cache-server.cmd" os-family="windows" mode="640"/>
+            <file size="1219" dest="coherence.cmd" os-family="windows" mode="640"/>
+            <file size="636" dest="datagram-test.cmd" os-family="windows" mode="640"/>
+            <file size="645" dest="multicast-test.cmd" os-family="windows" mode="640"/>
+            <file size="956" dest="optimize.reg" os-family="windows" mode="640"/>
+            <file size="801" dest="pof-config-gen.cmd" os-family="windows" mode="640"/>
+            <file size="1157" dest="query.cmd" os-family="windows" mode="640"/>
+            <file size="225" dest="readme.txt" mode="640"/>
+         </directory>
+         <directory dest="lib" mode="750" patchable="true">
+            <file size="49433" pack="true" dest="cache-api.jar" mode="640"/>
+            <file size="167526" pack="true" dest="coherence-hotcache.jar" mode="640"/>
+            <file size="23295" pack="true" dest="coherence-http-grizzly.jar" mode="640"/>
+            <file size="25297" pack="true" dest="coherence-http-jetty.jar" mode="640"/>
+            <file size="40303" pack="true" dest="coherence-http-netty.jar" mode="640"/>
+            <file size="27484" pack="true" dest="coherence-http-simple.jar" mode="640"/>
+            <file size="241116" pack="true" dest="coherence-jcache.jar" mode="640"/>
+            <file size="574" pack="true" dest="coherence-loadbalancer.jar" mode="640"/>
+            <file size="137561" pack="true" dest="coherence-management.jar" mode="640"/>
+            <file size="18525" pack="true" dest="coherence-metrics.jar" mode="640"/>
+            <file size="191775" pack="true" dest="coherence-mock.jar" mode="640"/>
+            <file size="1273772" pack="true" dest="coherence-rest.jar" mode="640"/>
+            <file size="29878" pack="true" dest="coherence-transaction.rar" mode="640"/>
+            <file size="2717" pack="true" dest="coherence-tx.rar" mode="640"/>
+            <file size="234324" pack="true" dest="coherence-web.jar" mode="640"/>
+            <file size="33017" pack="true" dest="coherence-work.jar" mode="640"/>
+            <file size="13193392" pack="true" dest="coherence.jar" mode="640"/>
+            <file size="2793083" pack="true" dest="je.jar" mode="640"/>
+            <file size="263801" pack="true" dest="jline.jar" mode="640"/>
+            <file size="15606" dest="licenses.txt" mode="640"/>
+            <directory dest="security" mode="750" patchable="true">
+               <file size="6342" pack="true" dest="coherence-login.jar" mode="640"/>
+               <file size="180" dest="login.config" mode="640"/>
+               <file size="1465" dest="permissions.xsd" mode="640"/>
+               <file size="27669" dest="security.policy" mode="640"/>
+            </directory>
+            <file size="82497" pack="true" dest="webInstaller.jar" mode="640"/>
+         </directory>
+         <file size="105" dest="product.xml" mode="640"/>
+         <file-perms>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <file-map symbol="coherence.mavenplugins.symbol" source="filegroup2.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="plugins" mode="750" patchable="true">
+         <directory dest="jdeveloper" mode="750" patchable="true">
+            <directory dest="libraries" mode="750" patchable="true">
+               <file size="3466" dest="coherence-exports.xml" mode="640"/>
+               <file size="399" dest="coherence.library" mode="640"/>
+            </directory>
+         </directory>
+         <directory dest="jvisualvm" mode="750" patchable="true">
+            <file size="1938166" pack="true" dest="coherence-jvisualvm.nbm" mode="640"/>
+         </directory>
+         <directory dest="maven" mode="750" patchable="true">
+            <directory dest="com" mode="750" patchable="true">
+               <directory dest="oracle" mode="750" patchable="true">
+                  <directory dest="coherence" mode="750" patchable="true">
+                     <directory dest="archetype" mode="750" patchable="true">
+                        <directory dest="gar-maven-archetype" mode="750" patchable="true">
+                           <directory dest="12.2.1" mode="750" patchable="true">
+                              <file size="3729" pack="true" dest="gar-maven-archetype.12.2.1.jar" mode="640"/>
+                              <file size="6263" dest="gar-maven-archetype.12.2.1.pom" mode="640"/>
+                           </directory>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="27" dest="coherence.12.2.1.location" mode="640"/>
+                           <file size="5913" dest="coherence.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-hotcache" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="36" dest="coherence-hotcache.12.2.1.location" mode="640"/>
+                           <file size="5736" dest="coherence-hotcache.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-http-grizzly" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="40" dest="coherence-http-grizzly.12.2.1.location" mode="640"/>
+                           <file size="6960" dest="coherence-http-grizzly.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-http-jetty" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="38" dest="coherence-http-jetty.12.2.1.location" mode="640"/>
+                           <file size="6904" dest="coherence-http-jetty.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-http-netty" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="38" dest="coherence-http-netty.12.2.1.location" mode="640"/>
+                           <file size="6359" dest="coherence-http-netty.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-http-simple" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="39" dest="coherence-http-simple.12.2.1.location" mode="640"/>
+                           <file size="6611" dest="coherence-http-simple.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-jcache" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="34" dest="coherence-jcache.12.2.1.location" mode="640"/>
+                           <file size="5879" dest="coherence-jcache.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-loadbalancer" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="40" dest="coherence-loadbalancer.12.2.1.location" mode="640"/>
+                           <file size="5750" dest="coherence-loadbalancer.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-login" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="42" dest="coherence-login.12.2.1.location" mode="640"/>
+                           <file size="5541" dest="coherence-login.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-management" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="38" dest="coherence-management.12.2.1.location" mode="640"/>
+                           <file size="6500" dest="coherence-management.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-maven-common" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="5566" dest="coherence-maven-common.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-metrics" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="35" dest="coherence-metrics.12.2.1.location" mode="640"/>
+                           <file size="6669" dest="coherence-metrics.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-mock" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="32" dest="coherence-mock.12.2.1.location" mode="640"/>
+                           <file size="5532" dest="coherence-mock.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-rest" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="32" dest="coherence-rest.12.2.1.location" mode="640"/>
+                           <file size="8106" dest="coherence-rest.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-transaction" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="39" dest="coherence-transaction.12.2.1.location" mode="640"/>
+                           <file size="5775" dest="coherence-transaction.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-tx" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="30" dest="coherence-tx.12.2.1.location" mode="640"/>
+                           <file size="5766" dest="coherence-tx.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-web" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="31" dest="coherence-web.12.2.1.location" mode="640"/>
+                           <file size="5721" dest="coherence-web.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="coherence-work" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="32" dest="coherence-work.12.2.1.location" mode="640"/>
+                           <file size="5740" dest="coherence-work.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="gar-maven-plugin" mode="750" patchable="true">
+                        <directory dest="12.2.1" mode="750" patchable="true">
+                           <file size="10025" pack="true" dest="gar-maven-plugin.12.2.1.jar" mode="640"/>
+                           <file size="7594" dest="gar-maven-plugin.12.2.1.pom" mode="640"/>
+                        </directory>
+                     </directory>
+                  </directory>
+               </directory>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <artifact-pom-overrides>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence/12.2.1/coherence.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-hotcache/12.2.1/coherence-hotcache.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-jcache/12.2.1/coherence-jcache.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-loadbalancer/12.2.1/coherence-loadbalancer.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-login/12.2.1/coherence-login.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-management/12.2.1/coherence-management.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-metrics/12.2.1/coherence-metrics.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-mock/12.2.1/coherence-mock.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-http-grizzly/12.2.1/coherence-http-grizzly.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-http-jetty/12.2.1/coherence-http-jetty.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-http-netty/12.2.1/coherence-http-netty.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-http-simple/12.2.1/coherence-http-simple.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-rest/12.2.1/coherence-rest.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-transaction/12.2.1/coherence-transaction.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-tx/12.2.1/coherence-tx.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-web/12.2.1/coherence-web.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+      <static-pom file="plugins/maven/com/oracle/coherence/coherence-work/12.2.1/coherence-work.12.2.1.pom" symbol="coherence.mavenplugins.symbol"/>
+   </artifact-pom-overrides>
+   <default-pom-override groupId="com.oracle.coherence" artifactId="coherence-all"/>
+   <libraries>
+      <library name="coherence.lib" type="none" size="13490976">
+         <entry explode="true" include-parent="false" name="lib/coherence.jar"/>
+      </library>
+   </libraries>
+</component-def>

@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.wls.rcu" version="12.2.1.4.0" description="Oracle WebLogic Server Rcu Schema Files" gdr-version="1.8.4.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="wls.server.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="server" mode="750" patchable="true">
+            <directory dest="lib" mode="750" patchable="true">
+               <file size="8310" dest="rdbms_security_store_db2_RCU.sql" mode="640"/>
+               <file size="801" dest="rdbms_security_store_db2_remove.sql" mode="640"/>
+               <file size="8310" dest="rdbms_security_store_db2.sql" mode="640"/>
+               <file jarentry="server/lib/rdbms_security_store_db2_remove.sql" size="801" dest="rdbms_security_store_derby_remove.sql" mode="640"/>
+               <file size="8302" dest="rdbms_security_store_derby.sql" mode="640"/>
+               <file jarentry="server/lib/rdbms_security_store_db2_remove.sql" size="801" dest="rdbms_security_store_mysql_remove.sql" mode="640"/>
+               <file size="9328" dest="rdbms_security_store_mysql.sql" mode="640"/>
+               <file jarentry="server/lib/rdbms_security_store_db2_remove.sql" size="801" dest="rdbms_security_store_oracle_remove.sql" mode="640"/>
+               <file size="8535" dest="rdbms_security_store_oracle.sql" mode="640"/>
+               <file size="8236" dest="rdbms_security_store_sqlserver_RCU.sql" mode="640"/>
+               <file jarentry="server/lib/rdbms_security_store_db2_remove.sql" size="801" dest="rdbms_security_store_sqlserver_remove.sql" mode="640"/>
+               <file size="8172" dest="rdbms_security_store_sqlserver.sql" mode="640"/>
+               <file jarentry="server/lib/rdbms_security_store_db2_remove.sql" size="801" dest="rdbms_security_store_sybase_remove.sql" mode="640"/>
+               <file size="10591" dest="rdbms_security_store_sybase.sql" mode="640"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.bat"/>
+            <permission mode="750" regex=".*\.cmd"/>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <file-map symbol="wls.common.symbol" source="filegroup2.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="plugins" mode="750" patchable="true">
+            <directory dest="rcu" mode="750" patchable="true">
+               <file size="563" dest="wlsservices_rcu_registration.xml" mode="640"/>
+            </directory>
+         </directory>
+         <directory dest="common" mode="750" patchable="true">
+            <directory dest="sql" mode="750" patchable="true">
+               <directory dest="wlsservices" mode="750" patchable="true">
+                  <directory dest="db2" mode="750" patchable="true">
+                     <file size="756" dest="create-user-rcu.db2" mode="640"/>
+                     <file size="712" dest="create-rcu.db2" mode="640"/>
+                     <file size="2188" dest="droptabs.db2" mode="640"/>
+                     <file size="708" dest="drop-user-rcu.db2" mode="640"/>
+                     <file size="5166" dest="core_tables.db2" mode="640"/>
+                     <file size="3267" dest="droptabs-consolidated.db2" mode="640"/>
+                  </directory>
+                  <directory dest="batch" mode="750" patchable="true">
+                     <directory dest="db2" mode="750" patchable="true">
+                        <file size="5027" dest="jsr352-db2.ddl" mode="640"/>
+                     </directory>
+                     <directory dest="sqlserver" mode="750" patchable="true">
+                        <file size="3268" dest="jsr352-ms-sqlserver.ddl" mode="640"/>
+                     </directory>
+                     <directory dest="oracle_ebr" mode="750" patchable="true">
+                        <file size="1826" dest="job_status_ddl.sql" mode="640"/>
+                        <file size="2566" dest="job_instance_data_ddl.sql" mode="640"/>
+                        <file size="1784" dest="checkpoint_data_ddl.sql" mode="640"/>
+                        <file size="1702" dest="step_status_ddl.sql" mode="640"/>
+                        <file size="170" dest="jbatch.sql" mode="640"/>
+                        <file size="3236" dest="execution_instance_data_ddl.sql" mode="640"/>
+                        <file size="3705" dest="step_execution_instance_data_ddl.sql" mode="640"/>
+                     </directory>
+                     <directory dest="mysql" mode="750" patchable="true">
+                        <file size="2394" dest="jsr352-mysql.ddl" mode="640"/>
+                     </directory>
+                     <directory dest="oracle" mode="750" patchable="true">
+                        <file size="716" dest="job_status_ddl.sql" mode="640"/>
+                        <file size="1390" dest="job_instance_data_ddl.sql" mode="640"/>
+                        <file size="600" dest="checkpoint_data_ddl.sql" mode="640"/>
+                        <file size="728" dest="step_status_ddl.sql" mode="640"/>
+                        <file jarentry="common/sql/wlsservices/batch/oracle_ebr/jbatch.sql" size="170" dest="jbatch.sql" mode="640"/>
+                        <file size="1880" dest="execution_instance_data_ddl.sql" mode="640"/>
+                        <file size="2323" dest="step_execution_instance_data_ddl.sql" mode="640"/>
+                     </directory>
+                  </directory>
+                  <directory dest="sql" mode="750" patchable="true">
+                     <file size="1182" dest="create_user.sql" mode="640"/>
+                     <file size="737" dest="create-rcu.sql" mode="640"/>
+                     <file size="965" dest="create.sql" mode="640"/>
+                     <file size="803" dest="cleanup.sql" mode="640"/>
+                     <file size="1875" dest="crejstbs.sql" mode="640"/>
+                     <file size="1043" dest="crelstbs.sql" mode="640"/>
+                     <file size="613" dest="drop-rcu.sql" mode="640"/>
+                     <file size="2143" dest="drop.sql" mode="640"/>
+                  </directory>
+                  <file size="633" dest="wlsservices_Storage.xml" mode="640"/>
+                  <file size="19683" dest="wlsservices.xml" mode="640"/>
+                  <file size="6012" dest="wlsservices_ComponentInfo.xml" mode="640"/>
+                  <directory dest="MSSQL" mode="750" patchable="true">
+                     <file size="891" dest="create-rcu.sql" mode="640"/>
+                     <file size="1501" dest="crejstbs.sql" mode="640"/>
+                     <file size="673" dest="crelstbs.sql" mode="640"/>
+                     <file size="4952" dest="dropuser.sql" mode="640"/>
+                     <file size="1003" dest="create-user-rcu.sql" mode="640"/>
+                     <file size="4207" dest="createuser.sql" mode="640"/>
+                     <file size="794" dest="drop-user-rcu.sql" mode="640"/>
+                     <file size="5675" dest="droptabs-consolidated.sql" mode="640"/>
+                  </directory>
+                  <directory dest="security" mode="750" patchable="true">
+                     <directory dest="oracle" mode="750" patchable="true">
+                        <file size="1732" dest="rdbms_security_store_oracle_upgrade.sql" mode="640"/>
+                     </directory>
+                  </directory>
+                  <directory dest="diagnostics" mode="750" patchable="true">
+                     <directory dest="db2" mode="750" patchable="true">
+                        <file size="5693" dest="wldf_tables.db2" mode="640"/>
+                     </directory>
+                     <directory dest="sqlserver" mode="750" patchable="true">
+                        <file size="2647" dest="wls_events_ddl.sql" mode="640"/>
+                        <file size="2084" dest="wls_hvst_ddl.sql" mode="640"/>
+                     </directory>
+                     <directory dest="oracle_ebr" mode="750" patchable="true">
+                        <file size="2905" dest="upgrade_wls_events_ddl.sql" mode="640"/>
+                        <file size="3294" dest="upgrade_wls_hvst_ddl.sql" mode="640"/>
+                        <file size="1162" dest="wldf_ebr_upgrade_ddl.sql" mode="640"/>
+                        <file size="6136" dest="wls_events_ddl.sql" mode="640"/>
+                        <file size="4971" dest="wls_hvst_ddl.sql" mode="640"/>
+                     </directory>
+                     <directory dest="mysql" mode="750" patchable="true">
+                        <file size="2089" dest="wls_events_ddl.sql" mode="640"/>
+                        <file size="1958" dest="wls_hvst_ddl.sql" mode="640"/>
+                     </directory>
+                     <directory dest="oracle" mode="750" patchable="true">
+                        <file size="3894" dest="wls_events_ddl.sql" mode="640"/>
+                        <file size="3459" dest="wls_hvst_ddl.sql" mode="640"/>
+                     </directory>
+                  </directory>
+                  <directory dest="oracle_ebr" mode="750" patchable="true">
+                     <file size="1103" dest="create_user.sql" mode="640"/>
+                     <file size="2207" dest="upgrade_js_ddl.sql" mode="640"/>
+                     <file size="1401" dest="create-rcu.sql" mode="640"/>
+                     <file size="2824" dest="crejstbs.sql" mode="640"/>
+                     <file size="933" dest="crelstbs.sql" mode="640"/>
+                     <file size="1063" dest="core_ebr_upgrade_ddl.sql" mode="640"/>
+                     <file size="608" dest="drop-rcu.sql" mode="640"/>
+                     <file size="2769" dest="drop.sql" mode="640"/>
+                  </directory>
+                  <directory dest="mysql" mode="750" patchable="true">
+                     <file size="720" dest="create-rcu.sql" mode="640"/>
+                     <file size="3718" dest="create-user.sql" mode="640"/>
+                     <file size="944" dest="crelstbs.sql" mode="640"/>
+                     <file size="539" dest="create-user-rcu.sql" mode="640"/>
+                     <file size="1297" dest="crewlstbs.sql" mode="640"/>
+                     <file size="1802" dest="drop-rcu.sql" mode="640"/>
+                  </directory>
+                  <directory dest="scripts" mode="750" patchable="true">
+                     <file size="2355" dest="leasing_create_tables_oracle.sql" mode="640"/>
+                     <file size="873" dest="scheduler_create_tables_oracle.sql" mode="640"/>
+                     <file size="232" dest="userservice_drop_tables_oracle.sql" mode="640"/>
+                     <file size="391" dest="wlsservices_create_use_oracle.sql" mode="640"/>
+                     <file size="307" dest="securityservice_drop_tables_oracle.sql" mode="640"/>
+                     <file size="51" dest="orasdpsds_drop_user_oracle.sql" mode="640"/>
+                  </directory>
+               </directory>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.bat"/>
+            <permission mode="750" regex=".*\.cmd"/>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+</component-def>

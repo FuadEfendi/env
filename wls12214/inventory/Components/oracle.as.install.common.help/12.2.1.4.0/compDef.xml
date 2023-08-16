@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.as.install.common.help" version="12.2.1.4.0" description="OracleAS Install Common Help Files" gdr-version="1.3.0.0" groupId="com.oracle.fmwshare" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="oracle.as.install.common.help.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="mw" mode="750" patchable="true">
+         <directory dest="common" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <directory dest="help" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+               <file size="106241" dest="inhlp.jar" mode="640"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex="inhlp.jar"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <file-map symbol="oracle.as.install.common.help.symbol" source="filegroup2.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="mw" mode="750" patchable="true">
+         <directory dest="common" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <directory dest="help" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+               <file size="100104" dest="inhlp_zh_TW.jar" mode="640"/>
+               <file size="108490" dest="inhlp_fr.jar" mode="640"/>
+               <file size="106788" dest="inhlp_it.jar" mode="640"/>
+               <file size="107667" dest="inhlp_pt_BR.jar" mode="640"/>
+               <file size="106504" dest="inhlp_ko.jar" mode="640"/>
+               <file size="98848" dest="inhlp_zh_CN.jar" mode="640"/>
+               <file size="107625" dest="inhlp_de.jar" mode="640"/>
+               <file size="106240" dest="inhlp_ja.jar" mode="640"/>
+               <file size="106577" dest="inhlp_es.jar" mode="640"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*\.jar"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+</component-def>

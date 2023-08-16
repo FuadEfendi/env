@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<logging_configuration>
+  <log_handlers>
+    <log_handler name='odl-handler' level="NOTIFICATION:1"
+      class='oracle.core.ojdl.logging.ODLHandlerFactory'>
+      <property name='path' value='${ocp.log.path}' />
+      <property name='maxFileSize' value='10485760' />
+      <property name='maxLogSize' value='104857600' />
+      <property name='encoding' value='UTF-8' />
+      <property name='useThreadName' value='false' />
+      <property name='format' value='ODL-Text' />
+      <property name='useSourceClassandMethod' value='true' />
+      <property name='supplementalAttributes' value='lcaudit.args,lcaudit.verb,lcaudit.name' />
+    </log_handler>
+    <log_handler name='console-handler'
+      class='oracle.fmwplatform.configpatch.util.logging.ConsoleLoggingHandler'
+      level='NOTIFICATION:1' formatter="oracle.fmwplatform.configpatch.util.logging.CustomFormatter">
+    </log_handler>
+  </log_handlers>
+  <loggers>
+    <logger name="" level="NOTIFICATION:1">
+      <handler name="odl-handler" />
+      <handler name="console-handler" />
+    </logger>
+
+  </loggers>
+</logging_configuration>

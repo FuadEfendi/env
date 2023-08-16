@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library id="oracle.security.osdt" name="OSDT Design Time Library Extension" deployed="false" locked="true" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <description/>         
+         <classpath export="embedded">../../../modules/oracle.osdt/osdt_xmlsec.jar</classpath>        
+	 <classpath export="embedded">../../../modules/oracle.osdt/osdt_cert.jar</classpath>
+         <classpath export="embedded">../../../modules/oracle.osdt/osdt_core.jar</classpath>
+	 <classpath export="embedded">../../../modules/oracle.osdt/osdt_wss.jar</classpath>
+         <classpath export="embedded">../../../modules/oracle.osdt/osdt_restsec.jar</classpath>
+	 <classpath export="embedded">../../../modules/oracle.osdt/osdt_saml.jar</classpath>
+	 <classpath export="embedded">../../../modules/oracle.osdt/osdt_saml2.jar</classpath>
+	 <classpath export="none">../../../modules/oracle.osdt/osdt_ws_sx.jar</classpath>
+	 <classpath export="embedded">../../../modules/oracle.osdt/osdt_smime.jar</classpath>
+</library>

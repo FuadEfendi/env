@@ -1,0 +1,38 @@
+@ECHO OFF
+
+SET CURRENT_HOME=%MW_HOME%\oracle_common
+
+@REM Set the home directories...
+CALL "%MW_HOME%\oracle_common\common\bin\setHomeDirs.cmd"
+
+@REM Set the DELEGATE_ORACLE_HOME to CURRENT_HOME if it's not set...
+IF "%DELEGATE_ORACLE_HOME%"=="" (
+  SET DELEGATE_ORACLE_HOME=%CURRENT_HOME%
+)
+SET ORACLE_HOME=%DELEGATE_ORACLE_HOME%
+
+@REM some scripts in the the WLST_HOME directory reference ORACLE_HOME
+SET WLST_PROPERTIES=%WLST_PROPERTIES% -DORACLE_HOME=%ORACLE_HOME%
+
+IF DEFINED WLS_NOT_BRIEF_ENV (
+  IF "%WLS_NOT_BRIEF_ENV%"=="true" SET WLS_NOT_BRIEF_ENV=
+  IF "%WLS_NOT_BRIEF_ENV%"=="TRUE" SET WLS_NOT_BRIEF_ENV=
+) ELSE (
+  SET WLS_NOT_BRIEF_ENV=false
+)
+
+CALL "%MW_HOME%\oracle_common\common\bin\commBaseEnv.cmd"
+
+if exist %SCRIPT_PATH%\cam_config.cmd (
+  call %SCRIPT_PATH%\cam_config.cmd
+)
+
+SET CLASSPATH=%WLST_EXT_CLASSPATH%;%FMWCONFIG_CLASSPATH%
+
+if "%WLS_NOT_BRIEF_ENV%"=="" (
+@echo.
+@echo CLASSPATH=%CLASSPATH%
+)
+
+SET JVM_ARGS=%WLST_PROPERTIES% %UTILS_MEM_ARGS% %CONFIG_JVM_ARGS%
+

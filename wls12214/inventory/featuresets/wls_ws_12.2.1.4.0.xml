@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<feature-set-def name="wls_ws" version="12.2.1.4.0" display-name="WebLogic WebServices" display-name-key="featureset.display.name" description-key="featureset.description" xmlns:ns2="http://xmlns.oracle.com/cie/gdr/dei" xmlns:ns3="http://xmlns.oracle.com/cie/gdr/nfo" xmlns:ns4="http://xmlns.oracle.com/cie/gdr/rgy" xmlns="http://xmlns.oracle.com/cie/gdr/ftr">
+   <components>
+      <component name="oracle.webservices.wls" version="12.2.1.4.0"/>
+   </components>
+   <dependencies>
+      <requires name="ws_base" version="12.2.1.4.0">
+         <version-range min="12.2.1.4.0" min-inclusive="true" max="12.2.1.5.0" max-inclusive="false"/>
+      </requires>
+   </dependencies>
+   <libraries>
+      <library name="com.oracle.webservices.wls.wls-classpath" type="manifest" visibility="internal" suppress-version="true" suppress-prefix="true">
+         <include name="com.oracle.webservices.wls.classpath"/>
+         <include name="oracle.webservices.base.wls.classpath"/>
+         <include name="oracle.http_client"/>
+         <include name="oracle.webservices.orawsdl"/>
+         <include name="oracle.jaxb.core" version="2.3.0"/>
+         <include name="oracle.jaxb.impl" version="2.3.0"/>
+         <include name="oracle.jaxb.tools" version="2.3.0"/>
+         <include name="org.codehaus.woodstox" version="4.2.0"/>
+      </library>
+      <library name="webservices.jaxrpc_dependencies" type="manifest" visibility="internal" suppress-version="true" suppress-prefix="true">
+         <include name="webservices.jaxrpc.lib" version="12.2.1" ignore-type="true"/>
+      </library>
+   </libraries>
+</feature-set-def>

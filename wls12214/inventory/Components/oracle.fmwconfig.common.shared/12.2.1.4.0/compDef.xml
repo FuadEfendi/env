@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.fmwconfig.common.shared" version="12.2.1.4.0" description="Oracle Fusion Middleware Common Admin" gdr-version="1.8.4.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="fmwconfig.common.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="" patchable="true">
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="86688" pack="true" dest="com.bea.core.binxml_1.8.0.0.jar" mode="640"/>
+            <file size="31152" pack="true" dest="com.oracle.cie.encryption_2.7.0.0.jar" mode="640"/>
+            <file size="4603360" pack="true" dest="com.bea.core.xquery_1.8.0.0.jar" mode="640"/>
+            <file size="52957" pack="true" dest="com.bea.core.xquery.xmlbeans-interop_1.8.0.0.jar" mode="640"/>
+            <file size="72924" pack="true" dest="com.oracle.cie.service-table-impl_1.7.0.0.jar" mode="640"/>
+            <file size="34470" pack="true" dest="com.oracle.cie.service-table-schema_1.7.0.0.jar" mode="640"/>
+            <file size="12998" pack="true" dest="com.oracle.cie.service-table_1.7.0.0.jar" mode="640"/>
+         </directory>
+         <directory dest="common" mode="750" patchable="true">
+            <directory dest="sql" mode="750" patchable="true">
+               <directory dest="seed-schema" mode="750" patchable="true">
+                  <file size="56373" pack="true" dest="demoDB.jar" mode="640"/>
+                  <file size="52442" pack="true" dest="dummy.jar" mode="640"/>
+                  <file size="272" dest="demoDB-alter.sql" mode="640"/>
+                  <file size="196" dest="demoDB-create.sql" mode="640"/>
+               </directory>
+            </directory>
+            <directory dest="bin" mode="750" patchable="true">
+               <file size="494" dest="getproperty.sh" mode="750"/>
+               <file size="567" dest="getproperty.cmd" os-family="windows" mode="750"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.jar"/>
+            <permission mode="750" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.cmd"/>
+            <permission mode="750" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.sh"/>
+            <permission mode="640" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.sql"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="com.bea.core.binxml.lib" type="none" size="87826">
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.binxml_1.8.0.0.jar"/>
+      </library>
+      <library name="cie_common_shared_entry" type="none" size="4933539">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table_1.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table-impl_1.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table-schema_1.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.encryption_2.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.binxml_1.8.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.xquery_1.8.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.xquery.xmlbeans-interop_1.8.0.0.jar"/>
+      </library>
+      <library name="svctbl_entry" type="none" size="124682">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table_1.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table-impl_1.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table-schema_1.7.0.0.jar"/>
+      </library>
+      <library name="cie_common_external_entry" type="none" size="13488">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table_1.7.0.0.jar"/>
+      </library>
+      <library name="cie_common_impl_entry" type="none" size="4920051">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table-impl_1.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table-schema_1.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.encryption_2.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.binxml_1.8.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.xquery_1.8.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.xquery.xmlbeans-interop_1.8.0.0.jar"/>
+      </library>
+      <library name="svctbl_client_entry" type="client" size="88190">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table_1.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.service-table-impl_1.7.0.0.jar"/>
+      </library>
+   </libraries>
+</component-def>

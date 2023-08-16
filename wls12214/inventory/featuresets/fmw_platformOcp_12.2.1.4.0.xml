@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<feature-set-def name="fmw_platformOcp" version="12.2.1.4.0" display-name="FMW Platform OCP" display-name-key="featureset.display.name" description-key="featureset.description" pom-gen="false" xmlns:ns2="http://xmlns.oracle.com/cie/gdr/dei" xmlns:ns3="http://xmlns.oracle.com/cie/gdr/nfo" xmlns:ns4="http://xmlns.oracle.com/cie/gdr/rgy" xmlns="http://xmlns.oracle.com/cie/gdr/ftr">
+   <components>
+      <component name="oracle.fmwplatform.ocp" version="12.2.1.4.0"/>
+   </components>
+   <dependencies>
+      <requires name="fmw_platformProvisioningApi" version="12.2.1.4.0">
+         <version-range min="12.2.1.4.0" min-inclusive="true" max="12.2.1.5.0" max-inclusive="false"/>
+      </requires>
+   </dependencies>
+   <libraries>
+      <library name="oracle.fmwplatform.ocp_lib" type="manifest" visibility="public" suppress-version="true" suppress-prefix="true">
+         <include name="oracle.fmwplatform.fmwprov_lib" feature="true"/>
+         <include name="oracle.fmwplatform.ocp"/>
+      </library>
+      <library name="oracle.fmwplatform.ocp_plugin_lib" type="manifest" location="plugins/opatchauto/modules" visibility="public" suppress-version="true" suppress-prefix="true">
+         <include name="oracle.fmwplatform.ocp_lib" feature="true"/>
+      </library>
+   </libraries>
+</feature-set-def>

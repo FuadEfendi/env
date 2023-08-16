@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.nginst.core" version="13.9.4.0.0" description="Next Generation Installation Core" description-key="component.description" gdr-version="1.8.4.0" singleton="true" pom-gen="false" groupId="com.oracle.oui" patch-level="1" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <file size="1117" checksum="137156110a0f3489359aa71c33d780cb690ddbed" dest="OraInstaller.jar" mode="640"/>
+         <file size="46347" checksum="71884315b7dfa7804f67efc8df6b76aa0a84a7e4" dest="com.oracle.cie.ora-suite-installer_12.8.4.0.jar" mode="640"/>
+         <file size="277974" checksum="00f5ced75229bdc17688db0d1f7976bb756960bb" dest="com.oracle.cie.oui-remote-interfaces_12.8.4.0.jar" mode="640"/>
+         <file size="93976" checksum="aff27aec0abbaf3621cc73fd76f9a4f8f1d06933" dest="com.oracle.cie.oui-ssh_12.8.4.0.jar" mode="640"/>
+         <file size="693" checksum="771c1868f0f666b138f56b68cce80a340e1957ab" dest="opatchauto-classpath.jar" mode="640"/>
+         <file size="40728" checksum="cb7679ed22c364617a50e9951e7ef9549d56a4bc" dest="com.oracle.cie.oui-fixup_12.8.4.0.jar" mode="640"/>
+         <file size="4213040" checksum="95ba71823142dbdd9f7c4baf1aec91dbe6e427b7" dest="com.oracle.cie.ora-installer_12.8.4.0.jar" mode="640"/>
+         <file size="1117" checksum="137156110a0f3489359aa71c33d780cb690ddbed" dest="installer-launch.jar" mode="640"/>
+         <directory dest="private" mode="750" patchable="true">
+            <file size="549142" checksum="894e7277f5a69668479653808efda354b272a605" dest="oracle_ice5.jar" mode="640"/>
+            <file size="190402" checksum="9e51e39f74432f5c95be1ead9f1eacbeba27e1e1" dest="srvmasm.jar" mode="640"/>
+            <file size="56417" checksum="0ba8fa7de1379f04137d5a7b63c9bc65ddd2e9b9" dest="share.jar" mode="640"/>
+            <file size="1703277" checksum="a0f284677185f77db23b395f102606b9eac22fd8" dest="xmlparserv2.jar" mode="640"/>
+            <file size="547352" checksum="5496765348ecf4ce9b221957b55b14179ec5f597" dest="http_client.jar" mode="640"/>
+            <file size="417325" checksum="60e4cc9014cc38e77b8dade295c98442c64bc084" dest="ohj.jar" mode="640"/>
+            <file size="2645123" checksum="ac0ce032a57c1518cda95de752cb1d23f839fdac" dest="jewt4.jar" mode="640"/>
+            <file size="256575" checksum="04d3daf0e9d5ace4c9c71e4a32ea9abbff082544" dest="help-share.jar" mode="640"/>
+            <file size="506243" checksum="b8c103e2e0dac0ed74c36630a9093f9bd7a3d9ae" dest="olaf2.jar" mode="640"/>
+            <file size="280515" checksum="da3584329a263616e277e15462b387addd1b208d" dest="jsch-0.1.54.jar" mode="640"/>
+            <file size="3916088" checksum="53a700a68771647ad5dc2802aa05a3485c8f5493" dest="srvm.jar" mode="640"/>
+         </directory>
+         <file size="5036" checksum="325973c158344f10aaf9dae20229e8351047776a" dest="com.oracle.cie.ora-installer-net_12.8.4.0.jar" mode="640"/>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+      <modifier type="text" regex=".*\.sh"/>
+      <modifier type="text" regex=".*\.cmd"/>
+      <directory dest="bin" mode="750" patchable="true">
+         <file size="866" checksum="3de5da042b9ed3f84de1ec54d30427c14ee3f1d4" dest="attachHome.sh" mode="750"/>
+         <file size="1579" checksum="5b11fce1f9e7bfea2affe9231a0409136fb187d9" dest="attachHome.cmd" os-family="windows" mode="750"/>
+         <file size="473" checksum="726d090c5b88d964b2639be3dcaf48fa7e99776d" dest="detachHome.sh" mode="750"/>
+         <file size="899" checksum="a1e6e23b1e5a74713a9a40ff18f03308426b1b9e" dest="detachHome.cmd" os-family="windows" mode="750"/>
+      </directory>
+   </file-map>
+   <file-map symbol="oracle.nginst.thirdparty.symbol" source="filegroup2.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="bin" mode="750" patchable="true">
+         <file size="5633" checksum="7991c2fcefa979b0ea51715d455b00d916d43f4b" dest="copyBinary.sh" mode="750"/>
+         <file size="5204" checksum="381c1a3e30e6ed2d32406919aa50f17b57248978" dest="copyBinary.cmd" os-family="windows" mode="750"/>
+         <file size="6801" checksum="a0db8fdf84d6fdcc0d040458e02135aa7d097901" dest="pasteBinary.sh" mode="750"/>
+         <file size="6204" checksum="50f0b148c09bcc68cdf8f6557bc53a68600a2247" dest="pasteBinary.cmd" os-family="windows" mode="750"/>
+      </directory>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup3.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="prov" mode="750" patchable="true">
+         <directory dest="resources" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="1662" checksum="eb00d298f30b23bd415e1673ae32e184f1b24a71" dest="logging_conf.xml" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <directory dest="prov" mode="750" patchable="true">
+         <directory dest="resources" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="727" checksum="7f98b2b6f1106aaee60eebb3f8fe29153a5aa2ed" dest="Paths.properties" mode="640"/>
+            <file size="2266" checksum="c5e4cabda9969dcfa9b476118953d8adb627ef73" dest="ignoreMessages.txt" mode="640"/>
+            <file size="3370" checksum="e6e3de2e9a88328c3783d000c999c344b5e2ece2" dest="ssPaths_linux_ia64.properties" mode="640"/>
+            <file size="0" checksum="da39a3ee5e6b4b0d3255bfef95601890afd80709" dest="remoteinterfaces_config.properties" mode="640"/>
+            <file size="355" checksum="8fb9787f7b39e7a2140c82b1f359e5511091a370" dest="userPaths.properties" mode="640"/>
+            <file size="2512" checksum="9edf77afb275e9f665d6a45a051d45fda7481e87" dest="ssPaths_msplats.properties" mode="640"/>
+            <file size="764" checksum="4e0eb5074470c0fa5b76d7e2ad11a3825a2cc48d" dest="ssPaths_hpuix.properties" mode="640"/>
+            <file size="3010" checksum="52d7903dac243cdb80c7534626d0d8945bc5d341" dest="platformInfo.properties" mode="640"/>
+            <file size="665" checksum="cbb92e55e53c617dca68974890716cfaba08170c" dest="ssPaths_sol.properties" mode="640"/>
+            <file size="3370" checksum="bcde6473018bb7f0ece85714076f3c7a5c333bdd" dest="ssPaths_linuxx64.properties" mode="640"/>
+            <file size="710" checksum="6de19e6bd835451407bcc8e8f0bf084c5bf00500" dest="ssPaths_decunix.properties" mode="640"/>
+            <file size="752" checksum="2b64156c357616482c56e4ed74c582a9dac2e090" dest="ssPaths_hpi.properties" mode="640"/>
+            <file size="571" checksum="4280623b0ae769efa9d79960943194729baa8861" dest="ssPaths_solx64.properties" mode="640"/>
+            <file size="552" checksum="651fe67da590f7e28b12a7f2afb5b54a49f57115" dest="system.properties" mode="640"/>
+            <file size="571" checksum="4280623b0ae769efa9d79960943194729baa8861" dest="ssPaths_solx86.properties" mode="640"/>
+            <file size="3365" checksum="47fc864eeada724d7f9e7e4243e7eada71313565" dest="ssPaths_linux_zseries64.properties" mode="640"/>
+            <file size="3370" checksum="bcde6473018bb7f0ece85714076f3c7a5c333bdd" dest="ssPaths_linux_ppc64.properties" mode="640"/>
+            <file size="4011" checksum="9b6d77f1ee98b872b92c06e1c7334429db3f6c2c" dest="sPaths.properties" mode="640"/>
+            <file size="689" checksum="6da00d572eb0fec359feb284c62ab5431096fc4a" dest="ssPaths_aix.properties" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="text" regex=".*" match-dirs="true"/>
+   </file-map>
+   <stringsubs>
+      <ns2:group id="test">
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/attachHome.cmd"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/attachHome.sh"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/detachHome.cmd"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/detachHome.sh"/>
+         <ns2:change-pair-ref name="ORACLE_HOME"/>
+         <ns2:change-pair-ref name="ORACLE_HOME_NAME"/>
+      </ns2:group>
+      <ns2:change-pair id="ORACLE_HOME" before="@ORACLE_HOME@" after="$ORACLE_HOME$"/>
+      <ns2:change-pair id="ORACLE_HOME_NAME" before="@ORACLE_HOME_NAME@" after="$ORACLE_HOME_NAME$"/>
+   </stringsubs>
+</component-def>

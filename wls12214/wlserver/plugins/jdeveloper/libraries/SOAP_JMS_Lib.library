@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library name="SOAP JMS Lib" deployed="false" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <remediation-comments>remediation-comments.xml</remediation-comments>
+  <export-specification>SOAP_JMS_Lib.exports</export-specification>
+  <classpath manifest="true" export="library">../../../../oracle_common/modules/com.oracle.webservices.user-api.jar</classpath>
+</library>

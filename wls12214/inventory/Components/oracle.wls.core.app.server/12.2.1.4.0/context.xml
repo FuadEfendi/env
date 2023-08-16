@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<!-- Copyright (c) 1999, 2023, Oracle. All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. --><COMP_CONTEXT>
+   <VAR_LIST SIZE="6">
+      <VAR NAME="s_shortcutRoot" TYPE="String" DESC_RES_ID="s_shortcutRoot_DESC" SECURE="F" VAL="Oracle FMW - 12.2.1.4.0" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_onlineDocumentationTitle" TYPE="String" DESC_RES_ID="s_onlineDocumentationTitle_DESC" SECURE="F" VAL="Online Documentation" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_eclipse" TYPE="String" DESC_RES_ID="s_eclipse_DESC" SECURE="F" VAL="Eclipse" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_wlsShortcutRoot" TYPE="String" DESC_RES_ID="s_wlsShortcutRoot_DESC" SECURE="F" VAL="Oracle FMW - 12.2.1.4.0\WebLogic Server 12.2.1" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_toolsShortcutRoot" TYPE="String" DESC_RES_ID="s_toolsShortcutRoot_DESC" SECURE="F" VAL="Oracle FMW - 12.2.1.4.0\WebLogic Server 12.2.1\Tools" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="JAVA_HOME_LOCATION" TYPE="String" DESC_RES_ID="JAVA_HOME_LOCATION_DESC" SECURE="F" VAL="C:\Program Files\Java\jdk-1.8" ADV="F" CLONABLE="T" USER_INPUT="CALC"/>
+      <VAR NAME="PROD_HOME" TYPE="String" DESC_RES_ID="" SECURE="F" VAL="c:\Users\xiaol\Downloads\wls\wls12214\oracle.wls.core.app.server" ADV="F" CLONABLE="T" USER_INPUT="CALC"/>
+   </VAR_LIST>
+   <CONST_LIST SIZE="16">
+      <CONST NAME="Custom" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Custom_ALL"/>
+      <CONST NAME="Minimum_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Minimum_DESC_ALL"/>
+      <CONST NAME="s_onlineDocumentationTitle_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="Online Documentation shortcut Title"/>
+      <CONST NAME="s_wlsShortcutRoot_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="WLS Windows Shortcut Directory"/>
+      <CONST NAME="s_toolsShortcutRoot_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="WLS Tools Windows Shortcut Directory"/>
+      <CONST NAME="Custom_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Custom_DESC_ALL"/>
+      <CONST NAME="COMPONENT_NAME" PLAT_SP="F" TYPE="String" TRANS="F" VAL="oracle.wls.core.app.server"/>
+      <CONST NAME="s_shortcutRoot_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="Windows Shortcut Root Directory"/>
+      <CONST NAME="s_eclipse_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="Eclipse"/>
+      <CONST NAME="Typical_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Typical_DESC_ALL"/>
+      <CONST NAME="Complete" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Complete_ALL"/>
+      <CONST NAME="Complete_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Complete_DESC_ALL"/>
+      <CONST NAME="Minimum" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Minimum_ALL"/>
+      <CONST NAME="Typical" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Typical_ALL"/>
+      <CONST NAME="COMPONENT_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="COMPONENT_DESC_ALL"/>
+      <CONST NAME="JAVA_HOME_LOCATION_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="JAVA_HOME"/>
+   </CONST_LIST>
+</COMP_CONTEXT>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+NAME
+QuickStartConfig.xml
+
+DESCRIPTION
+QuickStart for configuration
+
+-->
+<config-qstart xmlns="http://xmlns.oracle.com/cie/config/qrt">
+    <distribution name="WebLogic Server" version="12.2.1.4.0">
+        <featureset name="wls_examples" version="12.2.1.4.0">
+            <domain name="wl_server">
+                <template location="${ORACLE_HOME}/wlserver/common/templates/wls/wls.jar"/>
+                <template location="${ORACLE_HOME}/wlserver/common/templates/wls/wls_examples.jar"/>
+            </domain>
+            <domain name="medrec">
+                <template location="${ORACLE_HOME}/wlserver/common/templates/wls/wls.jar"/>
+                <template location="${ORACLE_HOME}/wlserver/common/templates/wls/medrec.jar"/>
+            </domain>
+            <domain name="medrec-spring">
+                <template location="${ORACLE_HOME}/wlserver/common/templates/wls/wls.jar"/>
+                <template location="${ORACLE_HOME}/wlserver/common/templates/wls/medrec-spring.jar"/>
+            </domain>
+        </featureset>
+    </distribution>
+</config-qstart>

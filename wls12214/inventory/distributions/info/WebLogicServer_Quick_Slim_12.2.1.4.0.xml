@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<distribution-info name="WebLogicServer_Quick_Slim" version="12.2.1.4.0" xmlns="http://xmlns.oracle.com/cie/gdr/di">
+   <oraparam>
+      <platforms generate-default-oraparam="true">
+         <platform name="HP_IA64"/>
+         <platform name="IBM_AIX"/>
+         <platform name="IBM_AIXPPC64"/>
+         <platform name="Solaris_SPARC64"/>
+         <platform name="Solaris"/>
+         <platform name="Linux_AMD64"/>
+         <platform name="MAC-OS-IN"/>
+         <platform name="Intel_Solaris"/>
+         <platform name="NT_AMD64"/>
+         <platform name="MAC-OS-IN64"/>
+         <platform name="HP_UX"/>
+         <platform name="Linux_S390"/>
+      </platforms>
+      <sections>
+         <section name="Oracle">
+            <property name="SHOW_HOSTNAME" value="NEVER_SHOW"/>
+            <property name="HOTSPOT_JAVA_OPTIONS" value="-mx512m -Doracle.installer.appendjre=true"/>
+            <property name="IBM_JAVA_OPTIONS" value="-mx512m -XX:MaxPermSize=512m -Xverify:none -Doracle.installer.appendjre=true"/>
+            <property name="USEJDKONLY" value="TRUE"/>
+            <property name="DEFAULT_HOME_NAME" value="OracleHome"/>
+            <property name="PRODUCT_SHORTCUT_GROUP" value="FMW"/>
+            <property name="LOG_LOCATION" value="ORACLE_HOME"/>
+            <property name="VM_TYPES">
+               <value>HotSpot</value>
+               <value>IBM</value>
+            </property>
+            <property name="NO_BROWSE" value="/net"/>
+            <property name="DEFAULT_HOME_LOCATION" value="wls"/>
+            <property name="INSTALL_CLASS" value="oracle.sysman.oio.oioc.OiocOneClickInstaller"/>
+            <property name="JAVA_VERSION" value="1.7"/>
+            <property name="PREREQ_CONFIG_LOCATION" value="oui/mw/wls/prereq"/>
+            <property name="USE_PREREQ_CHECKER" value="FALSE"/>
+            <property name="NLS_ENABLED" value="TRUE"/>
+            <property name="EXT_CLASSPATH">
+               <value>oui/mw/common/framework/jlib/engine-nextgen.jar</value>
+               <value>oui/mw/common/framework/jlib/message.jar</value>
+               <value>oui/mw/common/framework/jlib/oneclick.jar</value>
+               <value>oracle_common/modules/oracle.dms/dms.jar</value>
+               <value>oracle_common/modules/oracle.odl/ojdl.jar</value>
+               <value>oracle_common/modules/oracle.odl/ojdl2.jar</value>
+               <value>oracle_common/modules/oracle.odl/ojdl-log4j.jar</value>
+               <value>oracle_common/modules/oracle.bali.jewt/jewt4.jar</value>
+               <value>oracle_common/modules/oracle.bali.jewt/olaf2.jar</value>
+               <value>oracle_common/jlib/wizardCommonResources.jar</value>
+               <value>oracle_common/modules/oracle.bali.share/share.jar</value>
+               <value>oracle_common/modules/oracle.help/oracle_ice.jar</value>
+               <value>oracle_common/modules/oracle.help/ohj.jar</value>
+               <value>oracle_common/modules/oracle.help/help-share.jar</value>
+            </property>
+         </section>
+         <section name="Generic Prereqs">
+            <property name="TEMP_SPACE" value="300"/>
+            <property name="JAVA_USE_64BIT">
+               <value>MAC-OS-IN64</value>
+               <value>MAC-OS-IN</value>
+               <value>Solaris</value>
+               <value>Solaris_SPARC64</value>
+               <value>HP_IA64</value>
+               <value>HP_IA32</value>
+               <value>Intel_Solaris</value>
+               <value>Intel_Solaris32</value>
+            </property>
+            <property name="SWAP_SPACE" value="512"/>
+            <property name="CPU" value="300"/>
+            <property name="MIN_DISPLAY_COLORS" value="256"/>
+         </section>
+         <section name="IMAGES"/>
+      </sections>
+   </oraparam>
+   <shiphomeproperties/>
+   <patches/>
+</distribution-info>

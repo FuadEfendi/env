@@ -1,0 +1,242 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.webservices.base" version="12.2.1.4.0" description="Oracle WebServices Base" gdr-version="1.8.4.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="jrf.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <file size="11968" pack="true" dest="com.oracle.state-management.executor-internal-api.jar" id="com.oracle.state-management:executor-internal-api" patchable="true" group="com.oracle.state-management" artifact="executor-internal-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="11822" pack="true" dest="com.oracle.state-management.persistence-service-internal-api.jar" id="com.oracle.state-management:persistence-service-internal-api" patchable="true" group="com.oracle.state-management" artifact="persistence-service-internal-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="27135" pack="true" dest="com.oracle.state-management.persistence-service-provider-state-management-impl.jar" id="com.oracle.state-management:persistence-service-provider-state-management-impl" patchable="true" group="com.oracle.state-management" artifact="persistence-service-provider-state-management-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="72099" pack="true" dest="com.oracle.state-management.state-management-internal-api.jar" id="com.oracle.state-management:state-management-internal-api" patchable="true" group="com.oracle.state-management" artifact="state-management-internal-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="31051" pack="true" dest="com.oracle.state-management.state-management-provider-aggregate-impl.jar" id="com.oracle.state-management:state-management-provider-aggregate-impl" patchable="true" group="com.oracle.state-management" artifact="state-management-provider-aggregate-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="65744" pack="true" dest="com.oracle.state-management.state-management-provider-coherence-impl.jar" id="com.oracle.state-management:state-management-provider-coherence-impl" patchable="true" group="com.oracle.state-management" artifact="state-management-provider-coherence-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="165361" pack="true" dest="com.oracle.state-management.state-management-provider-common-internal-api.jar" id="com.oracle.state-management:state-management-provider-common-internal-api" patchable="true" group="com.oracle.state-management" artifact="state-management-provider-common-internal-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="37874" pack="true" dest="com.oracle.state-management.state-management-provider-memory-impl.jar" id="com.oracle.state-management:state-management-provider-memory-impl" patchable="true" group="com.oracle.state-management" artifact="state-management-provider-memory-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="22588" pack="true" dest="com.oracle.state-management.state-management-provider-memory-rar-impl.rar" id="com.oracle.state-management:state-management-provider-memory-rar-impl" patchable="true" group="com.oracle.state-management" artifact="state-management-provider-memory-rar-impl" version="1.5.0-190912.1619.1974694" type="rar"/>
+         <file size="26334" pack="true" dest="com.oracle.state-management.transactional-map-internal-api.jar" id="com.oracle.state-management:transactional-map-internal-api" patchable="true" group="com.oracle.state-management" artifact="transactional-map-internal-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="3071" pack="true" dest="com.oracle.webservices.audit-internal-api.jar" id="com.oracle.webservices:audit-internal-api" patchable="true" group="com.oracle.webservices" artifact="audit-internal-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="190367" pack="true" dest="com.oracle.webservices.disi-impl.jar" id="com.oracle.webservices:disi-impl" patchable="true" group="com.oracle.webservices" artifact="disi-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="12689" pack="true" dest="com.oracle.webservices.disi-internal-api.jar" id="com.oracle.webservices:disi-internal-api" patchable="true" group="com.oracle.webservices" artifact="disi-internal-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="172905" pack="true" dest="com.oracle.webservices.fabric-common-api.jar" id="com.oracle.webservices:fabric-common-api" patchable="true" group="com.oracle.webservices" artifact="fabric-common-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="271380" pack="true" dest="com.oracle.webservices.mdds-api.jar" id="com.oracle.webservices:mdds-api" patchable="true" group="com.oracle.webservices" artifact="mdds-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="21047" pack="true" dest="com.oracle.webservices.mdds-jersey-api.jar" id="com.oracle.webservices:mdds-jersey-api" patchable="true" group="com.oracle.webservices" artifact="mdds-jersey-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="469496" pack="true" dest="com.oracle.webservices.orasaaj-rt-api.jar" id="com.oracle.webservices:orasaaj-rt-api" patchable="true" group="com.oracle.webservices" artifact="orasaaj-rt-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="8780" pack="true" dest="com.oracle.webservices.session-manager-impl.jar" id="com.oracle.webservices:session-manager-impl" patchable="true" group="com.oracle.webservices" artifact="session-manager-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="64792" pack="true" dest="com.oracle.webservices.session-manager-internal-api.jar" id="com.oracle.webservices:session-manager-internal-api" patchable="true" group="com.oracle.webservices" artifact="session-manager-internal-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="127887" pack="true" dest="com.oracle.webservices.user-api.jar" id="com.oracle.webservices:user-api" patchable="true" group="com.oracle.webservices" artifact="user-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="402950" pack="true" dest="com.oracle.webservices.ws-databinding-api.jar" id="com.oracle.webservices:ws-databinding-api" patchable="true" group="com.oracle.webservices" artifact="ws-databinding-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="223559" pack="true" dest="com.oracle.webservices.ws-databinding-plugins-impl.jar" id="com.oracle.webservices:ws-databinding-plugins-impl" patchable="true" group="com.oracle.webservices" artifact="ws-databinding-plugins-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="1372630" pack="true" dest="com.oracle.webservices.ws-star-impl.jar" id="com.oracle.webservices:ws-star-impl" patchable="true" group="com.oracle.webservices" artifact="ws-star-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="98590" pack="true" dest="com.oracle.webservices.wls.wls-ws-api.jar" id="com.oracle.webservices.wls:wls-ws-api" patchable="true" group="com.oracle.webservices.wls" artifact="wls-ws-api" version="1.5.0-190912.1619.1974694"/>
+         <file size="29540" pack="true" dest="com.sun.xml.ws.jaxws-eclipselink-plugin.jar" id="com.sun.xml.ws:jaxws-eclipselink-plugin" patchable="true" group="com.sun.xml.ws" artifact="jaxws-eclipselink-plugin" version="2.3.0-b170202.2253"/>
+         <file size="2548206" pack="true" dest="com.sun.xml.ws.jaxws-rt.jar" id="com.sun.xml.ws:jaxws-rt" patchable="true" group="com.sun.xml.ws" artifact="jaxws-rt" version="2.3.0-wls122140-b190328.0053"/>
+         <file size="490676" pack="true" dest="com.sun.xml.messaging.saaj.saaj-impl.jar" id="com.sun.xml.messaging.saaj:saaj-impl" patchable="true" group="com.sun.xml.messaging.saaj" artifact="saaj-impl" version="1.4.0-b05"/>
+         <file size="887139" pack="true" dest="com.sun.xml.ws.jaxws-tools.jar" id="com.sun.xml.ws:jaxws-tools" patchable="true" group="com.sun.xml.ws" artifact="jaxws-tools" version="2.3.0-b170214.1743"/>
+         <file size="53966" pack="true" dest="com.sun.xml.ws.sdo-eclipselink-plugin.jar" id="com.sun.xml.ws:sdo-eclipselink-plugin" patchable="true" group="com.sun.xml.ws" artifact="sdo-eclipselink-plugin" version="2.3.0-b170202.2253"/>
+         <file size="172987" pack="true" dest="com.sun.xml.ws.policy.jar" id="com.sun.xml.ws:policy" patchable="true" group="com.sun.xml.ws" artifact="policy" version="2.7"/>
+         <file size="43433" pack="true" dest="org.glassfish.external.management-api.jar" id="org.glassfish.external:management-api" patchable="true" group="org.glassfish.external" artifact="management-api" version="3.2.1-b001"/>
+         <file size="21233" pack="true" dest="org.glassfish.gmbal.gmbal-api-only.jar" id="org.glassfish.gmbal:gmbal-api-only" patchable="true" group="org.glassfish.gmbal" artifact="gmbal-api-only" version="3.1.0-b001"/>
+         <file size="34989" pack="true" dest="org.glassfish.ha.ha-api.jar" id="org.glassfish.ha:ha-api" patchable="true" group="org.glassfish.ha" artifact="ha-api" version="3.1.9"/>
+         <file size="62766" pack="true" dest="org.jvnet.mimepull.mimepull.jar" id="org.jvnet.mimepull:mimepull" patchable="true" group="org.jvnet.mimepull" artifact="mimepull" version="1.9.5"/>
+         <file size="33002" pack="true" dest="org.jvnet.staxex.stax-ex.jar" id="org.jvnet.staxex:stax-ex" patchable="true" group="org.jvnet.staxex" artifact="stax-ex" version="1.7.7"/>
+         <file size="23434" pack="true" dest="com.sun.istack.istack-commons-runtime.jar" id="com.sun.istack:istack-commons-runtime" patchable="true" group="com.sun.istack" artifact="istack-commons-runtime" version="3.0.4"/>
+         <file size="291857" pack="true" dest="com.sun.xml.fastinfoset.FastInfoset.jar" id="com.sun.xml.fastinfoset:FastInfoset" patchable="true" group="com.sun.xml.fastinfoset" artifact="FastInfoset" version="1.2.13"/>
+         <file size="67091" pack="true" dest="com.sun.xml.stream.buffer.streambuffer.jar" id="com.sun.xml.stream.buffer:streambuffer" patchable="true" group="com.sun.xml.stream.buffer" artifact="streambuffer" version="1.5.4"/>
+         <file size="60274" pack="true" dest="org.glassfish.metro.metro-cm-api.jar" id="org.glassfish.metro:metro-cm-api" patchable="true" group="org.glassfish.metro" artifact="metro-cm-api" version="2.3.2-b624"/>
+         <file size="9980" pack="true" dest="org.glassfish.metro.metro-cm-impl.jar" id="org.glassfish.metro:metro-cm-impl" patchable="true" group="org.glassfish.metro" artifact="metro-cm-impl" version="2.3.2-b624"/>
+         <file size="20798" pack="true" dest="org.glassfish.metro.metro-commons.jar" id="org.glassfish.metro:metro-commons" patchable="true" group="org.glassfish.metro" artifact="metro-commons" version="2.3.2-b624"/>
+         <file size="5530" pack="true" dest="org.glassfish.metro.metro-config-api.jar" id="org.glassfish.metro:metro-config-api" patchable="true" group="org.glassfish.metro" artifact="metro-config-api" version="2.3.2-b624"/>
+         <file size="17463" pack="true" dest="org.glassfish.metro.metro-runtime-api.jar" id="org.glassfish.metro:metro-runtime-api" patchable="true" group="org.glassfish.metro" artifact="metro-runtime-api" version="2.3.2-b624"/>
+         <file size="35864" pack="true" dest="org.glassfish.metro.metro-runtime-impl.jar" id="org.glassfish.metro:metro-runtime-impl" patchable="true" group="org.glassfish.metro" artifact="metro-runtime-impl" version="2.3.2-b624"/>
+         <file size="8254" pack="true" dest="org.glassfish.metro.soaptcp-api.jar" id="org.glassfish.metro:soaptcp-api" patchable="true" group="org.glassfish.metro" artifact="soaptcp-api" version="2.3.2-b624"/>
+         <file size="316496" pack="true" dest="org.glassfish.metro.soaptcp-impl.jar" id="org.glassfish.metro:soaptcp-impl" patchable="true" group="org.glassfish.metro" artifact="soaptcp-impl" version="2.3.2-b624"/>
+         <file size="8072" pack="true" dest="org.glassfish.metro.wsmc-api.jar" id="org.glassfish.metro:wsmc-api" patchable="true" group="org.glassfish.metro" artifact="wsmc-api" version="2.3.2-b624"/>
+         <file size="23208" pack="true" dest="org.glassfish.metro.wsrm-api.jar" id="org.glassfish.metro:wsrm-api" patchable="true" group="org.glassfish.metro" artifact="wsrm-api" version="2.3.2-b624"/>
+         <file size="397048" pack="true" dest="org.glassfish.metro.wsrm-impl.jar" id="org.glassfish.metro:wsrm-impl" patchable="true" group="org.glassfish.metro" artifact="wsrm-impl" version="2.3.2-b624"/>
+         <file size="58853" pack="true" dest="org.glassfish.metro.wsrx-commons.jar" id="org.glassfish.metro:wsrx-commons" patchable="true" group="org.glassfish.metro" artifact="wsrx-commons" version="2.3.2-b624"/>
+         <file size="94112" pack="true" dest="org.glassfish.metro.wssx-api.jar" id="org.glassfish.metro:wssx-api" patchable="true" group="org.glassfish.metro" artifact="wssx-api" version="2.3.2-b624"/>
+         <file size="2315" pack="true" dest="org.glassfish.metro.wstx-core.jar" id="org.glassfish.metro:wstx-core" patchable="true" group="org.glassfish.metro" artifact="wstx-core" version="2.3.2-b624"/>
+         <file size="47958" pack="true" dest="org.glassfish.metro.xmlfilter.jar" id="org.glassfish.metro:xmlfilter" patchable="true" group="org.glassfish.metro" artifact="xmlfilter" version="2.3.2-b624"/>
+         <file-perms/>
+      </directory>
+      <directory dest="common" mode="750" patchable="true">
+         <directory dest="templates" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <directory dest="wls" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+               <file size="1407" pack="true" dest="oracle.state-management.memory-provider-template.jar" patchable="true" group="com.oracle.state-management" artifact="oracle.state-management.memory-provider-template" version="1.5.0-190912.1619.1974694"/>
+               <file size="1828" pack="true" dest="oracle.state-management.memory-provider_reconfig_template_12.1.3.jar" patchable="true" group="com.oracle.state-management" artifact="oracle.state-management.memory-provider_reconfig_template_12.1.3" version="1.5.0-190912.1619.1974694"/>
+               <file size="1825" pack="true" dest="oracle.state-management.memory-provider_reconfig_template_12.2.1.jar" patchable="true" group="com.oracle.state-management" artifact="oracle.state-management.memory-provider_reconfig_template_12.2.1" version="1.5.0-190912.1619.1974694"/>
+               <file size="1811" pack="true" dest="oracle.state-management.memory-provider_reconfig_template_12.2.1.1.0.jar" patchable="true" group="com.oracle.state-management" artifact="oracle.state-management.memory-provider_reconfig_template_12.2.1.1.0" version="1.5.0-190912.1619.1974694"/>
+            </directory>
+         </directory>
+         <file-perms/>
+      </directory>
+      <directory dest="" patchable="true" group="com.oracle.webservices" artifact="metro-rm-resources" version="1.5.0-190912.1619.1974694">
+         <directory dest="common" mode="750" patchable="true">
+            <directory dest="sql" mode="750" patchable="true">
+               <directory dest="webservices" mode="750" patchable="true">
+                  <file size="1270" dest="metro-rm-create-tables-derby.sql"/>
+                  <file size="1400" dest="metro-rm-create-tables-oracle.sql"/>
+               </directory>
+            </directory>
+         </directory>
+      </directory>
+   </file-map>
+   <artifact-pom-overrides>
+      <suppress-pom file="common/templates/wls/oracle.state-management.memory-provider_reconfig_template_12.2.1.1.0.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.state-management.memory-provider_reconfig_template_12.2.1.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.state-management.memory-provider_reconfig_template_12.1.3.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.state-management.memory-provider-template.jar" symbol="jrf.symbol"/>
+   </artifact-pom-overrides>
+   <default-pom-override groupId="com.oracle.fmwshare"/>
+   <libraries>
+      <library name="oracle.webservices.base.client" type="none" suppress-version="true" size="8103868">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.executor-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.persistence-service-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.persistence-service-provider-state-management-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.state-management-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.state-management-provider-common-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.state-management-provider-memory-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.transactional-map-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.audit-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.disi-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.disi-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.fabric-common-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.mdds-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.mdds-jersey-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.orasaaj-rt-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.session-manager-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.session-manager-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.user-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-ws-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-star-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.istack.istack-commons-runtime.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.fastinfoset.FastInfoset.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.stream.buffer.streambuffer.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.jaxws-eclipselink-plugin.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.jaxws-rt.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.messaging.saaj.saaj-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.jaxws-tools.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.policy.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.sdo-eclipselink-plugin.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.external.management-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.gmbal.gmbal-api-only.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.ha.ha-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.wsrm-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.jvnet.mimepull.mimepull.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.jvnet.staxex.stax-ex.jar"/>
+      </library>
+      <library name="jrf.wls.classpath" type="none" visibility="none" suppress-version="true" size="631866">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-databinding-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-databinding-plugins-impl.jar"/>
+      </library>
+      <library name="oracle.webservices.jrf.ws-assembler-classes" type="none" visibility="none" suppress-version="true" size="631866">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-databinding-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-databinding-plugins-impl.jar"/>
+      </library>
+      <library name="ws.base.wlst.classpath" type="none" suppress-version="true" size="0"/>
+      <library name="com.oracle.webservices.wls.jaxws-wlswss-client" type="none" visibility="none" suppress-version="true" size="764646">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-ws-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-databinding-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-databinding-plugins-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.state-management-provider-aggregate-impl.jar"/>
+      </library>
+      <library name="com.oracle.webservices.wls.jaxrpc-client" type="none" visibility="none" size="6389873">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-ws-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-star-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-databinding-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-databinding-plugins-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.jaxws-eclipselink-plugin.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.jaxws-rt.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.messaging.saaj.saaj-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.jaxws-tools.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.sdo-eclipselink-plugin.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.policy.jar"/>
+      </library>
+      <library name="oracle.webservices.base.wls.classpath" type="manifest" visibility="none" suppress-version="true">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.executor-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.persistence-service-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.persistence-service-provider-state-management-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.state-management-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.state-management-provider-aggregate-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.state-management-provider-coherence-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.state-management-provider-common-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.state-management-provider-memory-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.state-management.transactional-map-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.audit-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.disi-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.disi-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.fabric-common-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.mdds-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.mdds-jersey-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.orasaaj-rt-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.session-manager-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.session-manager-internal-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.user-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-star-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-ws-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.istack.istack-commons-runtime.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.fastinfoset.FastInfoset.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.stream.buffer.streambuffer.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.jaxws-eclipselink-plugin.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.jaxws-rt.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.messaging.saaj.saaj-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.jaxws-tools.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.policy.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.ws.sdo-eclipselink-plugin.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.external.management-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.gmbal.gmbal-api-only.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.ha.ha-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.metro-cm-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.metro-cm-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.metro-commons.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.metro-config-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.metro-runtime-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.metro-runtime-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.soaptcp-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.soaptcp-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.wsmc-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.wsrm-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.wsrm-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.wsrx-commons.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.wssx-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.wstx-core.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.metro.xmlfilter.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.jvnet.mimepull.mimepull.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.jvnet.staxex.stax-ex.jar"/>
+      </library>
+      <library name="wls-api" type="none" visibility="none" suppress-version="true" size="1493893">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-ws-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.ws-star-impl.jar">
+            <include name="weblogic/wsee/reliability2/faults/SequenceFaultException.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability2/faults/SequenceFaultMsg.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability2/faults/SequenceFaultMsgType.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability2/faults/WsrmFaultException.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability2/faults/WsrmFaultMsg.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability2/sequence/OfferSequence.class" match-path="true"/>
+            <include name="weblogic/wsee/util/DefaultHashFunction.class" match-path="true"/>
+            <include name="weblogic/wsee/util/HashCodeUtil.class" match-path="true"/>
+            <include name="weblogic/wsee/util/SecurityUtil.class" match-path="true"/>
+            <include name="weblogic/wsee/util/StableHash$HashFunction.class" match-path="true"/>
+            <include name="weblogic/wsee/util/StableHash.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="wlclient" type="none" visibility="none" size="45142">
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.external.management-api.jar">
+            <include name="org/glassfish/external/probe/provider/PluginPoint.class" match-path="true"/>
+            <include name="org/glassfish/external/probe/provider/StatsProviderInfo.class" match-path="true"/>
+            <include name="org/glassfish/external/probe/provider/StatsProviderManager.class" match-path="true"/>
+            <include name="org/glassfish/external/probe/provider/StatsProviderManagerDelegate.class" match-path="true"/>
+            <include name="org/glassfish/external/statistics/CountStatistic.class" match-path="true"/>
+            <include name="org/glassfish/external/statistics/Statistic.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="SOA-Runtime" type="none" visibility="none" size="176518">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.fabric-common-api.jar"/>
+      </library>
+      <library name="webservices.base.foh.lib" type="none" visibility="none" suppress-version="true" size="940668">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.orasaaj-rt-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.fastinfoset.FastInfoset.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.sun.xml.stream.buffer.streambuffer.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.jvnet.mimepull.mimepull.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.jvnet.staxex.stax-ex.jar"/>
+      </library>
+   </libraries>
+</component-def>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PREREQUISITETESTS>
+ <PREREQUISITESET NAME="oracle.installType.all">
+  <PREREQUISITESETREF NAME="minimalTests"/>
+ </PREREQUISITESET>
+ <PREREQUISITESET NAME="minimalTests">
+  <PREREQUISITEREF NAME="CertifiedVersions" SEVERITY="Warning"/>
+ <PREREQUISITEREF NAME="CheckJDKVersion" SEVERITY="Warning"/>
+ </PREREQUISITESET>
+ <PREREQUISITE NAME="CertifiedVersions"
+               EXTERNALNAME="Is the Oracle software certified on the current O/S?"
+               EXTERNALNAMEID="S_CHECK_CERTIFIED_VERSIONS@oracle.sysman.oip.oipc.oipcz.resources.OipczRuntimeRes"
+               SEVERITY="Warning">
+  <DESCRIPTION TEXT="This is a prerequisite condition to test whether the Oracle software is certified on the current O/S or not."
+               TEXTID="S_CHECK_CERTIFIED_VERSIONS_DESCRIPTION@oracle.sysman.oip.oipc.oipcz.resources.OipczRuntimeRes"/>
+  <RULESETREF NAME="OSChecks" RULE="CertifiedVersions" FILE="refhost.xml"
+              RESULTS_FILE="install_rule_results.xml"/>
+  <PROBLEM TEXT="This Oracle software is not certified on the current O/S."
+           TEXTID="CHECK_OS_VERSION_GENERIC_WARNING@oracle.as.install.common.prereq.oscheck.resources.OSVersionCheckPreReqResourceBundle"/>
+  <RECOMMENDATION TEXT="Make sure you are installing the software on a certifid platform."
+                  TEXTID="CHECK_OS_VERSION_GENERIC_ACTION@oracle.as.install.common.prereq.oscheck.resources.OSVersionCheckPreReqResourceBundle"/>
+ </PREREQUISITE>
+  <PREREQUISITE NAME="CheckJDKVersion"
+                EXTERNALNAME="Is the Product Installer using JDK 1.7?"
+                EXTERNALNAMEID="CHECK_JDK_VERSION@oracle.as.install.common.prereq.jdkcheck.resources.JDKVersionCheckPreReqResourceBundle"
+                SEVERITY="Warning">
+        <DESCRIPTION TEXT="This is a prerequisite condition to test whether the installer is using JDK 1.7 to launch."
+                TEXTID="CHECK_JDK_VERSION_DESC@oracle.as.install.common.prereq.jdkcheck.resources.JDKVersionCheckPreReqResourceBundle"/>
+        <RULESETREF NAME="JDKVersionCheck" RULE="CheckJDKVersion" 
+                RESULTS_FILE="install_rule_results.xml"/>
+        <PROBLEM TEXT="JDK 1.7 is not used to launch the installer."
+                TEXTID="CHECK_JDK_VERSION_WARNING@oracle.as.install.common.prereq.jdkcheck.resources.JDKVersionCheckPreReqResourceBundle">
+        </PROBLEM>
+        <RECOMMENDATION TEXT="Oracle Fusion Middleware requires Java SE 7."
+                TEXTID="CHECK_JDK_VERSION_ACTION@oracle.as.install.common.prereq.jdkcheck.resources.JDKVersionCheckPreReqResourceBundle"/>
+    </PREREQUISITE>
+</PREREQUISITETESTS>

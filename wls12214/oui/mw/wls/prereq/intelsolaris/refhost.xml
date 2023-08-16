@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<HOST PLATID="267">
+  <CERTIFIED_SYSTEMS>
+    <OPERATING_SYSTEM>
+      <VERSION VALUE="5.11"/>
+      <ARCHITECTURE VALUE="x86"/>
+      <NAME VALUE="SunOS"/>
+      <VENDOR VALUE="Sun Microsystems Inc."/>
+      <PACKAGES VALUE=""/>
+      <PATCHES VALUE=""/>
+      <KERNEL></KERNEL>
+    </OPERATING_SYSTEM>
+  </CERTIFIED_SYSTEMS>
+</HOST>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library id="oracle.fmwplatform.common" name="Oracle FMW Platform LCM Tools" deployed="false" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <description/>
+  <classpath export="all">../../../../oracle_common/modules/fmwplatform/common/actionframework-api-v2.jar</classpath>
+  <classpath export="all">../../../../oracle_common/modules/fmwplatform/common/actionframework.jar</classpath>
+  <classpath export="all">../../../../oracle_common/modules/fmwplatform/common/util.jar</classpath>
+  <classpath export="all">../../../../oracle_common/modules/fmwplatform/common/credentials.jar</classpath>
+  <classpath export="all">../../../../oracle_common/modules/fmwplatform/common/wlst-api.jar</classpath>
+  <classpath export="all">../../../../oracle_common/modules/fmwplatform/fmwprov/fmwprov.jar</classpath>
+</library>

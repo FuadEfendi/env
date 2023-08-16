@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<!-- Copyright (c) 1999, 2023, Oracle. All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. --><LIB_LIST>
+   <QUERY_LIST>
+      <LIB NAME="jdkGeneralQueries" VER="12.1.3.0.0" REP_VER="0.0" MIN_INST_VER="11.2.0.0.0" INV_LOC="Queries/jdkGeneralQueries/12.1.3.0.0/jdkGeneralQueries.jar"/>
+      <LIB NAME="generalQueries" VER="10.2.0.2.1" REP_VER="0.0" MIN_INST_VER="11.2.0.0.0" INV_LOC="Queries/generalQueries/10.2.0.2.1/generalQueries.jar"/>
+   </QUERY_LIST>
+   <DIALOG_LIST/>
+   <ACTION_LIST>
+      <LIB NAME="ntw32FoldersActions" VER="10.2.0.3.0" REP_VER="0.0" MIN_INST_VER="11.2.0.0.0" INV_LOC="Actions/ntw32FoldersActions/10.2.0.3.0/WindowsFolders.jar"/>
+   </ACTION_LIST>
+</LIB_LIST>

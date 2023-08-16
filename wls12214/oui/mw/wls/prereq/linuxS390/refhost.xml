@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<HOST PLATID="209">
+  <CERTIFIED_SYSTEMS>
+    <OPERATING_SYSTEM>
+      <VERSION VALUE="6"/>
+      <ARCHITECTURE VALUE="s390x"/>
+      <NAME VALUE="Linux"/>
+      <VENDOR VALUE="redhat"/>
+      <PACKAGES></PACKAGES>
+      <KERNEL></KERNEL>
+    </OPERATING_SYSTEM>
+    <OPERATING_SYSTEM>
+      <VERSION VALUE="7"/>
+      <ARCHITECTURE VALUE="s390x"/>
+      <NAME VALUE="Linux"/>
+      <VENDOR VALUE="redhat"/>
+      <PACKAGES></PACKAGES>
+      <KERNEL></KERNEL>
+    </OPERATING_SYSTEM>
+    <OPERATING_SYSTEM>
+      <VERSION VALUE="11"/>
+      <ARCHITECTURE VALUE="s390x"/>
+      <NAME VALUE="Linux"/>
+      <VENDOR VALUE="SuSE"/>
+      <PACKAGES></PACKAGES>
+      <KERNEL></KERNEL>
+    </OPERATING_SYSTEM>
+    <OPERATING_SYSTEM>
+      <VERSION VALUE="12"/>
+      <ARCHITECTURE VALUE="s390x"/>
+      <NAME VALUE="Linux"/>
+      <VENDOR VALUE="SuSE"/>
+      <PACKAGES></PACKAGES>
+      <KERNEL></KERNEL>
+    </OPERATING_SYSTEM>
+  </CERTIFIED_SYSTEMS>
+</HOST>
