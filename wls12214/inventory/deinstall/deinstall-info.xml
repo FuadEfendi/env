@@ -1,0 +1,566 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<deinstall-info xmlns:ns2="http://xmlns.oracle.com/cie/gdr/nfo" xmlns:ns3="http://xmlns.oracle.com/cie/gdr/rgy" xmlns="http://xmlns.oracle.com/cie/gdr/dei">
+   <refcounts/>
+   <components>
+      <component name="oracle.bali.jewt" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\internal\features\oracle.bali.jewt_adf.runtime.war.jar"/>
+         </files>
+      </component>
+      <component name="oracle.glcm.opatch.common.api" version="13.9.4.0.0">
+         <files>
+            <file path="\OPatch\modules\features\oracle.glcm.opatch.common.api.classpath.jar"/>
+         </files>
+      </component>
+      <component name="oracle.glcm.opatchauto.core" version="13.9.4.2.0">
+         <files>
+            <file path="\OPatch\auto\core\modules\features\oracle.glcm.opatchauto.core.binary.classpath.jar"/>
+            <file path="\OPatch\auto\core\modules\features\oracle.glcm.opatchauto.core.classpath.jar"/>
+            <file path="\OPatch\modules\features\oracle.glcm.opatchauto.core.wallet.classpath.jar"/>
+            <file path="\OPatch\plugins\opatchauto\modules\oracle.glcm.opatchauto.core.actions.classpath.jar"/>
+         </files>
+      </component>
+      <component name="oracle.glcm.opatchauto.fmw" version="13.9.4.2.0">
+         <files>
+            <file path="\OPatch\plugins\opatchauto\modules\oracle.glcm.opatchauto.fmw.actions.classpath.jar"/>
+         </files>
+      </component>
+      <component name="oracle.wls.wlsportable.mod" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\clients\javax.management.j2ee_12.2.1.jar"/>
+         </files>
+      </component>
+   </components>
+   <features>
+      <feature name="bouncyCastle_thirdparty" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\lib_bouncyCastle_thirdparty.jar"/>
+         </files>
+      </feature>
+      <feature name="cieCfg_common" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\clients\svctbl_jmx_client.jar"/>
+            <file path="\oracle_common\modules\features\cieCfg_common_lib.jar"/>
+            <file path="\oracle_common\modules\features\cieCfg_common_svctbl_lib.jar"/>
+            <file path="\oracle_common\modules\features\oracle.glcm.logging.jar"/>
+            <file path="\oracle_common\modules\internal\features\com.bea.core.binxml_dependencies.jar"/>
+         </files>
+      </feature>
+      <feature name="cieCfg_wls" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\features\cieCfg_wls_external_lib.jar"/>
+            <file path="\oracle_common\modules\features\cieCfg_wls_impl_lib.jar"/>
+            <file path="\oracle_common\modules\features\cieCfg_wls_lib.jar"/>
+         </files>
+      </feature>
+      <feature name="cieCfg_wls_shared" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\features\cieCfg_wls_shared_lib.jar"/>
+         </files>
+      </feature>
+      <feature name="cieStb_rcu" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\features\cieCfg_common_rcu_lib.jar"/>
+         </files>
+      </feature>
+      <feature name="coherence" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\internal\features\coherence_dependencies.jar"/>
+         </files>
+      </feature>
+      <feature name="db_jdbc" version="19.3.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\features\com.oracle.db.jdbc-dms.jar"/>
+            <file path="\oracle_common\modules\features\com.oracle.db.jdbc-no-dms.jar"/>
+            <file path="\oracle_common\modules\features\com.oracle.db.jdbc7-dms.jar"/>
+            <file path="\oracle_common\modules\features\com.oracle.db.jdbc7-no-dms.jar"/>
+            <file path="\oracle_common\modules\internal\features\jdbcdms_dependencies.jar"/>
+         </files>
+      </feature>
+      <feature name="db_nlsrtl" version="19.3.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\features\com.oracle.db.nlsrtl.jar"/>
+         </files>
+      </feature>
+      <feature name="db_xdb" version="19.3.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\features\com.oracle.db.xdb.jar"/>
+         </files>
+      </feature>
+      <feature name="db_xdkNoJaxp" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\features\com.oracle.db.xdk-no-jaxp.jar"/>
+         </files>
+      </feature>
+      <feature name="fmw_platformOcp" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\features\oracle.fmwplatform.ocp_lib.jar"/>
+            <file path="\oracle_common\plugins\opatchauto\modules\oracle.fmwplatform.ocp_plugin_lib.jar"/>
+         </files>
+      </feature>
+      <feature name="fmw_platformProvisioningApi" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\features\oracle.fmwplatform.fmwprov_lib.jar"/>
+            <file path="\oracle_common\plugins\wlst\fmwplatform-wlst-dependencies.jar"/>
+         </files>
+      </feature>
+      <feature name="glcm_common" version="13.9.4.0.0">
+         <files>
+            <file path="\oracle_common\modules\features\glcm_common_glcm_common_lib_13.9.4.jar"/>
+         </files>
+      </feature>
+      <feature name="glcm_common_logging" version="13.9.4.0.0">
+         <files>
+            <file path="\oracle_common\modules\features\glcm_common_logging_glcm_common_logging_lib_13.9.4.jar"/>
+         </files>
+      </feature>
+      <feature name="glcm_encryption" version="13.9.4.2.0">
+         <files>
+            <file path="\oracle_common\modules\features\glcm_encryption_lib.jar"/>
+         </files>
+      </feature>
+      <feature name="java_api" version="12.2.1.4.0">
+         <files>
+            <file path="\wlserver\modules\features\oracle.java.classpath.jar"/>
+         </files>
+      </feature>
+      <feature name="mysql_jdbc" version="8.0.14.0.0">
+         <files>
+            <file path="\oracle_common\modules\features\mySqlJdbcDrivers.jar"/>
+         </files>
+      </feature>
+      <feature name="orapki" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\features\com.oracle.orapki.jar"/>
+            <file path="\oracle_common\modules\features\orapki.lib.jar"/>
+         </files>
+      </feature>
+      <feature name="owasp_thirdparty" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\lib_owasp_thirdparty.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_antContribAntContribVb3" version="1.0.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\ant-contrib.vb3.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_antContribAntContribVb" version="1.0.0.0.3">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\ant-contrib.vb.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_cglibCglibNodep" version="3.2.5.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\cglib-nodep.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comFasterxmlClassmate" version="1.3.1.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\classmate.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comFasterxmlJacksonCoreJacksonAnnotations" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-annotations.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comFasterxmlJacksonCoreJacksonCore" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-core.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comFasterxmlJacksonCoreJacksonDatabind" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-databind.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comFasterxmlJacksonDataformatJacksonDataformatXml" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-dataformat-xml.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comFasterxmlJacksonJaxrsJacksonJaxrsBase" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-jaxrs-base.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comFasterxmlJacksonJaxrsJacksonJaxrsJsonProvider" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-jaxrs-json-provider.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comFasterxmlJacksonModuleJacksonModuleJaxbAnnotations" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-module-jaxb-annotations.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comFasterxmlJacksonModuleJacksonModuleJsonschema" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-module-jsonschema.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comGoogleGuavaFailureaccess" version="1.0.1.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\failureaccess.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comGoogleGuavaGuava" version="27.1.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\guava.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comIbmJbatchComIbmJbatchContainer" version="1.0.3.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\com.ibm.jbatch.container.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_comIbmJbatchComIbmJbatchSpi" version="1.0.3.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\com.ibm.jbatch.spi.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_commonsFileuploadCommonsFileupload" version="1.4.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\commons-fileupload.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_jodaTimeJodaTime" version="2.10.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\joda-time.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_log4jLog4j" version="2.11.1.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\log4j.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_netSourceforgeNekohtmlNekohtml" version="1.9.16.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\net.sourceforge.nekohtml.nekohtml.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgApacheAntAntBundle" version="1.10.5.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\ant_bundle.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgApacheCommonsCommonsCollections4" version="4.2.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\commons-collections4.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgApacheCommonsCommonsCompress" version="1.9.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\commons-compress.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgApacheHttpcomponentsHttpclient" version="4.5.6.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\org.apache.httpcomponents.httpclient.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgApacheHttpcomponentsHttpcore" version="4.4.10.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\httpcore.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgApacheXmlgraphicsBatikAll" version="1.11.0.0.1">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\batik-all.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgBouncycastleBcpkixJdk15on" version="1.60.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\bcpkix-jdk15on.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgBouncycastleBcprovExtJdk15on" version="1.60.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\bcprov-ext-jdk15on.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgBouncycastleBcprovJdk15on" version="1.60.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\bcprov-jdk15on.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgCodehausJacksonJacksonCoreAsl" version="1.9.13.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-core-asl.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgCodehausJacksonJacksonJaxrs" version="1.9.13.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-jaxrs.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgCodehausJacksonJacksonMapperAsl" version="1.9.13.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-mapper-asl.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgCodehausJacksonJacksonXc" version="1.9.13.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-xc.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgJbossLoggingJbossLoggingVfinal" version="3.3.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jboss-logging.vfinal.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_orgOwaspEsapiEsapi" version="2.1.0.1.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\esapi.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyMain_xercesXercesimpl" version="2.12.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\xercesimpl.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyModified_orgApacheHttpcomponentsHttpclient_For_451" version="4.5.6.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\org.apache.httpcomponents.httpclient_4.5.1.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdPartyModified_orgApacheHttpcomponentsHttpcore_For_443" version="4.4.10.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\httpcore_4.4.3.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_antContribAntContribVb3" version="1.0.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\ant-contrib.vb3_1.0.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_antContribAntContribVb" version="1.0.0.0.3">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\ant-contrib.vb_1.0.0.0.3.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_cglibCglibNodep" version="3.2.5.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\cglib-nodep_3.2.5.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comFasterxmlClassmate" version="1.3.1.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\classmate_1.3.1.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comFasterxmlJacksonCoreJacksonAnnotations" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-annotations_2.9.9.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comFasterxmlJacksonCoreJacksonCore" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-core_2.9.9.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comFasterxmlJacksonCoreJacksonDatabind" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-databind_2.9.9.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comFasterxmlJacksonDataformatJacksonDataformatXml" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-dataformat-xml_2.9.9.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comFasterxmlJacksonJaxrsJacksonJaxrsBase" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-jaxrs-base_2.9.9.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comFasterxmlJacksonJaxrsJacksonJaxrsJsonProvider" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-jaxrs-json-provider_2.9.9.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comFasterxmlJacksonModuleJacksonModuleJaxbAnnotations" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-module-jaxb-annotations_2.9.9.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comFasterxmlJacksonModuleJacksonModuleJsonschema" version="2.9.9.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-module-jsonschema_2.9.9.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comGoogleGuavaFailureaccess" version="1.0.1.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\failureaccess_1.0.1.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comGoogleGuavaGuava" version="27.1.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\guava_27.1.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comIbmJbatchComIbmJbatchContainer" version="1.0.3.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\com.ibm.jbatch.container_1.0.3.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_comIbmJbatchComIbmJbatchSpi" version="1.0.3.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\com.ibm.jbatch.spi_1.0.3.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_commonsFileuploadCommonsFileupload" version="1.4.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\commons-fileupload_1.4.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_jodaTimeJodaTime" version="2.10.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\joda-time_2.10.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_log4jLog4j" version="2.11.1.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\log4j_2.11.1.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_netSourceforgeNekohtmlNekohtml" version="1.9.16.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\net.sourceforge.nekohtml.nekohtml_1.9.16.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_oracleJaxbRI" version="2.3.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\internal\features\lib_jaxb_2.3.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgApacheAntAntBundle" version="1.10.5.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\ant_bundle_1.10.5.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgApacheCommonsCommonsCollections4" version="4.2.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\commons-collections4_4.2.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgApacheCommonsCommonsCompress" version="1.9.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\commons-compress_1.9.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgApacheHttpcomponentsHttpclient" version="4.5.6.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\org.apache.httpcomponents.httpclient_4.5.6.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgApacheHttpcomponentsHttpcore" version="4.4.10.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\httpcore_4.4.10.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgApacheXmlgraphicsBatikAll" version="1.11.0.0.1">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\batik-all_1.11.0.0.1.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgBouncycastleBcpkixJdk15on" version="1.60.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\bcpkix-jdk15on_1.60.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgBouncycastleBcprovExtJdk15on" version="1.60.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\bcprov-ext-jdk15on_1.60.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgBouncycastleBcprovJdk15on" version="1.60.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\bcprov-jdk15on_1.60.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgCodehausJacksonJacksonCoreAsl" version="1.9.13.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-core-asl_1.9.13.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgCodehausJacksonJacksonJaxrs" version="1.9.13.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-jaxrs_1.9.13.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgCodehausJacksonJacksonMapperAsl" version="1.9.13.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-mapper-asl_1.9.13.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgCodehausJacksonJacksonXc" version="1.9.13.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jackson-xc_1.9.13.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgJbossLoggingJbossLoggingVfinal" version="3.3.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\jboss-logging.vfinal_3.3.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_orgOwaspEsapiEsapi" version="2.1.0.1.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\esapi_2.1.0.1.0.jar"/>
+         </files>
+      </feature>
+      <feature name="thirdParty_xercesXercesimpl" version="2.12.0.0.0">
+         <files>
+            <file path="\oracle_common\modules\thirdparty\features\xercesimpl_2.12.0.0.0.jar"/>
+         </files>
+      </feature>
+      <feature name="wls_coreServerComp" version="12.2.1.4.0">
+         <files>
+            <file path="\wlserver\modules\internal\features\coherence.intg_dependencies.jar"/>
+            <file path="\wlserver\modules\internal\features\velocity.dep_dependencies.jar"/>
+         </files>
+      </feature>
+      <feature name="wls_devServerSlim" version="12.2.1.4.0">
+         <files>
+            <file path="\wlserver\modules\features\wlst.wls.classpath.jar"/>
+            <file path="\wlserver\modules\internal\features\maven.wls.classpath.jar"/>
+         </files>
+      </feature>
+      <feature name="wls_portable" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\internal\features\glassfish.jersey_dependencies.jar"/>
+            <file path="\oracle_common\modules\internal\features\jackson.client_dependencies.jar"/>
+            <file path="\oracle_common\modules\internal\features\javax.ws.rs.api_dependencies.jar"/>
+            <file path="\oracle_common\modules\internal\features\weblogic.sca.engine_dependencies.jar"/>
+         </files>
+      </feature>
+      <feature name="wls_portable_sharedWithCoh" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\internal\features\glassfish.jersey.core_dependencies.jar"/>
+         </files>
+      </feature>
+      <feature name="wls_thirdparty_javaxjson" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\internal\features\javax_json_dependencies_12.2.1.jar"/>
+         </files>
+      </feature>
+      <feature name="wls_ws" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\internal\features\com.oracle.webservices.wls.wls-classpath.jar"/>
+            <file path="\oracle_common\modules\internal\features\webservices.jaxrpc_dependencies.jar"/>
+         </files>
+      </feature>
+      <feature name="ws_base" version="12.2.1.4.0">
+         <files>
+            <file path="\oracle_common\modules\internal\features\glassfish.gmbal_dependencies.jar"/>
+            <file path="\oracle_common\modules\internal\features\webservices_dependencies.jar"/>
+         </files>
+      </feature>
+      <feature name="xmlbeans" version="2.6.0.6.0">
+         <files>
+            <file path="\wlserver\modules\internal\features\xmlbeans_lib.jar"/>
+         </files>
+      </feature>
+   </features>
+</deinstall-info>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<distribution name="WebLogicServer_Quick_Slim" version="12.2.1.4.0" external-name="Oracle Fusion Middleware 13c WebLogic and Coherence Developer Slim" external-name-key="distribution.external.name" external-shortname="Oracle Fusion Middleware 12c WebLogic and Coherence Developer Slim" external-shortname-key="distribution.external.short.name" pom-gen="false" xmlns:ns2="http://xmlns.oracle.com/cie/gdr/dei" xmlns:ns3="http://xmlns.oracle.com/cie/gdr/nfo" xmlns:ns4="http://xmlns.oracle.com/cie/gdr/rgy" xmlns="http://xmlns.oracle.com/cie/gdr/dbd">
+   <feature-set-group name="WebLogic Server" display-name="WebLogic Server" display-name-key="distribution.featureset.group.weblogic_server.display.name" description="WebLogic Server" description-key="distribution.featureset.group.weblogic_server.description">
+      <feature-set visible="true" name="wls_devServerSlim" version="12.2.1.4.0"/>
+   </feature-set-group>
+   <feature-set-group name="Coherence" display-name="Coherence" display-name-key="distribution.featureset.group.coherence.display.name" description="Coherence" description-key="distribution.featureset.group.coherence.description">
+      <feature-set visible="true" name="coherence" version="12.2.1.4.0"/>
+   </feature-set-group>
+   <feature-set-group name="Toplink" display-name="TopLink" display-name-key="distribution.featureset.group.toplink.display.name" description="TopLink" description-key="distribution.featureset.group.toplink.description">
+      <feature-set visible="true" name="toplink" version="12.2.1.4.0"/>
+   </feature-set-group>
+   <feature-set-group name="Internal Features" display-name="Internal Features" display-name-key="distribution.featureset.group.internal_features.display.name" description="Internal Features" description-key="distribution.featureset.group.internal_features.description">
+      <feature-set visible="false" required="true" name="nginst_core" version="13.9.4.0.0"/>
+      <feature-set visible="true" required="true" name="fmw_platformGeneric" version="12.2.1.4.0"/>
+      <feature-set visible="true" name="opatch" version="13.9.4.2.1"/>
+      <feature-set visible="false" name="glcm_opatchauto_fmw" version="13.9.4.2.1"/>
+      <feature-set visible="false" required="true" name="properties_loader" version="12.2.1.4.0"/>
+      <feature-set visible="false" required="true" name="fmw_install_wls" version="12.2.1.4.0"/>
+   </feature-set-group>
+   <install-type name="Complete" default="true" external-name="Complete" external-name-key="distribution.install.type.complete.external.name"/>
+   <directory-map>
+      <mapping directory="wlserver">
+         <symbol>wls.server.symbol</symbol>
+         <symbol>xmlbeans.symbol</symbol>
+         <symbol>fmwconfig.wls.symbol</symbol>
+         <symbol>entsec.symbol</symbol>
+         <symbol>wls.common.cam.symbol</symbol>
+      </mapping>
+      <mapping directory="oracle_common">
+         <symbol>thirdparty.symbol</symbol>
+         <symbol>fmwplatform.fmwprov.symbol</symbol>
+         <symbol>fmwplatform.envspec.symbol</symbol>
+         <symbol>fmwplatform.common.symbol</symbol>
+         <symbol>fmwplatform.ocp.symbol</symbol>
+         <symbol>wls.common.symbol</symbol>
+         <symbol>fmwconfig.common.symbol</symbol>
+         <symbol>asutl.symbol</symbol>
+         <symbol>mysql.symbol</symbol>
+         <symbol>toplink.common.symbol</symbol>
+         <symbol>rdbms.jrf.common.symbol</symbol>
+         <symbol>rdbms.jrf.common.symbol</symbol>
+         <symbol>jrf.symbol</symbol>
+         <symbol>oracle.ons.dir</symbol>
+         <symbol>help.common.symbol</symbol>
+         <symbol>oracle.bali.jewt.dir</symbol>
+         <symbol>jewt.symbol</symbol>
+         <symbol>wsdoc.common.symbol</symbol>
+         <symbol>oracle.fmw.common.wizard.resources.symbol</symbol>
+         <symbol>orapki.symbol</symbol>
+         <symbol>osdt.symbol</symbol>
+         <symbol>rsa.symbol</symbol>
+         <symbol>oracle.nginst.thirdparty.symbol</symbol>
+         <symbol>glcm.logging.symbol</symbol>
+         <symbol>oracle.glcm.comdev.symbol</symbol>
+         <symbol>oracle.glcm.xmldh.symbol</symbol>
+         <symbol>oracle.glcm.dependency.symbol</symbol>
+         <symbol>oracle.glcm.wizard.symbol</symbol>
+         <symbol>oracle.glcm.encryption.symbol</symbol>
+         <symbol>owsap.jrf.symbol</symbol>
+      </mapping>
+      <mapping directory="coherence">
+         <symbol>coherence.symbol</symbol>
+         <symbol>toplink.coherence.symbol</symbol>
+         <symbol>coherence.mavenplugins.symbol</symbol>
+      </mapping>
+      <mapping directory="oui">
+         <symbol>oracle.nginst.core.symbol</symbol>
+         <symbol>oracle.nginst.common.symbol</symbol>
+         <symbol>asinst.framework.symbol</symbol>
+         <symbol>asinst.wls.install.symbol</symbol>
+         <symbol>oracle.as.install.common.help.symbol</symbol>
+      </mapping>
+      <mapping directory="OPatch">
+         <symbol>oracle.swd.opatch.symbol</symbol>
+         <symbol>oracle.glcm.opatch.common.api.symbol</symbol>
+         <symbol>oracle.glcm.opatchauto.core.symbol</symbol>
+         <symbol>oracle.glcm.opatchauto.fmw.symbol</symbol>
+         <symbol>oracle.glcm.osys.core.symbol</symbol>
+         <symbol>oracle.glcm.oplan.core.symbol</symbol>
+      </mapping>
+   </directory-map>
+</distribution>

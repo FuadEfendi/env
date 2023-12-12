@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.org.jboss.logging.jboss.logging.vfinal" version="3.3.0.0.0" description="Oracle Org Jboss Logging Jboss Logging Vfinal" description-key="component.description" gdr-version="1.8.5.0" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="thirdparty.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <directory dest="thirdparty" mode="750" patchable="true">
+            <file size="65470" pack="true" dest="jboss-logging-3.3.0.Final.jar" mode="640" patchable="true" group="org.jboss.logging" artifact="jboss-logging" version="3.3.0.Final" type="jar"/>
+         </directory>
+      </directory>
+      <file-perms>
+         <permission mode="640" regex=".*" match-dirs="false"/>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+         <permission mode="750" regex=".*\.sh" match-dirs="false"/>
+         <permission mode="750" regex=".*\.cmd" match-dirs="false"/>
+         <permission mode="750" regex=".*\.bat" match-dirs="false"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="jboss-logging.vfinal" type="none" version="3.3.0" size="66802">
+         <entry explode="true" include-parent="false" name="modules/thirdparty/jboss-logging-3.3.0.Final.jar"/>
+      </library>
+   </libraries>
+</component-def>

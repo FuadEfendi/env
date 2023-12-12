@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library name="JAX-WS RI Web Services" deployed="false" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <remediation-comments>remediation-comments.xml</remediation-comments>
+  <export-specification>JAX-WS_RI_Web_Services.exports</export-specification>
+  <classpath manifest="true" export="library">../../../../oracle_common/modules/com.sun.xml.ws.jaxws-rt.jar</classpath>
+  <classpath manifest="true" export="library">../../../../oracle_common/modules/com.oracle.webservices.orasaaj-rt-api.jar</classpath>
+    <!--          <endorsed-dirs>oracle_common/modules/endorsed/</endorsed-dirs> -->
+</library>

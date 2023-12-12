@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<!-- Copyright (c) 1999, 2023, Oracle. All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. --><ACTION_LIST>
+   <ACTION NAME="ntCreateItem" INSTALL="T" DEINSTALL="T">
+      <LIB NAME="ntw32FoldersActions" VER="10.2.0.3.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+      <INPUT_LIST>
+         <INPUT NAME="selectedNodes" VAL="null" TYPE="" SECURE="F"/>
+         <INPUT NAME="groupName" VAL="%s_shortcutRoot%" TYPE="String" SECURE="F"/>
+         <INPUT NAME="itemName" VAL="%s_deinstallTitle%" TYPE="String" SECURE="F"/>
+         <INPUT NAME="exeName" VAL="%ORACLE_HOME%\oui\bin\internal\ilaunch.exe" TYPE="String" SECURE="F"/>
+         <INPUT NAME="paramName" VAL="null" TYPE="" SECURE="F"/>
+         <INPUT NAME="workingDir" VAL="%ORACLE_HOME%\oui\bin" TYPE="String" SECURE="F"/>
+         <INPUT NAME="iconFileName" VAL="%ORACLE_HOME%\oui\bin\deinstall.ico" TYPE="String" SECURE="F"/>
+         <INPUT NAME="icon" VAL="0" TYPE="Number" SECURE="F"/>
+         <INPUT NAME="cmdType" VAL="1" TYPE="Number" SECURE="F"/>
+         <INPUT NAME="multiparamName" VAL="-deinstall,-console,ORACLE_HOME=%ORACLE_HOME%" TYPE="StringList" SECURE="F"/>
+         <INPUT NAME="runAsAdmin" VAL="null" TYPE="" SECURE="F"/>
+      </INPUT_LIST>
+      <LOG_OBJ_LIST/>
+   </ACTION>
+</ACTION_LIST>

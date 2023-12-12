@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.wls.shared.with.inst" version="12.2.1.4.0" description="Modules Shared by WebLogic Server and CIE Install" gdr-version="1.8.4.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="wls.common.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="822808" pack="true" dest="org.glassfish.hk2.external.asm-all-repackaged.jar" mode="640"/>
+            <file size="70476" pack="true" dest="org.glassfish.hk2.hk2-inhabitant-generator.jar" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="wls.inst.foh.lib" type="none" visibility="none" size="904919">
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.hk2.hk2-inhabitant-generator.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.glassfish.hk2.external.asm-all-repackaged.jar"/>
+      </library>
+   </libraries>
+</component-def>

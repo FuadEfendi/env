@@ -1,0 +1,48 @@
+-- Copyright (c) 2006,2014, Oracle and/or its affiliates. All rights reserved.
+-- All rights reserved. 
+--
+--
+-- crejstbs.sql - create job scheduler tables for SQL Server
+-- 
+
+DECLARE @this_schema VARCHAR(256);
+BEGIN
+
+  SET @this_schema = SCHEMA_NAME();
+  PRINT 'schema name: ' + @this_schema;
+
+  IF (NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = @this_schema
+    AND  TABLE_NAME = 'WEBLOGIC_TIMERS'))
+  BEGIN
+    PRINT 'CREATING TABLE WEBLOGIC_TIMERS'
+    CREATE TABLE "WEBLOGIC_TIMERS" ( 
+      "TIMER_ID" VARCHAR(100) NOT NULL,
+      "LISTENER" IMAGE NOT NULL,
+      "START_TIME" NUMERIC(19) NOT NULL,
+      "INTERVAL" NUMERIC(19) NOT NULL,
+      "TIMER_MANAGER_NAME" VARCHAR(500) NOT NULL,
+      "DOMAIN_NAME" VARCHAR(100) NOT NULL,
+      "CLUSTER_NAME" VARCHAR(100) NOT NULL,
+      "USER_KEY" VARCHAR(900) NULL UNIQUE,
+      PRIMARY KEY (TIMER_ID, CLUSTER_NAME, DOMAIN_NAME)
+    );
+  END;
+
+  -- Check for USER_KEY column and add if necessary (since 12.1.3)
+  IF NOT EXISTS (
+    SELECT COLUMN_NAME
+    FROM INFORMATION_SCHEMA.COLUMNS
+    WHERE COLUMN_NAME = 'USER_KEY' AND TABLE_NAME = 'WEBLOGIC_TIMERS' AND TABLE_SCHEMA = @this_schema)
+  BEGIN
+        PRINT 'ADDING COLUMN USER_KEY TO WEBLOGIC_TIMERS'
+    ALTER TABLE WEBLOGIC_TIMERS ADD USER_KEY VARCHAR(900) NULL UNIQUE
+  END;
+
+  -- TIMER_MANAGER_NAME column length is increased in 12.2.1
+  ALTER TABLE WEBLOGIC_TIMERS ALTER COLUMN TIMER_MANAGER_NAME VARCHAR(500) NOT NULL;
+
+END;
+
+-- commit transaction crejstbs
+go
+

@@ -1,0 +1,134 @@
+#!/bin/sh
+
+###################################################
+#  Usage: operr <error code> [-f <message file>] [-jre <jre location>] [-jdk <jdk location>][-oh <oracle home>]
+#  OPERR is located in the $ORACLE_HOME/OPatch didectory.
+#  opatch  04/03/13 Create and support -f, -jre, -jdk,-oh
+#  
+
+BASE=`dirname $0`;
+
+# Get ORACLE_HOME from environment variable "ORACLE_HOME"
+OH=${ORACLE_HOME}
+
+argCount=$#
+args=$@
+
+# If -jre or -jdk are specified, use it to launch operr,
+#   with -jdk > -jre.  And we expect there is a "bin/java" underneath
+#   the value supplied
+getJRE=0
+getJDK=0
+getOH=0
+
+JDK=""
+JRE=""
+
+for arg in "$@"; do
+  if [ $getOH = 1 ]; then
+     OH=$arg
+     getOH=0
+  fi
+  if [ $getJRE = 1 ]; then
+     JRE=$arg
+     getJRE=0
+  fi
+  if [ $getJDK = 1 ]; then
+     JDK=$arg
+     getJDK=0
+  fi
+  if [ "$arg" = "-oh" ]; then
+     getOH=1;
+  fi
+  if [ "$arg" = "-jre" ]; then
+     getJRE=1;
+  fi
+  if [ "$arg" = "-jdk" ]; then
+     getJDK=1;
+  fi
+done
+
+# Error out if OH is not set and env var OPATCH_NO_IMPLICIT_OH is set to 'true'
+if [ "$OH" = "" ]; then
+    echo Oracle Home is not set. OPERR cannot proceed!
+    echo "OPERR returns with error code = 1"
+    exit 1
+fi
+
+# Use ORACLE_HOME to set Java CLASS_PATH
+JAVA= # Default location
+
+# Use JRE if supplied
+if [ "$JAVA" = "" ] && [ "$JRE" != "" ]; then # from -jre
+  JAVA=$JRE/bin/java
+  JAVA_HOME=$JRE
+fi
+
+
+# Use JDK if supplied
+if [ "$JAVA" = "" ] && [ "$JDK" != "" ]; then # now from -jdk
+  JAVA=$JDK/bin/java
+  JAVA_HOME=$JDK
+fi
+
+
+# use OH/jre/*, it should be 1.5 or above
+if [ "$JAVA" = "" ] ; then
+  JRE_HIGH=
+  if [ -d $OH/jre ]; then
+    for i in `ls -1 $OH/jre | sort` ;
+    do
+      JRE_HIGH=$i ;
+    done
+    if [ "$JRE_HIGH" != "" ]; then
+      JRE_HIGH_FINAL=`echo $JRE_HIGH | awk '
+                            BEGIN {FS="."}
+                            {
+                                if (($1 >= 1) && ($2 >= 5))
+                                    print $0
+                            }'`
+      if [ "$JRE_HIGH_FINAL" != "" ] && [ -x $OH/jre/$JRE_HIGH_FINAL/bin/java ]; then
+          JAVA=$OH/jre/$JRE_HIGH_FINAL/bin/java
+          JAVA_HOME=$OH/jre/$JRE_HIGH_FINAL
+      fi
+    fi
+  fi
+fi
+
+# Now Check for jdk location inside OH
+if [ "$JAVA" = "" ] && [ -d $OH/jdk ]; then  # Now look for jdk in OH
+  JAVA=$OH/jdk/bin/java
+  JAVA_HOME=$OH/jdk
+fi
+
+if [ "$JAVA_HOME" = "" ]; then
+	if [ -d $OH/../jdk6 ]; then
+	   JAVA_HOME=$OH/../jdk6
+	   JAVA=$JAVA_HOME/bin/java
+	   if [ ! -x $JAVA ]; then
+		   JAVA_HOME=""
+		   JAVA=""
+	   fi
+   fi
+fi
+
+# Now check if Java executable exists and has execute permission, exit otherwise
+# Because from this point on we cannot proceed without Java 
+if [ "$JAVA" = "" -o ! -x "$JAVA" ]; then
+   if [ ! -e "$JAVA" ]; then
+      echo Java $JAVA could not be located. OPERR cannot proceed!
+      echo "OPERR returns with error code = 1"
+      exit 1
+   fi
+   if [ ! -x "$JAVA" ]; then
+      echo $JAVA is not executable for this platform. OPERR cannot proceed!
+      echo "OPERR returns with error code = 1"
+      exit 1
+   fi
+fi
+
+$JAVA -cp "$BASE/jlib/oracle.opatch.classpath.jar"  oracle/opatch/diag/OPatchErrorUtil $args 
+
+RESULT=$?
+
+exit ${RESULT}

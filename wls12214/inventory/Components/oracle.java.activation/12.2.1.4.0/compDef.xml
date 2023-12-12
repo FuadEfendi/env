@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.java.activation" version="12.2.1.4.0" description="JDK9 Compitable Module for Javax Activation Shipped by WebLogic Server" gdr-version="1.8.4.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="wls.common.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="69409" dest="javax.activation.javax.activation.jar" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="oracle.java.activation-jar" type="none" visibility="none" size="69409">
+         <entry explode="true" include-parent="false" name="modules/javax.activation.javax.activation.jar"/>
+      </library>
+      <library name="oracle.java.classpath" type="none" visibility="none" size="69409">
+         <entry explode="true" include-parent="false" name="modules/javax.activation.javax.activation.jar"/>
+      </library>
+      <library name="com.oracle.webservices.wls.jaxws-wlswss-client" type="none" visibility="none" size="69409">
+         <entry explode="true" include-parent="false" name="modules/javax.activation.javax.activation.jar"/>
+      </library>
+      <library name="com.oracle.webservices.wls.jaxrpc-client" type="none" visibility="none" size="69409">
+         <entry explode="true" include-parent="false" name="modules/javax.activation.javax.activation.jar"/>
+      </library>
+      <library name="wlstt3client" type="none" size="69409">
+         <entry explode="true" include-parent="false" name="modules/javax.activation.javax.activation.jar"/>
+      </library>
+   </libraries>
+</component-def>

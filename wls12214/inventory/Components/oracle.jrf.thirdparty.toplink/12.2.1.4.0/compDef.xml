@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.jrf.thirdparty.toplink" version="12.2.1.4.0" description="OracleAS TopLink Thirdparty JRF" gdr-version="1.8.4.0" groupId="com.oracle.fmwshare" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="toplink.common.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="" patchable="true">
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="20194" pack="true" dest="commonj.sdo.jar" mode="640"/>
+            <file size="4531" pack="true" dest="commonj.sdo.backward.jar" mode="640"/>
+            <file size="63695" pack="true" dest="javax.validation.jar" mode="640"/>
+            <file size="162855" pack="true" dest="javax.persistence.jar" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="oracle.jrf.thirdparty.toplink.library" type="none" size="225946">
+         <entry explode="true" include-parent="false" name="modules/javax.persistence.jar"/>
+         <entry explode="true" include-parent="false" name="modules/javax.validation.jar"/>
+      </library>
+      <library name="oracle.jrf.thirdparty.toplink.client" type="client" size="251561">
+         <entry explode="true" include-parent="false" name="modules/commonj.sdo.jar"/>
+         <entry explode="true" include-parent="false" name="modules/commonj.sdo.backward.jar"/>
+         <entry explode="true" include-parent="false" name="modules/javax.persistence.jar"/>
+         <entry explode="true" include-parent="false" name="modules/javax.validation.jar"/>
+      </library>
+      <library name="javax.validation.library" type="none" visibility="none" suppress-version="true" size="63830">
+         <entry explode="true" include-parent="false" name="modules/javax.validation.jar"/>
+      </library>
+      <library name="javax.validation.client" type="client" visibility="none" size="63830">
+         <entry explode="true" include-parent="false" name="modules/javax.validation.jar"/>
+      </library>
+      <library name="javax.persistence.library" type="none" visibility="none" suppress-version="true" size="162116">
+         <entry explode="true" include-parent="false" name="modules/javax.persistence.jar"/>
+      </library>
+      <library name="javax.persistence.client" type="client" visibility="none" size="162116">
+         <entry explode="true" include-parent="false" name="modules/javax.persistence.jar"/>
+      </library>
+      <library name="commonj.sdo" version="2.1.1" size="25615">
+         <entry explode="true" include-parent="false" name="modules/commonj.sdo.jar"/>
+         <entry explode="true" include-parent="false" name="modules/commonj.sdo.backward.jar"/>
+      </library>
+      <library name="oracle.jrf.tenancy.common.library" type="none" visibility="none" suppress-version="true" size="63830">
+         <entry explode="true" include-parent="false" name="modules/javax.validation.jar"/>
+      </library>
+      <library name="wlconnector" type="none" visibility="none" suppress-version="true" size="63830">
+         <entry explode="true" include-parent="false" name="modules/javax.validation.jar">
+            <include name="javax/validation/ConstraintTarget.class" match-path="true"/>
+            <include name="javax/validation/ConstraintValidator.class" match-path="true"/>
+            <include name="javax/validation/ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeBuilderCustomizableContext.class" match-path="true"/>
+            <include name="javax/validation/ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeBuilderDefinedContext.class" match-path="true"/>
+            <include name="javax/validation/ConstraintValidatorContext$ConstraintViolationBuilder$LeafNodeContextBuilder.class" match-path="true"/>
+            <include name="javax/validation/ConstraintValidatorContext$ConstraintViolationBuilder$NodeBuilderCustomizableContext.class" match-path="true"/>
+            <include name="javax/validation/ConstraintValidatorContext$ConstraintViolationBuilder$NodeBuilderDefinedContext.class" match-path="true"/>
+            <include name="javax/validation/ConstraintValidatorContext$ConstraintViolationBuilder$NodeContextBuilder.class" match-path="true"/>
+            <include name="javax/validation/ConstraintValidatorContext$ConstraintViolationBuilder.class" match-path="true"/>
+            <include name="javax/validation/ConstraintValidatorContext.class" match-path="true"/>
+            <include name="javax/validation/ConstraintValidatorFactory.class" match-path="true"/>
+            <include name="javax/validation/ElementKind.class" match-path="true"/>
+            <include name="javax/validation/MessageInterpolator$Context.class" match-path="true"/>
+            <include name="javax/validation/MessageInterpolator.class" match-path="true"/>
+            <include name="javax/validation/ParameterNameProvider.class" match-path="true"/>
+            <include name="javax/validation/Path$BeanNode.class" match-path="true"/>
+            <include name="javax/validation/Path$ConstructorNode.class" match-path="true"/>
+            <include name="javax/validation/Path$CrossParameterNode.class" match-path="true"/>
+            <include name="javax/validation/Path$MethodNode.class" match-path="true"/>
+            <include name="javax/validation/Path$Node.class" match-path="true"/>
+            <include name="javax/validation/Path$ParameterNode.class" match-path="true"/>
+            <include name="javax/validation/Path$PropertyNode.class" match-path="true"/>
+            <include name="javax/validation/Path$ReturnValueNode.class" match-path="true"/>
+            <include name="javax/validation/Path.class" match-path="true"/>
+            <include name="javax/validation/TraversableResolver.class" match-path="true"/>
+            <include name="javax/validation/Validator.class" match-path="true"/>
+            <include name="javax/validation/ValidatorContext.class" match-path="true"/>
+            <include name="javax/validation/ValidatorFactory.class" match-path="true"/>
+            <include name="javax/validation/executable/ExecutableValidator.class" match-path="true"/>
+            <include name="javax/validation/metadata/BeanDescriptor.class" match-path="true"/>
+            <include name="javax/validation/metadata/CascadableDescriptor.class" match-path="true"/>
+            <include name="javax/validation/metadata/ConstraintDescriptor.class" match-path="true"/>
+            <include name="javax/validation/metadata/ConstructorDescriptor.class" match-path="true"/>
+            <include name="javax/validation/metadata/CrossParameterDescriptor.class" match-path="true"/>
+            <include name="javax/validation/metadata/ElementDescriptor$ConstraintFinder.class" match-path="true"/>
+            <include name="javax/validation/metadata/ElementDescriptor.class" match-path="true"/>
+            <include name="javax/validation/metadata/ExecutableDescriptor.class" match-path="true"/>
+            <include name="javax/validation/metadata/MethodDescriptor.class" match-path="true"/>
+            <include name="javax/validation/metadata/MethodType.class" match-path="true"/>
+            <include name="javax/validation/metadata/PropertyDescriptor.class" match-path="true"/>
+            <include name="javax/validation/metadata/ReturnValueDescriptor.class" match-path="true"/>
+            <include name="javax/validation/metadata/Scope.class" match-path="true"/>
+         </entry>
+      </library>
+   </libraries>
+</component-def>

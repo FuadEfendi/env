@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.glcm.opatch.common.api" version="13.9.4.0.0" description="Oracle OPatch Common API" gdr-version="1.8.4.0" pom-gen="false" patch-level="1" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="oracle.glcm.opatch.common.api.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <file size="100354" dest="com.oracle.glcm.patch.opatch-common-api-interfaces_13.9.4.0.jar" mode="640"/>
+         <file size="283857" dest="com.oracle.glcm.patch.opatch-common-api_13.9.4.0.jar" mode="640"/>
+         <file size="236892" dest="com.oracle.glcm.patch.opatch-common-api-schema_13.9.4.0.jar" mode="640"/>
+         <directory dest="features" mode="750" patchable="true">
+            <file size="468" dest="opatch-common-api-classpath.jar" mode="640"/>
+         </directory>
+      </directory>
+      <directory dest="bin" mode="750" patchable="true">
+         <file size="1358" dest="listDomainPatchInventory.sh" mode="750"/>
+         <file size="1188" dest="listDomainPatchInventory.cmd" os-family="windows" mode="750"/>
+      </directory>
+      <directory dest="scripts" mode="750" patchable="true">
+         <file size="1333" dest="viewAliasInfo.sh" mode="750"/>
+         <file size="1305" dest="viewAliasInfo.cmd" os-family="windows" mode="750"/>
+      </directory>
+   </file-map>
+   <libraries>
+      <library name="oracle.glcm.opatch.common.api.classpath" type="manifest" location="modules/features" visibility="public" suppress-version="true" suppress-prefix="true">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.glcm.patch.opatch-common-api-interfaces_13.9.4.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.glcm.patch.opatch-common-api_13.9.4.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.glcm.patch.opatch-common-api-schema_13.9.4.0.jar"/>
+      </library>
+   </libraries>
+   <stringsubs>
+      <ns2:group id="windows">
+         <ns2:file-entry name="$oracle.glcm.opatch.common.api.symbol.path$/bin/listDomainPatchInventory.cmd"/>
+         <ns2:change-pair-ref name="JAVA_HOME_LOCATION"/>
+         <ns2:change-pair-ref name="ORACLE_HOME"/>
+      </ns2:group>
+      <ns2:group id="unix" mode="forward">
+         <ns2:file-entry name="$oracle.glcm.opatch.common.api.symbol.path$/bin/listDomainPatchInventory.sh"/>
+         <ns2:change-pair-ref name="JAVA_HOME_LOCATION"/>
+         <ns2:change-pair-ref name="ORACLE_HOME"/>
+      </ns2:group>
+      <ns2:group id="windows">
+         <ns2:file-entry name="$oracle.glcm.opatch.common.api.symbol.path$/glcm/bin/viewAliasInfo.cmd"/>
+         <ns2:change-pair-ref name="JAVA_HOME_LOCATION"/>
+         <ns2:change-pair-ref name="ORACLE_HOME"/>
+      </ns2:group>
+      <ns2:group id="unix" mode="forward">
+         <ns2:file-entry name="$oracle.glcm.opatch.common.api.symbol.path$/glcm/bin/viewAliasInfo.sh"/>
+         <ns2:change-pair-ref name="JAVA_HOME_LOCATION"/>
+         <ns2:change-pair-ref name="ORACLE_HOME"/>
+      </ns2:group>
+      <ns2:change-pair id="JAVA_HOME_LOCATION" before="@JAVA_HOME_LOCATION@" after="$JAVA_HOME_LOCATION$"/>
+      <ns2:change-pair id="ORACLE_HOME" before="@ORACLE_HOME@" after="$ORACLE_HOME$"/>
+   </stringsubs>
+</component-def>

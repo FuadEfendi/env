@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!-- Remediation comments for restricted and deprecated WLS classes, methods and fields -->
+<lib-comments xmlns="http://xmlns.oracle.com/ide/comment">
+  <!-- forbidden -->
+  <comment name="weblogic.transaction.internal.TimedOutException">
+    Use {@code weblogic.transaction.TimedOutException}
+  </comment>
+  <comment name="weblogic.jdbc.wrapper.Array">
+    Use {@code java.sql.Array} or {@code oracle.jdbc.OracleArray}, see <a href="http://docs.oracle.com/middleware/12211/wls/JDBCA/ds_tuning.htm#JDBCA504">Using Unwrapped Data Type Objects</a>
+  </comment>
+  <comment name="weblogic.jdbc.vendor.oracle.OracleArray">
+    Use {@code java.sql.Array} or {@code oracle.jdbc.OracleArray}, see <a href="http://docs.oracle.com/middleware/12211/wls/JDBCA/ds_tuning.htm#JDBCA504">Using Unwrapped Data Type Objects</a>
+  </comment>
+  <comment name="weblogic.jdbc.wrapper.Clob">
+    Use {@code java.sql.Clob}, see <a href="http://docs.oracle.com/middleware/12211/wls/JDBCA/ds_tuning.htm#JDBCA504">Using Unwrapped Data Type Objects</a>
+  </comment>
+  <comment name="weblogic.jdbc.wrapper.Struct">
+    Use {@code java.sql.Struct}, see <a href="http://docs.oracle.com/middleware/12211/wls/JDBCA/ds_tuning.htm#JDBCA504">Using Unwrapped Data Type Objects</a>
+  </comment>
+  <comment name="com.bea.core.repackaged.springframework.util.Assert.hasLength(java.lang.String,java.lang.String)">
+    Use other public APIs such as <a href="http://junit.sourceforge.net/javadoc/org/junit/Assert.html#assertTrue(java.lang.String,%20boolean)">org.junit.Assert.assertTrue</a>(String, <a href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/util/StringUtils.html#hasLength-java.lang.String-">org.springframework.util.StringUtils.hasLength(String)</a>)
+  </comment>
+  <comment name="com.bea.core.repackaged.springframework.util.Assert.hasText(java.lang.String,java.lang.String)">
+    Use other public APIs such as <a href="http://junit.sourceforge.net/javadoc/org/junit/Assert.html#assertTrue%28java.lang.String,%20boolean%29" >org.junit.Assert.assertTrue</a>(String, <a href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/util/StringUtils.html#hasText-java.lang.String-">org.springframework.util.StringUtils.hasText(String)</a>)
+  </comment>
+  <comment name="com.bea.core.repackaged.springframework.util.Assert.notNull(java.lang.Object,java.lang.String)">
+    Use other public APIs such as <a href="http://junit.sourceforge.net/javadoc/org/junit/Assert.html#assertNull(java.lang.String,%20java.lang.Object)">org.junit.Assert.assertNotNull</a>(String, Object)
+  </comment>
+  <comment name="oracle.jrf.PortConfig.WEBSPHERE_IIOP">
+    Use string {@code "iiop"}
+  </comment>
+  <comment name="weblogic.jdbc.wrapper.JDBCWrapperImpl.getVendorObj()">
+    Use <a href="https://docs.oracle.com/javase/7/docs/api/java/sql/Wrapper.html#unwrap%28java.lang.Class%29">java.sql.Wrapper.unwrap(java.lang.Class)</a>
+  </comment>
+  <comment name="weblogic.jdbc.wrapper.JDBCWrapperImpl.unwrap(java.lang.Class)">
+    Use <a href="https://docs.oracle.com/javase/7/docs/api/java/sql/Wrapper.html#unwrap%28java.lang.Class%29">java.sql.Wrapper.unwrap(java.lang.Class)</a>
+  </comment>
+  <comment name="weblogic.utils.wrapper.Wrapper.getVendorObj()">
+    Use <a href="https://docs.oracle.com/javase/7/docs/api/java/sql/Wrapper.html#unwrap%28java.lang.Class%29">java.sql.Wrapper.unwrap(java.lang.Class)</a>
+  </comment>
+  <comment name="weblogic.utils.wrapper.Wrapper">
+    Use <a href="https://docs.oracle.com/javase/7/docs/api/java/sql/Wrapper.html">java.sql.Wrapper</a>
+  </comment>
+  <comment name="weblogic.utils.zip.SafeZipFileInputStream.close()">
+    Use {@code java.io.FilterInputStream.close()}
+  </comment>
+  <comment name="weblogic.utils.zip.SafeZipFileInputStream">
+    Use {@code java.io.FilterInputStream}
+  </comment>
+  <comment name="com.oracle.vmm.client.provider.ovm22.ws.sps.HashMap">
+    Use {@code java.util.HashMap}
+  </comment>
+  <comment name="com.bea.common.security.utils.Pair">
+    Use alternative such as that provided by Apache Commons tuple package
+  </comment>
+  <comment name="com.bea.common.security.utils.encoders.BASE64Decoder">
+    Use {@code weblogic.utils.encoders.BASE64Decoder}
+  </comment>
+  <comment name="com.bea.wlw.runtime.core.config.impl.RunTimeServiceTypeImpl">
+    Internal implementation class, use corresponding interface instead
+  </comment>
+
+  <!-- public but deprecated APIs, no remediation comment will be shown -->
+  <comment name="oracle.jrf.ApplicationIdentifier">
+    Use {@code oracle.jrf.Application}
+  </comment>
+  <comment name="oracle.jrf.ServerPlatformSupport.getApplicationIdentifier()">
+    Use {@code getApplication()}
+  </comment>
+</lib-comments>

@@ -1,0 +1,105 @@
+#!/bin/sh
+
+######################################################################
+# Copyright (c) 2014, 2024, Oracle and/or its affiliates. All rights reserved.
+#
+# opatch 08/30/13  set wls environment settings needed for middleware based OH
+#
+#####################################################################
+
+#Check if this is really a FMW home - WebTier and some others create fake
+#Middleware homes. If TRUE Middleware Home, we are guaranteed of the
+#presence of registry.dat
+#Note: A TRUE Middleware Home can be established ONLY by the WebLogic installer
+FMW_ERROR=0
+if [ -f "${C_MW_HOME}/registry.dat" -o -f "${C_ORACLE_HOME}/inventory/registry.xml" ]; then
+   #Invoking the setHomeDirs.sh script to set the WebLogic environment
+
+   # Set the MW_HOME env variable temporarily for the following scripts
+   SET_MW_HOME=${MW_HOME}
+   MW_HOME=${C_MW_HOME}
+   
+   if [ -x "${C_ORACLE_HOME}/common/bin/setHomeDirs.sh" ]; then
+      . "${C_ORACLE_HOME}/common/bin/setHomeDirs.sh"
+   else
+       MW_HOME=${C_ORACLE_HOME}
+       SET_MW_HOME=${MW_HOME}
+       if [ -x "${MW_HOME}/oracle_common/common/bin/setHomeDirs.sh" ]; then
+           MWH=${MW_HOME}
+           . "${MW_HOME}/oracle_common/common/bin/setHomeDirs.sh"
+       fi
+   fi
+   if [ "$DEBUGVAL" = "true" ]; then
+      echo WL_HOME is set by setHomeDirs.sh script to $WL_HOME 
+   fi
+   if [ "$WL_HOME" = "" ] || [ ! -d "$WL_HOME" ]; then
+      # Is it still possible to run without the WL_HOME? Only if
+      # we are able to find the JVM launcher (JDK/JRE). The OPatch
+      # Java code can decide which commands can be run without the
+      # Weblogic environment
+      FMW_ERROR=-1
+      if [ "$DEBUGVAL" = "true" ]; then
+         echo "OPatch was not able to set weblogic home. The Fusion Middleware home seems to be corrupted"
+         echo "OPatch will proceed only if JVM launcher found"
+      fi
+   elif [ -x "${WL_HOME}/common/bin/commEnv.sh" ]; then
+      . "${WL_HOME}/common/bin/commEnv.sh"
+   else
+      FMW_ERROR=-2
+      if [ "$DEBUGVAL" = "true" ]; then
+         echo "Fusion Middleware Home maybe corrupted (Common Env Script missing or Not executable)"
+         echo "OPatch will proceed only if JVM launcher found"
+      fi
+   fi
+   TEMP_ORACLE_HOME=${ORACLE_HOME}
+   ORACLE_HOME=${C_ORACLE_HOME}
+   if [ -x "${C_ORACLE_HOME}/common/bin/setWlstEnv.sh" ]; then
+      . "${C_ORACLE_HOME}/common/bin/setWlstEnv.sh" > /dev/null
+   fi
+   CURRENT_HOME=${COMMON_COMPONENTS_HOME}
+   if [ -x "${COMMON_COMPONENTS_HOME}/common/bin/setWlstEnvExtns.sh" ]; then
+      . "${COMMON_COMPONENTS_HOME}/common/bin/setWlstEnvExtns.sh"
+   fi
+   CURRENT_HOME=
+   ORACLE_HOME=${TEMP_ORACLE_HOME}
+   # Reset the MW_HOME variable if set lest OPatch think otherwise
+   MW_HOME=${SET_MW_HOME}
+
+   export ORACLE_HOME
+   export MW_HOME
+
+   if [ "$MWH" = "" ]; then
+      MWH=${C_MW_HOME}
+   fi
+
+   export MWH
+   export FMW_ERROR
+
+   #We will use the JDK used by WebLogic unless user knows better 
+   #and wants to override
+   if [ "$WL_HOME" != "" ] && [ "$JDK" = "" ] && [ "$JRE" = "" ]; then # no -jdk/jre specified
+      JDK=${JAVA_HOME}
+      export JDK
+   fi
+
+   #JRE_MEMORY_OPTIONS="${MEM_ARGS} ${JVM_D64}"
+   #export JRE_MEMORY_OPTIONS
+   case $JAVA_VENDOR in
+     Oracle)
+       JAVA_VM_OPTION=-client
+     ;;
+     HP)
+       JAVA_VM_OPTION=-client
+     ;;
+     IBM)
+       JAVA_VM_OPTION=
+     ;;
+     Sun)
+       JAVA_VM_OPTION=-client
+     ;;
+     *)
+       JAVA_VM_OPTION=
+     ;;
+   esac
+   export JAVA_VM_OPTION
+fi

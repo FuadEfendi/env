@@ -1,0 +1,389 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.webservices.wls" version="12.2.1.4.0" description="Oracle WebLogic WebServices" gdr-version="1.8.4.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="jrf.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <file size="28796" pack="true" dest="com.oracle.webservices.wls.wls-integration-impl.jar" id="com.oracle.webservices.wls:wls-integration-impl" patchable="true" group="com.oracle.webservices.wls" artifact="wls-integration-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="6436654" pack="true" dest="com.oracle.webservices.wls.wls-soap-stack-impl.jar" id="com.oracle.webservices.wls:wls-soap-stack-impl" patchable="true" group="com.oracle.webservices.wls" artifact="wls-soap-stack-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="1730854" pack="true" dest="com.oracle.webservices.wls.wls-jaxrpc.jar" id="com.oracle.webservices.wls:wls-jaxrpc" patchable="true" group="com.oracle.webservices.wls" artifact="wls-jaxrpc" version="1.5.0-190912.1619.1974694"/>
+         <file size="17560" pack="true" dest="com.oracle.webservices.wls.wls-soap-tool-jspgen.jar" id="com.oracle.webservices.wls:wls-soap-tool-jspgen" patchable="true" group="com.oracle.webservices.wls" artifact="wls-soap-tool-jspgen" version="1.5.0-190912.1619.1974694"/>
+         <file size="9036" pack="true" dest="com.oracle.webservices.wls.wls-tools-ext.jar" id="com.oracle.webservices.wls:wls-tools-ext" patchable="true" group="com.oracle.webservices.wls" artifact="wls-tools-ext" version="1.5.0-190912.1619.1974694"/>
+         <file size="8401" pack="true" dest="com.oracle.webservices.wls.wls-ws-metainf-services-impl.jar" id="com.oracle.webservices.wls:wls-ws-metainf-services-impl" patchable="true" group="com.oracle.webservices.wls" artifact="wls-ws-metainf-services-impl" version="1.5.0-190912.1619.1974694"/>
+         <file size="22806" pack="true" dest="com.oracle.webservices.wls.wsat-endpoints-impl.war" id="com.oracle.webservices.wls:wsat-endpoints-impl" patchable="true" group="com.oracle.webservices.wls" artifact="wsat-endpoints-impl" version="1.5.0-190912.1619.1974694" type="war"/>
+         <file size="12020" pack="true" dest="com.oracle.webservices.wls.bea-wls9-async-response.war" id="com.oracle.webservices.wls:bea-wls9-async-response" patchable="true" group="com.oracle.webservices.wls" artifact="bea-wls9-async-response" version="1.5.0-190912.1619.1974694" type="war"/>
+         <file size="943701" pack="true" dest="com.oracle.webservices.wls.ws-testclient-app-wls.ear" id="com.oracle.webservices.wls:ws-testclient-app-wls" patchable="true" group="com.oracle.webservices.wls" artifact="ws-testclient-app-wls" version="1.5.0-190912.1619.1974694" type="ear"/>
+         <file size="31013" pack="true" dest="com.oracle.webservices.wls.ws-testpage-ext.jar" id="com.oracle.webservices.wls:ws-testpage-ext" patchable="true" group="com.oracle.webservices.wls" artifact="ws-testpage-ext" version="1.5.0-190912.1619.1974694"/>
+         <file size="2866" pack="true" dest="com.oracle.webservices.wls.ws-testpage-jrf-ext.jar" id="com.oracle.webservices.wls:ws-testpage-jrf-ext" patchable="true" group="com.oracle.webservices.wls" artifact="ws-testpage-jrf-ext" version="1.5.0-190912.1619.1974694"/>
+         <file-perms/>
+      </directory>
+      <directory dest="common" mode="750" patchable="true">
+         <directory dest="templates" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <directory dest="wls" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+               <file size="7770" pack="true" dest="oracle.wls-webservice-template.jar" id="com.oracle.webservices.wls:oracle.wls-webservice-template" patchable="true" group="com.oracle.webservices.wls" artifact="oracle.wls-webservice-template" version="1.5.0-190912.1619.1974694"/>
+               <file size="1470" pack="true" dest="oracle.wls-webservice-reconfig-template_12.1.3.jar" id="com.oracle.webservices.wls:oracle.wls-webservice-reconfig-template_12.1.3" patchable="true" group="com.oracle.webservices.wls" artifact="oracle.wls-webservice-reconfig-template_12.1.3" version="1.5.0-190912.1619.1974694"/>
+               <file size="1488" pack="true" dest="oracle.wls-webservice-reconfig-template_12.2.1.jar" id="com.oracle.webservices.wls:oracle.wls-webservice-reconfig-template_12.2.1" patchable="true" group="com.oracle.webservices.wls" artifact="oracle.wls-webservice-reconfig-template_12.2.1" version="1.5.0-190912.1619.1974694"/>
+               <file size="1451" pack="true" dest="oracle.wls-webservice-reconfig-template_12.2.1.1.0.jar" id="com.oracle.webservices.wls:oracle.wls-webservice-reconfig-template_12.2.1.1.0" patchable="true" group="com.oracle.webservices.wls" artifact="oracle.wls-webservice-reconfig-template_12.2.1.1.0" version="1.5.0-190912.1619.1974694"/>
+               <file size="8312" pack="true" dest="oracle.wls-webservice-jaxws-template.jar" id="com.oracle.webservices.wls:oracle.wls-webservice-jaxws-template" patchable="true" group="com.oracle.webservices.wls" artifact="oracle.wls-webservice-jaxws-template" version="1.5.0-190912.1619.1974694"/>
+               <file size="1811" pack="true" dest="oracle.wls-webservice-jaxws-reconfig-template_12.1.3.jar" id="com.oracle.webservices.wls:oracle.wls-webservice-jaxws-reconfig-template_12.1.3" patchable="true" group="com.oracle.webservices.wls" artifact="oracle.wls-webservice-jaxws-reconfig-template_12.1.3" version="1.5.0-190912.1619.1974694"/>
+               <file size="1829" pack="true" dest="oracle.wls-webservice-jaxws-reconfig-template_12.2.1.jar" id="com.oracle.webservices.wls:oracle.wls-webservice-jaxws-reconfig-template_12.2.1" patchable="true" group="com.oracle.webservices.wls" artifact="oracle.wls-webservice-jaxws-reconfig-template_12.2.1" version="1.5.0-190912.1619.1974694"/>
+               <file size="1799" pack="true" dest="oracle.wls-webservice-jaxws-reconfig-template_12.2.1.1.0.jar" id="com.oracle.webservices.wls:oracle.wls-webservice-jaxws-reconfig-template_12.2.1.1.0" patchable="true" group="com.oracle.webservices.wls" artifact="oracle.wls-webservice-jaxws-reconfig-template_12.2.1.1.0" version="1.5.0-190912.1619.1974694"/>
+               <file size="4920" pack="true" dest="oracle.wls-webservice-soapjms-template.jar" id="com.oracle.webservices.wls:oracle.wls-webservice-soapjms-template" patchable="true" group="com.oracle.webservices.wls" artifact="oracle.wls-webservice-soapjms-template" version="1.5.0-190912.1619.1974694"/>
+            </directory>
+         </directory>
+         <file-perms/>
+      </directory>
+      <directory dest="" id="com.oracle.webservices.wls:wls-ws-resources" patchable="true" group="com.oracle.webservices.wls" artifact="wls-ws-resources" version="1.5.0-190912.1619.1974694">
+         <directory dest="webservices" mode="750" patchable="true">
+            <directory dest="bin" mode="750" patchable="true">
+               <file size="7349" dest="wlsws-soapjms-mt-config.py"/>
+               <file size="10828" dest="wlsws-advanced-jaxws-mt-config.py"/>
+            </directory>
+         </directory>
+      </directory>
+   </file-map>
+   <file-map symbol="wls.server.symbol" source="filegroup2.jar" expanded="true" compacted="true">
+      <directory dest="plugins" mode="750" patchable="true" group="com.oracle.webservices" artifact="api-export" version="1.5.0-190912.1619.1974694" type="zip">
+         <directory dest="jdeveloper" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <directory dest="libraries" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+               <file size="159234" dest="JAX-RS_Jersey_2.x_from_ws.exports"/>
+               <file size="38631" dest="SOAP_JMS_Lib.exports"/>
+               <file size="432" dest="SOAP_JMS_Lib.library"/>
+               <file size="301034" dest="JAX-WS_Client_from_ws.exports"/>
+               <file size="293" dest="JAX-WS_RI_Web_Services.exports"/>
+               <file size="227193" dest="JAX-WS_Web_Services_from_ws.exports"/>
+               <file size="663" dest="JAX-WS_RI_Web_Services.library"/>
+               <file jarentry="plugins/jdeveloper/libraries/JAX-WS_Web_Services_from_ws.exports" size="227193" dest="WebLogic_12.1_Remote_Client_from_ws.exports"/>
+            </directory>
+         </directory>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <artifact-pom-overrides>
+      <suppress-pom file="common/templates/wls/oracle.wls-webservice-jaxws-template.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.wls-webservice-jaxws-reconfig-template_12.1.3.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.wls-webservice-jaxws-reconfig-template_12.2.1.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.wls-webservice-jaxws-reconfig-template_12.2.1.1.0.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.wls-webservice-soapjms-template.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.wls-webservice-template.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.wls-webservice-reconfig-template_12.1.3.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.wls-webservice-reconfig-template_12.2.1.jar" symbol="jrf.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.wls-webservice-reconfig-template_12.2.1.1.0.jar" symbol="jrf.symbol"/>
+   </artifact-pom-overrides>
+   <default-pom-override groupId="com.oracle.fmwshare"/>
+   <libraries>
+      <library name="com.oracle.webservices.wls.jaxws-wlswss-client" type="none" visibility="none" size="8382597">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-ws-metainf-services-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-integration-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-soap-stack-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-jaxrpc.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-soap-tool-jspgen.jar"/>
+      </library>
+      <library name="com.oracle.webservices.wls.jaxrpc-client" type="none" visibility="none" size="8382597">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-ws-metainf-services-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-integration-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-soap-stack-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-jaxrpc.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-soap-tool-jspgen.jar"/>
+      </library>
+      <library name="com.oracle.webservices.wls.classpath" type="manifest" visibility="none">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-ws-metainf-services-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-integration-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-soap-stack-impl.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-jaxrpc.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-soap-tool-jspgen.jar"/>
+      </library>
+      <library name="wls-api" type="none" visibility="none" size="8327088">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-jaxrpc.jar">
+            <include name="weblogic/wsee/conversation/ConversationIdNotYetAvailableException.class" match-path="true"/>
+            <include name="weblogic/wsee/conversation/ConversationUtils.class" match-path="true"/>
+            <include name="weblogic/wsee/jws/JwsContext.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/ReliabilityErrorListener.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/ReliabilityErrorListenerRegistry.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmHelper.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmUtils.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/faults/SequenceFaultException.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/faults/SequenceFaultMsg.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/faults/SequenceFaultMsgType.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/faults/WsrmFaultException.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/faults/WsrmFaultMsg.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLAttributeStatementDataHelper.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/ClassContext.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/CustomSchema.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/DeserializationContext.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/DeserializationException.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/Deserializer.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/EncodingStyle.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/Holder.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/SchemaContext.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/SerializationContext.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/SerializationException.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/SerializationPhase.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/Serializer.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/TypeMapping.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/TypeMappingEntry.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/util/runtime/ObjectRefTable$Entry.class" match-path="true"/>
+            <include name="weblogic/xml/schema/binding/util/runtime/ObjectRefTable.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.wls.wls-soap-stack-impl.jar">
+            <include name="weblogic/wsee/WebServiceType.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/TransportInfo.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/http/HttpTransportInfo.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/https/HttpsTransportInfo.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/https/JdkSSLAdapter.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/https/SSLAdapter.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/https/SSLAdapterUtils.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/https/WlsSSLAdapter.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/jms/JMSServerTransport.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/jms/JmsQueueConnection.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/jms/JmsQueueConnectionPool.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/jms/JmsQueueConnectionPoolInternal.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/jms/JmsServerQueueTransport.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/jms/JmsTransport.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/jms/JmsTransportInfo.class" match-path="true"/>
+            <include name="weblogic/wsee/connection/transport/servlet/HttpTransportUtils.class" match-path="true"/>
+            <include name="weblogic/wsee/conversation/ConversationUtils2.class" match-path="true"/>
+            <include name="weblogic/wsee/deploy/WsdlAddressInfo$PortAddress.class" match-path="true"/>
+            <include name="weblogic/wsee/deploy/WsdlAddressInfo.class" match-path="true"/>
+            <include name="weblogic/wsee/handler/HandlerException.class" match-path="true"/>
+            <include name="weblogic/wsee/handler/HandlerList.class" match-path="true"/>
+            <include name="weblogic/wsee/handler/InvocationException.class" match-path="true"/>
+            <include name="weblogic/wsee/jaxrpc/WLStub.class" match-path="true"/>
+            <include name="weblogic/wsee/jws/RetryException.class" match-path="true"/>
+            <include name="weblogic/wsee/jws/SoapFaultException.class" match-path="true"/>
+            <include name="weblogic/wsee/jws/WebServiceRuntimeDecl.class" match-path="true"/>
+            <include name="weblogic/wsee/jws/jaxws/owsm/PolicySubjectBindingFeature.class" match-path="true"/>
+            <include name="weblogic/wsee/jws/util/Logger.class" match-path="true"/>
+            <include name="weblogic/wsee/jws/wlw/SoapFaultException.class" match-path="true"/>
+            <include name="weblogic/wsee/message/MsgHeader.class" match-path="true"/>
+            <include name="weblogic/wsee/message/MsgHeaderException.class" match-path="true"/>
+            <include name="weblogic/wsee/message/MsgHeaderType.class" match-path="true"/>
+            <include name="weblogic/wsee/message/MsgHeaders.class" match-path="true"/>
+            <include name="weblogic/wsee/message/WlMessageContext.class" match-path="true"/>
+            <include name="weblogic/wsee/message/soap/SoapMessageContext.class" match-path="true"/>
+            <include name="weblogic/wsee/message/soap/SoapMsgHeaders.class" match-path="true"/>
+            <include name="weblogic/wsee/policy/deployment/PolicyURIs.class" match-path="true"/>
+            <include name="weblogic/wsee/policy/framework/NormalizedExpression.class" match-path="true"/>
+            <include name="weblogic/wsee/policy/framework/OperatorType.class" match-path="true"/>
+            <include name="weblogic/wsee/policy/framework/PolicyAlternative.class" match-path="true"/>
+            <include name="weblogic/wsee/policy/framework/PolicyAssertion$PolicySubject.class" match-path="true"/>
+            <include name="weblogic/wsee/policy/framework/PolicyAssertion.class" match-path="true"/>
+            <include name="weblogic/wsee/policy/framework/PolicyException.class" match-path="true"/>
+            <include name="weblogic/wsee/policy/framework/PolicyExpression.class" match-path="true"/>
+            <include name="weblogic/wsee/policy/framework/PolicyStatement.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/MessageRange.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/ReliabilityErrorContext.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/ReliableDeliveryException.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmConstants$Action$VersionInfo.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmConstants$Action.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmConstants$DeliveryQOS.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmConstants$FaultCode.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmConstants$FaultGeneratedBy.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmConstants$HeaderElement.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmConstants$RMVersion.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmConstants$SOAPVersion.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability/WsrmConstants.class" match-path="true"/>
+            <include name="weblogic/wsee/reliability2/sequence/CreateSequencePostSecurityTokenCallback.class" match-path="true"/>
+            <include name="weblogic/wsee/security/bst/BST11CredentialProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/bst/BSTCredentialProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/bst/ClientBSTCredentialProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/bst/ServerBSTCredentialProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/bst/StubPropertyBSTCredProv.class" match-path="true"/>
+            <include name="weblogic/wsee/security/policy/SecurityToken.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/AbstractSAMLCredentialProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/AbstractSAMLTokenHandler.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/CSSUtils.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/PKISAMLCredentialProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAML2Constants.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAML2CredentialProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAML2TokenHandler.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLAttributeData.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLAttributeDataImpl.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLAttributeStatementData.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLAttributeStatementDataFactory.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLAttributeStatementDataImpl.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLConstants.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLCredential.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLCredentialImpl.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLCredentialProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLIssuedTokenHelper.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLKeyProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLSecurityTokenReference.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLToken.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLTokenHandler.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLTokenImpl.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLTrustCredential.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLTrustCredentialProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLTrustToken.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLTrustTokenProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/saml/SAMLUtils.class" match-path="true"/>
+            <include name="weblogic/wsee/security/unt/ClientUNTCredentialProvider.class" match-path="true"/>
+            <include name="weblogic/wsee/security/wss/SecurityPolicyException.class" match-path="true"/>
+            <include name="weblogic/wsee/security/wssc/utils/WSSCClientUtil.class" match-path="true"/>
+            <include name="weblogic/wsee/security/wssc/utils/WSSCCompatibilityUtil$OrderingIterator.class" match-path="true"/>
+            <include name="weblogic/wsee/security/wssc/utils/WSSCCompatibilityUtil.class" match-path="true"/>
+            <include name="weblogic/wsee/security/wst/faults/WSTFaultException.class" match-path="true"/>
+            <include name="weblogic/wsee/security/wst/framework/TrustCredential.class" match-path="true"/>
+            <include name="weblogic/wsee/security/wst/framework/TrustToken.class" match-path="true"/>
+            <include name="weblogic/wsee/tools/WsBuildException.class" match-path="true"/>
+            <include name="weblogic/wsee/tools/anttasks/WsdlGetTask.class" match-path="true"/>
+            <include name="weblogic/wsee/util/ToStringWriter.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/Callback81WsdlExtracter.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlBinding.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlDefinitions.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlDocumentation.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlElement.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlExtensible.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlExtension.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlFilter.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlMessage.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlMethod.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlOperation.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlPart.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlPort.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlPortType.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlSchema.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlSchemaImport.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlService.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlTypes.class" match-path="true"/>
+            <include name="weblogic/wsee/wsdl/WsdlWriter.class" match-path="true"/>
+            <include name="weblogic/wsee/wstx/TransactionServices.class" match-path="true"/>
+            <include name="weblogic/wsee/wstx/wsat/WSATClientHandler.class" match-path="true"/>
+            <include name="weblogic/wsee/wstx/wsat/WSATConstants.class" match-path="true"/>
+            <include name="weblogic/wsee/wstx/wsat/WSATException.class" match-path="true"/>
+            <include name="weblogic/wsee/wstx/wsat/WSATFaultFactory.class" match-path="true"/>
+            <include name="weblogic/wsee/wstx/wsat/WSATHelper.class" match-path="true"/>
+            <include name="weblogic/wsee/wstx/wsat/WSATSynchronization.class" match-path="true"/>
+            <include name="weblogic/wsee/wstx/wsat/WSATXAResource.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/AlgorithmMethod.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/Data.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/KeySelector$Purpose.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/KeySelector.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/KeySelectorException.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/KeySelectorResult.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/MarshalException.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/URIDereferencer.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/URIReference.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/URIReferenceException.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/XMLCryptoContext.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/api/XMLStructure.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/common/keyinfo/BaseKeyProvider.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/common/keyinfo/EncryptedKeyProvider.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/common/keyinfo/KeyProvider.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/common/keyinfo/KeyResolver$Accessor.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/common/keyinfo/KeyResolver.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/dsig/KeyInfoObjectFactory.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/dsig/api/keyinfo/KeyInfo.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/dsig/api/keyinfo/X509IssuerSerial.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/encrypt/api/CipherData.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/encrypt/api/EncryptedType.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/encrypt/api/EncryptionMethod.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/encrypt/api/EncryptionProperties.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/encrypt/api/TBE.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/encrypt/api/XMLDecryptContext.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/encrypt/api/XMLEncryptContext.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/encrypt/api/XMLEncryptionException.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/encrypt/api/keyinfo/EncryptedKey.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/EncryptionInfo.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/SecurityTokenContextHandler.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/SecurityTokenImpl.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/SecurityTokenReferenceImpl.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/SecurityTokenValidateResult.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/SignatureInfo$Reference.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/SignatureInfo.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/WSSecurityException.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/WSSecurityInfo.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/api/KeyIdentifier.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/api/Timestamp.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/provider/CredentialProvider.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/provider/Purpose.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/provider/SecurityToken.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/provider/SecurityTokenHandler.class" match-path="true"/>
+            <include name="weblogic/xml/crypto/wss/provider/SecurityTokenReference.class" match-path="true"/>
+            <include name="weblogic/xml/security/InvalidSecurityException.class" match-path="true"/>
+            <include name="weblogic/xml/security/NamedKey.class" match-path="true"/>
+            <include name="weblogic/xml/security/SecurityAssertion.class" match-path="true"/>
+            <include name="weblogic/xml/security/SecurityConfigurationException.class" match-path="true"/>
+            <include name="weblogic/xml/security/SecurityProcessingException.class" match-path="true"/>
+            <include name="weblogic/xml/security/UserInfo.class" match-path="true"/>
+            <include name="weblogic/xml/security/assertion/ConfidentialityAssertion.class" match-path="true"/>
+            <include name="weblogic/xml/security/assertion/ElementAssertion.class" match-path="true"/>
+            <include name="weblogic/xml/security/assertion/ElementAssertionUtils.class" match-path="true"/>
+            <include name="weblogic/xml/security/assertion/ElementConfidentialityAssertion.class" match-path="true"/>
+            <include name="weblogic/xml/security/assertion/ElementIntegrityAssertion.class" match-path="true"/>
+            <include name="weblogic/xml/security/assertion/IdentityAssertion.class" match-path="true"/>
+            <include name="weblogic/xml/security/assertion/IntegrityAssertion.class" match-path="true"/>
+            <include name="weblogic/xml/security/assertion/ServerHelper.class" match-path="true"/>
+            <include name="weblogic/xml/security/encryption/CipherData.class" match-path="true"/>
+            <include name="weblogic/xml/security/encryption/DataReference.class" match-path="true"/>
+            <include name="weblogic/xml/security/encryption/EncryptedKey.class" match-path="true"/>
+            <include name="weblogic/xml/security/encryption/EncryptedType.class" match-path="true"/>
+            <include name="weblogic/xml/security/encryption/EncryptionException.class" match-path="true"/>
+            <include name="weblogic/xml/security/encryption/EncryptionMethod.class" match-path="true"/>
+            <include name="weblogic/xml/security/encryption/EncryptionMethodFactory.class" match-path="true"/>
+            <include name="weblogic/xml/security/encryption/KeyReference.class" match-path="true"/>
+            <include name="weblogic/xml/security/encryption/ReferenceList.class" match-path="true"/>
+            <include name="weblogic/xml/security/encryption/XMLEncConstants.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/KeyInfo.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/KeyInfoException.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/KeyInfoValidationException.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/KeyProvider.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/KeyPurpose.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/KeyResolver$Accessor.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/KeyResolver.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/KeyResolverException.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/KeyResult.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/KeyValue.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/X509Data.class" match-path="true"/>
+            <include name="weblogic/xml/security/keyinfo/X509IssuerSerial.class" match-path="true"/>
+            <include name="weblogic/xml/security/signature/CanonicalizationMethod.class" match-path="true"/>
+            <include name="weblogic/xml/security/signature/CanonicalizationMethodFactory.class" match-path="true"/>
+            <include name="weblogic/xml/security/signature/DSIGConstants.class" match-path="true"/>
+            <include name="weblogic/xml/security/signature/DigestMethod.class" match-path="true"/>
+            <include name="weblogic/xml/security/signature/DigestMethodFactory.class" match-path="true"/>
+            <include name="weblogic/xml/security/signature/Reference.class" match-path="true"/>
+            <include name="weblogic/xml/security/signature/Signature.class" match-path="true"/>
+            <include name="weblogic/xml/security/signature/XMLSignatureException.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/BinarySecurityTokenSpec.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/ElementIdentifier.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/EncryptionKey.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/EncryptionSpec.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/EntityDescriptor.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/OperationSpec.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/SecurityDD.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/SecuritySpec.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/SignatureKey.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/SignatureSpec.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/SpecBase.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/SpecConstants.class" match-path="true"/>
+            <include name="weblogic/xml/security/specs/User.class" match-path="true"/>
+            <include name="weblogic/xml/security/transforms/IncompatibleTransformException.class" match-path="true"/>
+            <include name="weblogic/xml/security/transforms/Transform.class" match-path="true"/>
+            <include name="weblogic/xml/security/transforms/TransformException.class" match-path="true"/>
+            <include name="weblogic/xml/security/utils/NSOutputStream.class" match-path="true"/>
+            <include name="weblogic/xml/security/utils/XMLObjectReader.class" match-path="true"/>
+            <include name="weblogic/xml/security/utils/XMLOutputStreamBase.class" match-path="true"/>
+            <include name="weblogic/xml/security/utils/XMLSecurityException.class" match-path="true"/>
+            <include name="weblogic/xml/security/utils/XMLWriter.class" match-path="true"/>
+            <include name="weblogic/xml/security/utils/XMLWriterRuntimeException.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/BinarySecurityToken.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/KeyIdentifier.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/SecureInputStream.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/SecureSoapOutputStream.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/Security.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/SecurityElementFactory.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/SecurityTokenReference.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/Token.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/UsernameToken.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/WSSEConstants.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/WSSEReader.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsse/v200207/WSSEConstants.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsu/AttributedDateTime.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsu/Created.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsu/Expires.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsu/Received.class" match-path="true"/>
+            <include name="weblogic/xml/security/wsu/Timestamp.class" match-path="true"/>
+         </entry>
+      </library>
+   </libraries>
+</component-def>

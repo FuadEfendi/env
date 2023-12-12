@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.wls.common.nodemanager" version="12.2.1.4.0" description="Modules for standalone NodeManager common to WebLogic and CAM" gdr-version="1.8.4.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="wls.common.cam.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="server" mode="750" patchable="true">
+            <directory dest="bin" mode="750" patchable="true">
+               <file size="10590" dest="startNodeManager.cmd" os-family="windows" mode="750"/>
+               <file size="8743" dest="startNodeManager.sh" mode="750"/>
+               <file size="7174" dest="stopNodeManager.cmd" os-family="windows" mode="750"/>
+               <file size="11753" dest="stopNodeManager.sh" mode="750"/>
+               <file size="1227" dest="uninstallNodeMgrSvc.cmd" os-family="windows" mode="750"/>
+               <file size="4464" dest="installNodeMgrSvc.cmd" os-family="windows" mode="750"/>
+               <file size="65536" dest="wlsvcX64.dll" os-family="windows" mode="640"/>
+               <file size="65536" dest="wlsvcX64.exe" os-family="windows" mode="640"/>
+               <file size="1744" dest="wlsvcX64.lib" os-family="windows" mode="640"/>
+               <file size="61440" dest="wlsvc.dll" os-family="windows" mode="640"/>
+               <file size="57344" dest="wlsvc.exe" os-family="windows" mode="640"/>
+               <file size="1928" dest="wlsvc.lib" os-family="windows" mode="640"/>
+               <file size="374" dest="wlsvc.exe.manifest" os-family="windows" mode="640"/>
+            </directory>
+            <directory dest="lib" mode="750" patchable="true">
+               <file size="1610" dest="DemoTrust.jks" mode="600"/>
+               <file size="9202" pack="true" dest="weblogic-launcher.jar" mode="640"/>
+            </directory>
+         </directory>
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="874164" pack="true" dest="org.glassfish.grizzly.grizzly-framework.jar" mode="640"/>
+            <file size="329311" pack="true" dest="org.glassfish.grizzly.grizzly-http.jar" mode="640"/>
+            <file size="279577" pack="true" dest="org.glassfish.grizzly.grizzly-http-server.jar" mode="640"/>
+            <file size="19136" pack="true" dest="org.glassfish.grizzly.grizzly-portunif.jar" mode="640"/>
+            <file size="201681" pack="true" dest="org.glassfish.grizzly.grizzly-http-servlet.jar" mode="640"/>
+            <file size="8542" pack="true" dest="com.bea.core.nodemanager.plugin.jar" mode="640"/>
+            <file size="84184" pack="true" dest="com.oracle.core.nodemanager.rest.jar" mode="640"/>
+            <file size="288358" pack="true" dest="com.oracle.core.nodemanager.server.jar" mode="640"/>
+            <directory dest="features" mode="750" patchable="true">
+               <file size="842" pack="true" dest="oracle.wls.common.nodemanager.jar" mode="640"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.bat"/>
+            <permission mode="750" regex=".*\.cmd"/>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="600" regex=".*\.jks"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <default-pom-override groupId="com.oracle.weblogic" artifactId="oracle.wls.common.nodemanager.component"/>
+   <libraries>
+      <library name="wls_common_nodemanager_comp_lib" type="none" size="398412">
+         <entry explode="true" include-parent="false" name="server/lib/weblogic-launcher.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.nodemanager.plugin.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.core.nodemanager.rest.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.core.nodemanager.server.jar"/>
+      </library>
+      <library name="wlstt3client" type="none" size="302347">
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.nodemanager.plugin.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.core.nodemanager.server.jar"/>
+      </library>
+      <library name="oracle.wls.nodemanager_comp.wlst.classpath" type="none" visibility="none" size="835">
+         <entry explode="true" include-parent="false" name="modules/features/oracle.wls.common.nodemanager.jar"/>
+      </library>
+   </libraries>
+   <stringsubs>
+      <ns2:group id="WlsHome">
+         <ns2:file-entry name="$wls.common.cam.symbol.path$/server/bin/installNodeMgrSvc.cmd"/>
+         <ns2:file-entry name="$wls.common.cam.symbol.path$/server/bin/uninstallNodeMgrSvc.cmd"/>
+         <ns2:file-entry name="$wls.common.cam.symbol.path$/server/bin/startNodeManager.cmd"/>
+         <ns2:file-entry name="$wls.common.cam.symbol.path$/server/bin/stopNodeManager.cmd"/>
+         <ns2:change-pair-ref name="WL_HOME"/>
+      </ns2:group>
+      <ns2:group id="WlsHomeForward" mode="forward">
+         <ns2:file-entry name="$wls.common.cam.symbol.path$/server/bin/startNodeManager.sh"/>
+         <ns2:file-entry name="$wls.common.cam.symbol.path$/server/bin/stopNodeManager.sh"/>
+         <ns2:change-pair-ref name="WL_HOME"/>
+      </ns2:group>
+      <ns2:change-pair id="WL_HOME" before="@WL_HOME" after="$wls.common.cam.symbol.path$"/>
+   </stringsubs>
+</component-def>

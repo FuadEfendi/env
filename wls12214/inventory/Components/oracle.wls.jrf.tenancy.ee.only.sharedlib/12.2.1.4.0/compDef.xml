@@ -1,0 +1,1052 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.wls.jrf.tenancy.ee.only.sharedlib" version="12.2.1.4.0" description="Common Tenancy Modules for EE/WLS, shared from WLS and used in WLS shared library" gdr-version="1.8.4.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="wls.server.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="1325247" pack="true" dest="com.oracle.weblogic.application.jar" mode="640"/>
+            <file size="63066" pack="true" dest="com.oracle.weblogic.common.frag.jar" mode="640"/>
+            <file size="37233" pack="true" dest="com.bea.core.weblogic.lifecycle.jar" mode="640"/>
+            <file size="350795" pack="true" dest="com.oracle.weblogic.server.jar" mode="640"/>
+            <file size="37087" pack="true" dest="com.bea.core.workarea.jar" mode="640"/>
+            <file size="234095" pack="true" dest="com.bea.core.utils.full.jar" mode="640"/>
+            <file size="243328" pack="true" dest="com.bea.core.weblogic.workmanager.jar" mode="640"/>
+            <file size="7650" pack="true" dest="com.bea.core.logging.debug.jar" mode="640"/>
+            <file size="137362" pack="true" dest="com.bea.core.logging.jar" mode="640"/>
+            <file size="96358" pack="true" dest="com.bea.core.management.core.jar" mode="640"/>
+            <file size="53217" pack="true" dest="com.oracle.weblogic.security.service.cssenv.jar" mode="640"/>
+            <file size="80844" pack="true" dest="com.oracle.weblogic.security.service.ffapi.jar" mode="640"/>
+            <file size="107137" pack="true" dest="com.oracle.weblogic.security.service.sspi.jar" mode="640"/>
+         </directory>
+         <directory dest="server" mode="750" patchable="true">
+            <directory dest="lib" mode="750" patchable="true">
+               <file size="255680" pack="true" dest="pcl2.jar" mode="640"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="oracle.jrf.tenancy.ee.library" type="none" visibility="none" suppress-version="true" size="3068631">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.application.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.common.frag.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.lifecycle.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.server.jar"/>
+         <entry explode="true" include-parent="false" name="server/lib/pcl2.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.workarea.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.utils.full.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.workmanager.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.debug.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.management.core.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.cssenv.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.ffapi.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.sspi.jar"/>
+      </library>
+      <library name="com.oracle.webservices.wls.jaxws-wlswss-client" type="none" visibility="none" size="3014151">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.application.jar">
+            <include name="weblogic/application/AnnotationProcessingException.class" match-path="true"/>
+            <include name="weblogic/application/AppSupportDeclaration.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationAccess$1.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationAccess$2.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationAccess$ApplicationAccessSingleton.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationAccess.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationArchiveFileManager.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationContext.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationContextInternal$SecurityProvider.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationContextInternal.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationFactoryManager.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationFileManager.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationFileManagerImpl.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationLifecycleListener.class" match-path="true"/>
+            <include name="weblogic/application/ComponentMBeanFactory$1.class" match-path="true"/>
+            <include name="weblogic/application/ComponentMBeanFactory$2.class" match-path="true"/>
+            <include name="weblogic/application/ComponentMBeanFactory$3.class" match-path="true"/>
+            <include name="weblogic/application/ComponentMBeanFactory$4.class" match-path="true"/>
+            <include name="weblogic/application/ComponentMBeanFactory$5.class" match-path="true"/>
+            <include name="weblogic/application/ComponentMBeanFactory$6.class" match-path="true"/>
+            <include name="weblogic/application/ComponentMBeanFactory$MBeanFactory.class" match-path="true"/>
+            <include name="weblogic/application/ComponentMBeanFactory.class" match-path="true"/>
+            <include name="weblogic/application/Deployment.class" match-path="true"/>
+            <include name="weblogic/application/DeploymentFactory.class" match-path="true"/>
+            <include name="weblogic/application/DeploymentManager$DeploymentCreator.class" match-path="true"/>
+            <include name="weblogic/application/DeploymentManager$DeploymentManagerInstance.class" match-path="true"/>
+            <include name="weblogic/application/DeploymentManager.class" match-path="true"/>
+            <include name="weblogic/application/DeploymentOperationType.class" match-path="true"/>
+            <include name="weblogic/application/DeploymentWrapper.class" match-path="true"/>
+            <include name="weblogic/application/DescriptorUpdater.class" match-path="true"/>
+            <include name="weblogic/application/EditableApplicationArchiveFileManager.class" match-path="true"/>
+            <include name="weblogic/application/GenericApplicationContext.class" match-path="true"/>
+            <include name="weblogic/application/MBeanFactory$MBeanFactorySingleton.class" match-path="true"/>
+            <include name="weblogic/application/MBeanFactory.class" match-path="true"/>
+            <include name="weblogic/application/ModuleException.class" match-path="true"/>
+            <include name="weblogic/application/ParentModule.class" match-path="true"/>
+            <include name="weblogic/application/SplitDirectoryConstants.class" match-path="true"/>
+            <include name="weblogic/application/WebLogicApplicationModuleFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/Compiler.class" match-path="true"/>
+            <include name="weblogic/application/compiler/EARCompilerFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/EARMergerFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/EARToolsInitializer.class" match-path="true"/>
+            <include name="weblogic/application/compiler/Factory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/FactoryException.class" match-path="true"/>
+            <include name="weblogic/application/compiler/FactoryManager.class" match-path="true"/>
+            <include name="weblogic/application/compiler/GenVersionFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/Merger.class" match-path="true"/>
+            <include name="weblogic/application/compiler/NoClaimsFactoryException.class" match-path="true"/>
+            <include name="weblogic/application/compiler/SCACompilerFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/SingleModuleCompilerFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/SingleModuleMergerFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/StandaloneToolsModuleFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsContext.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsEnvironment.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsExtension.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsExtensionFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsFactoryManager$1.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsFactoryManager$WrapperFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsFactoryManager.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsInitializer.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsInitializerManager.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsModule.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsModuleExtension.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsModuleExtensionFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/ToolsModuleFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/UnresolvedClaimsFactoryException.class" match-path="true"/>
+            <include name="weblogic/application/compiler/WebLogicToolsModuleFactory.class" match-path="true"/>
+            <include name="weblogic/application/compiler/utils/ApplicationNameScanner$1.class" match-path="true"/>
+            <include name="weblogic/application/compiler/utils/ApplicationNameScanner$ByteBufferFile.class" match-path="true"/>
+            <include name="weblogic/application/compiler/utils/ApplicationNameScanner$ElementContentHandler.class" match-path="true"/>
+            <include name="weblogic/application/compiler/utils/ApplicationNameScanner.class" match-path="true"/>
+            <include name="weblogic/application/compiler/utils/ApplicationNameScannerException.class" match-path="true"/>
+            <include name="weblogic/application/compiler/utils/DefaultToolsEnvironment.class" match-path="true"/>
+            <include name="weblogic/application/ddconvert/Converter.class" match-path="true"/>
+            <include name="weblogic/application/ddconvert/ConverterFactory.class" match-path="true"/>
+            <include name="weblogic/application/ddconvert/ConverterFactoryManager.class" match-path="true"/>
+            <include name="weblogic/application/ddconvert/EarConverterFactory.class" match-path="true"/>
+            <include name="weblogic/application/internal/BaseComponentMBeanFactory.class" match-path="true"/>
+            <include name="weblogic/application/internal/CarDeploymentFactory.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentManagerImpl$1.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentManagerImpl$2.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentManagerImpl$3.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentManagerImpl$4.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentManagerImpl$DeploymentCreatorImpl.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentManagerImpl$IteratorFetcher.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentManagerImpl$VersionedDeployments.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentManagerImpl.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentStateChecker$DeploymentAssertionError.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentStateChecker.class" match-path="true"/>
+            <include name="weblogic/application/internal/DeploymentTimer.class" match-path="true"/>
+            <include name="weblogic/application/internal/EarDeploymentFactory.class" match-path="true"/>
+            <include name="weblogic/application/internal/JavaEEName.class" match-path="true"/>
+            <include name="weblogic/application/internal/MBeanFactoryImpl.class" match-path="true"/>
+            <include name="weblogic/application/internal/library/BasicLibraryData.class" match-path="true"/>
+            <include name="weblogic/application/internal/library/EarLibraryDefinition.class" match-path="true"/>
+            <include name="weblogic/application/internal/library/EarLibraryFactory.class" match-path="true"/>
+            <include name="weblogic/application/internal/library/JarLibraryDefinition.class" match-path="true"/>
+            <include name="weblogic/application/internal/library/JarLibraryFactory.class" match-path="true"/>
+            <include name="weblogic/application/internal/library/LibraryDeploymentFactory.class" match-path="true"/>
+            <include name="weblogic/application/io/AA.class" match-path="true"/>
+            <include name="weblogic/application/library/ApplicationLibrary.class" match-path="true"/>
+            <include name="weblogic/application/library/Library.class" match-path="true"/>
+            <include name="weblogic/application/library/LibraryContext.class" match-path="true"/>
+            <include name="weblogic/application/library/LibraryData.class" match-path="true"/>
+            <include name="weblogic/application/library/LibraryDefinition.class" match-path="true"/>
+            <include name="weblogic/application/library/LibraryDeploymentException.class" match-path="true"/>
+            <include name="weblogic/application/library/LibraryFactory.class" match-path="true"/>
+            <include name="weblogic/application/metadatacache/Metadata.class" match-path="true"/>
+            <include name="weblogic/application/naming/PersistenceUnitRegistry.class" match-path="true"/>
+            <include name="weblogic/application/utils/AnnotationDetector$ApplicationArchiveEntryResource.class" match-path="true"/>
+            <include name="weblogic/application/utils/AnnotationDetector$FileResource.class" match-path="true"/>
+            <include name="weblogic/application/utils/AnnotationDetector$Resource.class" match-path="true"/>
+            <include name="weblogic/application/utils/AnnotationDetector.class" match-path="true"/>
+            <include name="weblogic/application/utils/ApplicationRuntimeStateManager.class" match-path="true"/>
+            <include name="weblogic/application/utils/ApplicationVersionUtils$ApplicationRuntimeStateInitializer.class" match-path="true"/>
+            <include name="weblogic/application/utils/ApplicationVersionUtils$ApplicationVersionUtilsServiceImpl.class" match-path="true"/>
+            <include name="weblogic/application/utils/ApplicationVersionUtils.class" match-path="true"/>
+            <include name="weblogic/application/utils/ClassAnnotationMetaDataFilter.class" match-path="true"/>
+            <include name="weblogic/application/utils/EarUtils.class" match-path="true"/>
+            <include name="weblogic/application/utils/IOUtils.class" match-path="true"/>
+            <include name="weblogic/application/utils/ManagementUtils.class" match-path="true"/>
+            <include name="weblogic/application/utils/MetaDataFilter$Resource.class" match-path="true"/>
+            <include name="weblogic/application/utils/MetaDataFilter.class" match-path="true"/>
+            <include name="weblogic/application/utils/MetaDataIterator$MetaData.class" match-path="true"/>
+            <include name="weblogic/application/utils/MetaDataIterator.class" match-path="true"/>
+            <include name="weblogic/j2ee/J2EEArchiveServiceImpl.class" match-path="true"/>
+            <include name="weblogic/j2ee/J2EEUtils$1.class" match-path="true"/>
+            <include name="weblogic/j2ee/J2EEUtils$RARAnnotationDetector.class" match-path="true"/>
+            <include name="weblogic/j2ee/J2EEUtils.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.common.frag.jar">
+            <include name="weblogic/common/LogServicesDef.class" match-path="true"/>
+            <include name="weblogic/common/LogServicesUtil.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.lifecycle.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.server.jar">
+            <include name="weblogic/management/provider/internal/AdminManagedValidatorService$1.class" match-path="true"/>
+            <include name="weblogic/management/provider/internal/AdminManagedValidatorService.class" match-path="true"/>
+            <include name="weblogic/t3/srvr/T3Srvr$1.class" match-path="true"/>
+            <include name="weblogic/t3/srvr/T3Srvr$2.class" match-path="true"/>
+            <include name="weblogic/t3/srvr/T3Srvr$3.class" match-path="true"/>
+            <include name="weblogic/t3/srvr/T3Srvr$4.class" match-path="true"/>
+            <include name="weblogic/t3/srvr/T3Srvr$FailureState.class" match-path="true"/>
+            <include name="weblogic/t3/srvr/T3Srvr.class" match-path="true"/>
+            <include name="weblogic/t3/srvr/T3SrvrConsole.class" match-path="true"/>
+            <include name="weblogic/t3/srvr/T3SrvrTextTextFormatter.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="server/lib/pcl2.jar">
+            <include name="com/oracle/classloader/SymLinkDetectorFilenameFilter$Reporter.class" match-path="true"/>
+            <include name="com/oracle/classloader/SymLinkDetectorFilenameFilter.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.workarea.jar">
+            <include name="weblogic/workarea/NoWorkContextException.class" match-path="true"/>
+            <include name="weblogic/workarea/PrimitiveContextFactory.class" match-path="true"/>
+            <include name="weblogic/workarea/PrimitiveWorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/PropertyReadOnlyException.class" match-path="true"/>
+            <include name="weblogic/workarea/SerializableWorkContext$1.class" match-path="true"/>
+            <include name="weblogic/workarea/SerializableWorkContext$Carrier.class" match-path="true"/>
+            <include name="weblogic/workarea/SerializableWorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/StringWorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextFilter.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextHelper.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextInput.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextLocalMap$1.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextLocalMap$WorkContextIterator.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextLocalMap$WorkContextKeys.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextLocalMap.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextMap.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextMapImpl$1.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextMapImpl.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextOutput.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/AfterCopyContextsListener.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/AfterReceiveRequestListener.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/AfterSendRequestListener.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/BeforeSendRequestListener.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextAccessController$WorkContextAccessControllerHolder$1.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextAccessController$WorkContextAccessControllerHolder.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextAccessController.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextEntry.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextEntryImpl.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextMapInterceptor.class" match-path="true"/>
+            <include name="weblogic/workarea/utils/WorkContextInputAdapter.class" match-path="true"/>
+            <include name="weblogic/workarea/utils/WorkContextOutputAdapter.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.utils.full.jar">
+            <include name="weblogic/deploy/api/internal/utils/Debug$Location.class" match-path="true"/>
+            <include name="weblogic/deploy/api/internal/utils/Debug$StackTrace.class" match-path="true"/>
+            <include name="weblogic/deploy/api/internal/utils/Debug.class" match-path="true"/>
+            <include name="weblogic/utils/application/WarDetector.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/Latch.class" match-path="true"/>
+            <include name="weblogic/utils/net/SocketResetException.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.workmanager.jar">
+            <include name="weblogic/common/CompletionRequest.class" match-path="true"/>
+            <include name="weblogic/common/T3Exception.class" match-path="true"/>
+            <include name="weblogic/common/WLObjectInput.class" match-path="true"/>
+            <include name="weblogic/common/WLObjectOutput.class" match-path="true"/>
+            <include name="weblogic/kernel/AuditableThread.class" match-path="true"/>
+            <include name="weblogic/kernel/AuditableThreadLocal.class" match-path="true"/>
+            <include name="weblogic/kernel/AuditableThreadLocalFactory.class" match-path="true"/>
+            <include name="weblogic/kernel/FinalThreadLocal$1.class" match-path="true"/>
+            <include name="weblogic/kernel/FinalThreadLocal$FinalThreadStorage.class" match-path="true"/>
+            <include name="weblogic/kernel/FinalThreadLocal.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelInitializer.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelLogger$MessageLoggerInitializer.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelLogger.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelStatus.class" match-path="true"/>
+            <include name="weblogic/kernel/QueueFullException.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocal$1.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocal$ThreadStorage.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocal.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocalStack.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalInitialValue.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalStack$1.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalStack$StackInitialValue.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalStack.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadStorage.class" match-path="true"/>
+            <include name="weblogic/work/ComponentInvocationContextHolder.class" match-path="true"/>
+            <include name="weblogic/work/ExecuteThread.class" match-path="true"/>
+            <include name="weblogic/work/ExecuteThreadLite.class" match-path="true"/>
+            <include name="weblogic/work/PartitionUtility$1.class" match-path="true"/>
+            <include name="weblogic/work/PartitionUtility$FixedContextPartitionUtility.class" match-path="true"/>
+            <include name="weblogic/work/PartitionUtility.class" match-path="true"/>
+            <include name="weblogic/work/RequestClass.class" match-path="true"/>
+            <include name="weblogic/work/SelfTuningWorkManagerImpl$1.class" match-path="true"/>
+            <include name="weblogic/work/SelfTuningWorkManagerImpl$Logger.class" match-path="true"/>
+            <include name="weblogic/work/SelfTuningWorkManagerImpl$WorkAdapterImpl.class" match-path="true"/>
+            <include name="weblogic/work/SelfTuningWorkManagerImpl.class" match-path="true"/>
+            <include name="weblogic/work/Work.class" match-path="true"/>
+            <include name="weblogic/work/WorkAdapter$1.class" match-path="true"/>
+            <include name="weblogic/work/WorkAdapter$2.class" match-path="true"/>
+            <include name="weblogic/work/WorkAdapter$3.class" match-path="true"/>
+            <include name="weblogic/work/WorkAdapter.class" match-path="true"/>
+            <include name="weblogic/work/WorkManager.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerFactory.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerImpl.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.debug.jar">
+            <include name="weblogic/diagnostics/debug/DebugLogger$1.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLogger.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLoggerRepository$1.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLoggerRepository.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/PartitionContextProvider.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.jar">
+            <include name="com/bea/logging/BaseLogEntry.class" match-path="true"/>
+            <include name="com/bea/logging/BaseLogRecord.class" match-path="true"/>
+            <include name="com/bea/logging/BaseLogRecordFactory.class" match-path="true"/>
+            <include name="com/bea/logging/BaseLogger.class" match-path="true"/>
+            <include name="com/bea/logging/BaseLoggerFactory.class" match-path="true"/>
+            <include name="com/bea/logging/DateFormatter$1.class" match-path="true"/>
+            <include name="com/bea/logging/DateFormatter$DefaultSingletonFactory.class" match-path="true"/>
+            <include name="com/bea/logging/DateFormatter.class" match-path="true"/>
+            <include name="com/bea/logging/InvalidSeverityStringException.class" match-path="true"/>
+            <include name="com/bea/logging/JDKLoggingVersionHelper$VersionInitializer.class" match-path="true"/>
+            <include name="com/bea/logging/JDKLoggingVersionHelper.class" match-path="true"/>
+            <include name="com/bea/logging/LogBufferHandler$LogBufferHandlerSingletonFactory.class" match-path="true"/>
+            <include name="com/bea/logging/LogBufferHandler.class" match-path="true"/>
+            <include name="com/bea/logging/LogErrorManager.class" match-path="true"/>
+            <include name="com/bea/logging/LogFileChangeListener.class" match-path="true"/>
+            <include name="com/bea/logging/LogFileConfig.class" match-path="true"/>
+            <include name="com/bea/logging/LogFileConfigBean.class" match-path="true"/>
+            <include name="com/bea/logging/LogFileConfigImpl.class" match-path="true"/>
+            <include name="com/bea/logging/LogFileRotator$1.class" match-path="true"/>
+            <include name="com/bea/logging/LogFileRotator$FileInfo.class" match-path="true"/>
+            <include name="com/bea/logging/LogFileRotator$GlobalAccountRunner.class" match-path="true"/>
+            <include name="com/bea/logging/LogFileRotator$LogRotationInitializer.class" match-path="true"/>
+            <include name="com/bea/logging/LogFileRotator.class" match-path="true"/>
+            <include name="com/bea/logging/LogFilterExpressionConfig.class" match-path="true"/>
+            <include name="com/bea/logging/LogFilterExpressionConfigImpl.class" match-path="true"/>
+            <include name="com/bea/logging/LogFilterFactory$SingletonInitializer.class" match-path="true"/>
+            <include name="com/bea/logging/LogFilterFactory.class" match-path="true"/>
+            <include name="com/bea/logging/LogLevel.class" match-path="true"/>
+            <include name="com/bea/logging/LogMessageFormatter.class" match-path="true"/>
+            <include name="com/bea/logging/LogRotationException.class" match-path="true"/>
+            <include name="com/bea/logging/LogfileFilter.class" match-path="true"/>
+            <include name="com/bea/logging/LoggerWrapper.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingConfigValidator$SeveritiesSet.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingConfigValidator.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingLifecycle.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingService$1.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingService$SingletonWrapper.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingService.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingServiceConfig.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingServiceConfigImpl.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingServiceLogLocalizer.properties" match-path="true"/>
+            <include name="com/bea/logging/LoggingServiceLogLocalizerDetail.properties" match-path="true"/>
+            <include name="com/bea/logging/LoggingServiceLogger$MessageLoggerInitializer.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingServiceLogger.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingServiceManager.class" match-path="true"/>
+            <include name="com/bea/logging/LoggingSupplementalAttribute.class" match-path="true"/>
+            <include name="com/bea/logging/MsgIdPrefixConverter$SystemPropertyInitializer.class" match-path="true"/>
+            <include name="com/bea/logging/MsgIdPrefixConverter.class" match-path="true"/>
+            <include name="com/bea/logging/ParentDelegatingFilter.class" match-path="true"/>
+            <include name="com/bea/logging/RotatingFileOutputStream$1.class" match-path="true"/>
+            <include name="com/bea/logging/RotatingFileOutputStream$2.class" match-path="true"/>
+            <include name="com/bea/logging/RotatingFileOutputStream$3.class" match-path="true"/>
+            <include name="com/bea/logging/RotatingFileOutputStream$4.class" match-path="true"/>
+            <include name="com/bea/logging/RotatingFileOutputStream.class" match-path="true"/>
+            <include name="com/bea/logging/RotatingFileStreamHandler$1.class" match-path="true"/>
+            <include name="com/bea/logging/RotatingFileStreamHandler$AttributeType.class" match-path="true"/>
+            <include name="com/bea/logging/RotatingFileStreamHandler.class" match-path="true"/>
+            <include name="com/bea/logging/StatsHandler$1.class" match-path="true"/>
+            <include name="com/bea/logging/StatsHandler.class" match-path="true"/>
+            <include name="com/bea/logging/StdoutConfig.class" match-path="true"/>
+            <include name="com/bea/logging/StdoutConfigImpl.class" match-path="true"/>
+            <include name="com/bea/logging/StdoutHandler.class" match-path="true"/>
+            <include name="com/bea/logging/ThrowableWrapper.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugScopeBean.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/KernelDebugService.class" match-path="true"/>
+            <include name="weblogic/logging/Severities.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.management.core.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.ffapi.jar">
+            <include name="weblogic/security/service/DeploymentValidator.class" match-path="true"/>
+            <include name="weblogic/security/service/GetKernelIdentityAction.class" match-path="true"/>
+            <include name="weblogic/security/service/PluginUtils.class" match-path="true"/>
+            <include name="weblogic/security/service/PrivilegedActions.class" match-path="true"/>
+            <include name="weblogic/security/service/ProviderException.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityServiceManager$DelegateInstanceMaker$1.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityServiceManager$DelegateInstanceMaker$2.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityServiceManager$DelegateInstanceMaker.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityServiceManager.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityServiceManagerDelegate.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityServiceManagerDelegate2.class" match-path="true"/>
+            <include name="weblogic/security/service/WSPolicyConsumer.class" match-path="true"/>
+            <include name="weblogic/security/service/WSRoleConsumer.class" match-path="true"/>
+            <include name="weblogic/security/shared/LoggerAdapter.class" match-path="true"/>
+            <include name="weblogic/security/shared/LoggerWrapper.class" match-path="true"/>
+            <include name="weblogic/security/shared/RuntimeEnvironment$RuntimeUtilityHolder.class" match-path="true"/>
+            <include name="weblogic/security/shared/RuntimeEnvironment.class" match-path="true"/>
+            <include name="weblogic/security/shared/RuntimeUtilities.class" match-path="true"/>
+            <include name="weblogic/security/shared/SecurityPlatformID.class" match-path="true"/>
+            <include name="weblogic/security/utils/KeyStoreInfo.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.sspi.jar">
+            <include name="weblogic/security/pk/CertPathSelector.class" match-path="true"/>
+            <include name="weblogic/security/service/AdminResource.class" match-path="true"/>
+            <include name="weblogic/security/service/ApplicationResource.class" match-path="true"/>
+            <include name="weblogic/security/service/ConsumptionException.class" match-path="true"/>
+            <include name="weblogic/security/service/ContextElement.class" match-path="true"/>
+            <include name="weblogic/security/service/ContextElementMessageStream.class" match-path="true"/>
+            <include name="weblogic/security/service/ContextHandler.class" match-path="true"/>
+            <include name="weblogic/security/service/DeployHandleCreationException.class" match-path="true"/>
+            <include name="weblogic/security/service/JMXResource.class" match-path="true"/>
+            <include name="weblogic/security/service/ResourceBase$1.class" match-path="true"/>
+            <include name="weblogic/security/service/ResourceBase.class" match-path="true"/>
+            <include name="weblogic/security/service/ResourceCreationException.class" match-path="true"/>
+            <include name="weblogic/security/service/ResourceRemovalException.class" match-path="true"/>
+            <include name="weblogic/security/service/RoleCreationException.class" match-path="true"/>
+            <include name="weblogic/security/service/RoleRemovalException.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityApplicationInfo.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityServiceRuntimeException.class" match-path="true"/>
+            <include name="weblogic/security/service/ServerResource.class" match-path="true"/>
+            <include name="weblogic/security/service/WebServiceResource.class" match-path="true"/>
+            <include name="weblogic/security/spi/AuditSeverity.class" match-path="true"/>
+            <include name="weblogic/security/spi/Direction.class" match-path="true"/>
+            <include name="weblogic/security/spi/IdentityAssertionException.class" match-path="true"/>
+            <include name="weblogic/security/spi/Resource.class" match-path="true"/>
+            <include name="weblogic/security/spi/Result.class" match-path="true"/>
+            <include name="weblogic/security/spi/SecurityProvider.class" match-path="true"/>
+            <include name="weblogic/security/spi/SelfDescribingResource.class" match-path="true"/>
+            <include name="weblogic/security/spi/SelfDescribingResourceV2.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="com.oracle.webservices.wls.jaxrpc-client" type="none" visibility="none" size="2398146">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.application.jar">
+            <include name="weblogic/application/ApplicationAccess$1.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationAccess$2.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationAccess$ApplicationAccessSingleton.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationAccess.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationContext.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationContextFactory.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationContextInternal$SecurityProvider.class" match-path="true"/>
+            <include name="weblogic/application/ApplicationContextInternal.class" match-path="true"/>
+            <include name="weblogic/application/DescriptorUpdater.class" match-path="true"/>
+            <include name="weblogic/application/GenericApplicationContext.class" match-path="true"/>
+            <include name="weblogic/application/WebLogicApplicationModuleFactory.class" match-path="true"/>
+            <include name="weblogic/application/library/LibraryContext.class" match-path="true"/>
+            <include name="weblogic/application/utils/ApplicationVersionUtils$ApplicationRuntimeStateInitializer.class" match-path="true"/>
+            <include name="weblogic/application/utils/ApplicationVersionUtils$ApplicationVersionUtilsServiceImpl.class" match-path="true"/>
+            <include name="weblogic/application/utils/ApplicationVersionUtils.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.common.frag.jar">
+            <include name="weblogic/common/LogServicesUtil.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.lifecycle.jar">
+            <include name="weblogic/Home$1.class" match-path="true"/>
+            <include name="weblogic/Home$HomeSingleton.class" match-path="true"/>
+            <include name="weblogic/Home.class" match-path="true"/>
+            <include name="weblogic/i18n/i18n.properties" match-path="true"/>
+            <include name="weblogic/opatch/OPatchUtil$OPatchInfo.class" match-path="true"/>
+            <include name="weblogic/opatch/OPatchUtil.class" match-path="true"/>
+            <include name="weblogic/server/AbstractServerService.class" match-path="true"/>
+            <include name="weblogic/server/ActivatedService.class" match-path="true"/>
+            <include name="weblogic/server/RunningStateListener.class" match-path="true"/>
+            <include name="weblogic/server/ServerLifecycleException.class" match-path="true"/>
+            <include name="weblogic/server/ServerLogLocalizer.properties" match-path="true"/>
+            <include name="weblogic/server/ServerLogLocalizerDetail.properties" match-path="true"/>
+            <include name="weblogic/server/ServerLogger$MessageLoggerInitializer.class" match-path="true"/>
+            <include name="weblogic/server/ServerLogger.class" match-path="true"/>
+            <include name="weblogic/server/ServerService.class" match-path="true"/>
+            <include name="weblogic/server/ServerStates.class" match-path="true"/>
+            <include name="weblogic/server/ServiceActivator.class" match-path="true"/>
+            <include name="weblogic/server/ServiceFailureException.class" match-path="true"/>
+            <include name="weblogic/server/ShutdownParametersBean.class" match-path="true"/>
+            <include name="weblogic/server/StandardDirectives.class" match-path="true"/>
+            <include name="weblogic/server/lifecycle/WebLogicServerRunState.class" match-path="true"/>
+            <include name="weblogic/server/lifecycle/hk2/WebLogicLifecycle.class" match-path="true"/>
+            <include name="weblogic/server/package-info.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.workarea.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.utils.full.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.workmanager.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.debug.jar">
+            <include name="weblogic/diagnostics/debug/DebugContext.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLogger$1.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLogger.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLoggerRepository$1.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLoggerRepository.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.management.core.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.ffapi.jar">
+            <include name="weblogic/security/SimpleCallbackHandler$1.class" match-path="true"/>
+            <include name="weblogic/security/SimpleCallbackHandler$IdentityDomainUserCallbackStrategy.class" match-path="true"/>
+            <include name="weblogic/security/SimpleCallbackHandler$NameCallbackStrategy.class" match-path="true"/>
+            <include name="weblogic/security/SimpleCallbackHandler$PasswordCallbackStrategy.class" match-path="true"/>
+            <include name="weblogic/security/SimpleCallbackHandler.class" match-path="true"/>
+            <include name="weblogic/security/service/GetKernelIdentityAction.class" match-path="true"/>
+            <include name="weblogic/security/service/PrivilegedActions$SignPrincipalAction.class" match-path="true"/>
+            <include name="weblogic/security/service/PrivilegedActions.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.sspi.jar">
+            <include name="weblogic/security/service/AdminResource.class" match-path="true"/>
+            <include name="weblogic/security/service/ContextElement.class" match-path="true"/>
+            <include name="weblogic/security/service/ContextElementMessageStream.class" match-path="true"/>
+            <include name="weblogic/security/service/ContextHandler.class" match-path="true"/>
+            <include name="weblogic/security/service/JMXResource.class" match-path="true"/>
+            <include name="weblogic/security/service/ResourceBase$1.class" match-path="true"/>
+            <include name="weblogic/security/service/ResourceBase.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityServiceRuntimeException.class" match-path="true"/>
+            <include name="weblogic/security/spi/Resource.class" match-path="true"/>
+            <include name="weblogic/security/spi/SelfDescribingResource.class" match-path="true"/>
+            <include name="weblogic/security/spi/SelfDescribingResourceV2.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="wlclient" type="none" size="291471">
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.workarea.jar">
+            <include name="weblogic/workarea/AsciiWorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/LongWorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/NoWorkContextException.class" match-path="true"/>
+            <include name="weblogic/workarea/PrimitiveContextFactory.class" match-path="true"/>
+            <include name="weblogic/workarea/PrimitiveWorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/PropagationMode.class" match-path="true"/>
+            <include name="weblogic/workarea/PropertyReadOnlyException.class" match-path="true"/>
+            <include name="weblogic/workarea/SerializableWorkContext$1.class" match-path="true"/>
+            <include name="weblogic/workarea/SerializableWorkContext$Carrier.class" match-path="true"/>
+            <include name="weblogic/workarea/SerializableWorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/StringWorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/UserWorkArea.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextFilter.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextHelper.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextInput.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextLocalMap$1.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextLocalMap$WorkContextIterator.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextLocalMap$WorkContextKeys.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextLocalMap.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextMap.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextMapImpl$1.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextMapImpl.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextOutput.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/AfterCopyContextsListener.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/AfterReceiveRequestListener.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/AfterSendRequestListener.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/BeforeSendRequestListener.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextAccessController$WorkContextAccessControllerHolder$1.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextAccessController$WorkContextAccessControllerHolder.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextAccessController.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextEntry.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextEntryImpl.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextMapInterceptor.class" match-path="true"/>
+            <include name="weblogic/workarea/utils/WorkContextInputAdapter.class" match-path="true"/>
+            <include name="weblogic/workarea/utils/WorkContextOutputAdapter.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.workmanager.jar">
+            <include name="weblogic/kernel/AuditableThread.class" match-path="true"/>
+            <include name="weblogic/kernel/AuditableThreadLocal.class" match-path="true"/>
+            <include name="weblogic/kernel/AuditableThreadLocalFactory.class" match-path="true"/>
+            <include name="weblogic/kernel/FinalThreadLocal$1.class" match-path="true"/>
+            <include name="weblogic/kernel/FinalThreadLocal$FinalThreadStorage.class" match-path="true"/>
+            <include name="weblogic/kernel/FinalThreadLocal.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelLogLocalizer.properties" match-path="true"/>
+            <include name="weblogic/kernel/KernelLogger$MessageLoggerInitializer.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelLogger.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelStatus.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocal$1.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocal$ThreadStorage.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocal.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocalStack.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalInitialValue.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalStack$1.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalStack$StackInitialValue.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalStack.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadStorage.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.debug.jar">
+            <include name="weblogic/diagnostics/debug/DebugContext.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLogger$1.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLogger.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLoggerRepository$1.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLoggerRepository.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/PartitionContextProvider.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="wljmsclient" type="none" size="619898">
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.workarea.jar">
+            <include name="weblogic/workarea/NoWorkContextException.class" match-path="true"/>
+            <include name="weblogic/workarea/PropertyReadOnlyException.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContext.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextFilter.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextHelper.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextInput.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextLocalMap.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextMap.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextMapImpl.class" match-path="true"/>
+            <include name="weblogic/workarea/WorkContextOutput.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextEntry.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextEntryImpl.class" match-path="true"/>
+            <include name="weblogic/workarea/spi/WorkContextMapInterceptor.class" match-path="true"/>
+            <include name="weblogic/workarea/utils/WorkContextInputAdapter.class" match-path="true"/>
+            <include name="weblogic/workarea/utils/WorkContextOutputAdapter.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.utils.full.jar">
+            <include name="weblogic/invocation/ComponentInvocationContext.class" match-path="true"/>
+            <include name="weblogic/invocation/ManagedInvocationContext.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/JDK15ConcurrentBlockingQueue.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/JDK15ConcurrentFactory.class" match-path="true"/>
+            <include name="weblogic/utils/time/JDK15NanoTimer.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.workmanager.jar">
+            <include name="weblogic/common/CompletionListener.class" match-path="true"/>
+            <include name="weblogic/common/CompletionRequest.class" match-path="true"/>
+            <include name="weblogic/common/WLObjectInput.class" match-path="true"/>
+            <include name="weblogic/common/WLObjectOutput.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelInitializer.class" match-path="true"/>
+            <include name="weblogic/kernel/QueueFullException.class" match-path="true"/>
+            <include name="weblogic/work/ExecuteThreadLite.class" match-path="true"/>
+            <include name="weblogic/work/StackableThreadContext.class" match-path="true"/>
+            <include name="weblogic/work/Work.class" match-path="true"/>
+            <include name="weblogic/work/WorkManager.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerFactory.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerImpl.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerLite.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.management.core.jar">
+            <include name="weblogic/management/runtime/Timer.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="wlsafclient" type="none" size="245834">
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.workmanager.jar">
+            <include name="commonj/work/Work.class" match-path="true"/>
+            <include name="commonj/work/WorkEvent.class" match-path="true"/>
+            <include name="commonj/work/WorkException.class" match-path="true"/>
+            <include name="commonj/work/WorkItem.class" match-path="true"/>
+            <include name="commonj/work/WorkListener.class" match-path="true"/>
+            <include name="commonj/work/WorkManager.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="wlnmclient" type="none" visibility="none" size="483615">
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.utils.full.jar">
+            <include name="weblogic/utils/net/SocketResetException.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.workmanager.jar">
+            <include name="weblogic/kernel/KernelStatus.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="wljmxclient" type="mergedJar" location="server/lib" visibility="none" suppress-version="true" symbol="wls.server.symbol" size="205007">
+         <resolvers>
+            <resolver type="FirstEntryWins" wildcard="*"/>
+            <manifest-resolver type="WLS"/>
+         </resolvers>
+         <manifest>
+            <attribute name="sealed" value="false"/>
+            <attribute name="Class-Path" value="wlclient.jar"/>
+         </manifest>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.management.core.jar">
+            <include name="weblogic/management/NoAccessRuntimeException.class" match-path="true"/>
+            <include name="weblogic/management/visibility/MBeanType.class" match-path="true"/>
+            <include name="weblogic/management/visibility/MBeanVisibilityResult.class" match-path="true"/>
+            <include name="weblogic/management/visibility/WLSMBeanVisibility.class" match-path="true"/>
+            <include name="weblogic/management/visibility/utils/MBeanNameUtil.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.sspi.jar">
+            <include name="weblogic/security/service/SecurityServiceRuntimeException.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="wlthint3client" type="client" visibility="none" size="2711610">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.application.jar">
+            <include name="weblogic/application/ClassLoaderNotFoundException.class" match-path="true"/>
+            <include name="weblogic/j2ee/validation/IDescriptorError.class" match-path="true"/>
+            <include name="weblogic/j2ee/validation/IDescriptorErrorInfo.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.common.frag.jar">
+            <include name="weblogic/common/CommonLogLocalizer.properties" match-path="true"/>
+            <include name="weblogic/common/CommonLogLocalizerDetail.properties" match-path="true"/>
+            <include name="weblogic/common/CommonLogger$MessageLoggerInitializer.class" match-path="true"/>
+            <include name="weblogic/common/CommonLogger.class" match-path="true"/>
+            <include name="weblogic/common/internal/BootServices.class" match-path="true"/>
+            <include name="weblogic/common/internal/BootServicesStub.class" match-path="true"/>
+            <include name="weblogic/common/internal/SecurityServiceGeneratorImpl.class" match-path="true"/>
+            <include name="weblogic/common/internal/T3ClientParams.class" match-path="true"/>
+            <include name="weblogic/t3/srvr/RemoteClientContext.class" match-path="true"/>
+            <include name="weblogic/time/common/Schedulable.class" match-path="true"/>
+            <include name="weblogic/time/common/Triggerable.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.lifecycle.jar">
+            <include name="weblogic/server/ServiceFailureException.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="server/lib/pcl2.jar">
+            <include name="com/oracle/classloader/SymLinkDetectorFilenameFilter$Reporter.class" match-path="true"/>
+            <include name="com/oracle/classloader/SymLinkDetectorFilenameFilter.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.workarea.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.utils.full.jar">
+            <include name="weblogic/deploy/api/internal/utils/Debug$Location.class" match-path="true"/>
+            <include name="weblogic/deploy/api/internal/utils/Debug$StackTrace.class" match-path="true"/>
+            <include name="weblogic/deploy/api/internal/utils/Debug.class" match-path="true"/>
+            <include name="weblogic/invocation/ComponentInvocationContext.class" match-path="true"/>
+            <include name="weblogic/invocation/ComponentInvocationContextChangeListener.class" match-path="true"/>
+            <include name="weblogic/invocation/ComponentInvocationContextManager$SingletonHolder.class" match-path="true"/>
+            <include name="weblogic/invocation/ComponentInvocationContextManager.class" match-path="true"/>
+            <include name="weblogic/invocation/ManagedInvocationContext.class" match-path="true"/>
+            <include name="weblogic/invocation/PartitionTable$SingletonHolder.class" match-path="true"/>
+            <include name="weblogic/invocation/PartitionTable.class" match-path="true"/>
+            <include name="weblogic/invocation/PartitionTableEntry.class" match-path="true"/>
+            <include name="weblogic/invocation/ReadOnlyComponentInvocationContextManager.class" match-path="true"/>
+            <include name="weblogic/invocation/spi/ComponentRequest.class" match-path="true"/>
+            <include name="weblogic/platform/GCListener.class" match-path="true"/>
+            <include name="weblogic/platform/GCMonitorThread.class" match-path="true"/>
+            <include name="weblogic/platform/GarbageCollectionEvent.class" match-path="true"/>
+            <include name="weblogic/platform/SunVM.class" match-path="true"/>
+            <include name="weblogic/platform/Unix.class" match-path="true"/>
+            <include name="weblogic/platform/VM.class" match-path="true"/>
+            <include name="weblogic/platform/VM15$1.class" match-path="true"/>
+            <include name="weblogic/platform/VM15.class" match-path="true"/>
+            <include name="weblogic/utils/ByteArrayDiff$BeanDiff.class" match-path="true"/>
+            <include name="weblogic/utils/ByteArrayDiff.class" match-path="true"/>
+            <include name="weblogic/utils/ByteArrayDiffChecker.class" match-path="true"/>
+            <include name="weblogic/utils/CharsetMap.class" match-path="true"/>
+            <include name="weblogic/utils/ExecutionCancelledException.class" match-path="true"/>
+            <include name="weblogic/utils/HelperPattern.class" match-path="true"/>
+            <include name="weblogic/utils/JavaExec$JaXSubProcess.class" match-path="true"/>
+            <include name="weblogic/utils/JavaExec.class" match-path="true"/>
+            <include name="weblogic/utils/ObjectFactory$1.class" match-path="true"/>
+            <include name="weblogic/utils/ObjectFactory$2.class" match-path="true"/>
+            <include name="weblogic/utils/ObjectFactory$3.class" match-path="true"/>
+            <include name="weblogic/utils/ObjectFactory$4.class" match-path="true"/>
+            <include name="weblogic/utils/ObjectFactory$ConfigurationError.class" match-path="true"/>
+            <include name="weblogic/utils/ObjectFactory.class" match-path="true"/>
+            <include name="weblogic/utils/ParsingException.class" match-path="true"/>
+            <include name="weblogic/utils/RecursiveDescentParser$IndexStack.class" match-path="true"/>
+            <include name="weblogic/utils/RecursiveDescentParser.class" match-path="true"/>
+            <include name="weblogic/utils/SanitizedDiagnosticInfo.class" match-path="true"/>
+            <include name="weblogic/utils/TypeConversionUtils.class" match-path="true"/>
+            <include name="weblogic/utils/URIUtils.class" match-path="true"/>
+            <include name="weblogic/utils/UnsyncHashtable$1.class" match-path="true"/>
+            <include name="weblogic/utils/UnsyncHashtable$UnsyncHTEntry.class" match-path="true"/>
+            <include name="weblogic/utils/UnsyncHashtable$UnsyncHTEnumerator.class" match-path="true"/>
+            <include name="weblogic/utils/UnsyncHashtable.class" match-path="true"/>
+            <include name="weblogic/utils/Versions.class" match-path="true"/>
+            <include name="weblogic/utils/XSSUtils.class" match-path="true"/>
+            <include name="weblogic/utils/classes/ClassBytes.class" match-path="true"/>
+            <include name="weblogic/utils/classes/ClassBytes102.class" match-path="true"/>
+            <include name="weblogic/utils/classes/ClassBytes11.class" match-path="true"/>
+            <include name="weblogic/utils/classes/ClassFinder.class" match-path="true"/>
+            <include name="weblogic/utils/classes/ClassFinder102.class" match-path="true"/>
+            <include name="weblogic/utils/classes/ClassFinder11.class" match-path="true"/>
+            <include name="weblogic/utils/classes/TypeUtils.class" match-path="true"/>
+            <include name="weblogic/utils/collections/AggregateKey.class" match-path="true"/>
+            <include name="weblogic/utils/collections/CombinedMap.class" match-path="true"/>
+            <include name="weblogic/utils/collections/CombinedSet.class" match-path="true"/>
+            <include name="weblogic/utils/collections/DoubleArrayTrieMatchMap$1.class" match-path="true"/>
+            <include name="weblogic/utils/collections/DoubleArrayTrieMatchMap$Entry.class" match-path="true"/>
+            <include name="weblogic/utils/collections/DoubleArrayTrieMatchMap$EntryIterator.class" match-path="true"/>
+            <include name="weblogic/utils/collections/DoubleArrayTrieMatchMap.class" match-path="true"/>
+            <include name="weblogic/utils/collections/EnumerationIterator.class" match-path="true"/>
+            <include name="weblogic/utils/collections/HashtableEntry.class" match-path="true"/>
+            <include name="weblogic/utils/collections/HashtableEnumerator.class" match-path="true"/>
+            <include name="weblogic/utils/collections/MultiMap.class" match-path="true"/>
+            <include name="weblogic/utils/collections/NumericHashtable.class" match-path="true"/>
+            <include name="weblogic/utils/collections/PartitionMatchMap$PartitionMatchMapKey.class" match-path="true"/>
+            <include name="weblogic/utils/collections/PartitionMatchMap.class" match-path="true"/>
+            <include name="weblogic/utils/collections/PartitionedStackPool.class" match-path="true"/>
+            <include name="weblogic/utils/collections/PropertiesHelper.class" match-path="true"/>
+            <include name="weblogic/utils/collections/SingleItemIterator.class" match-path="true"/>
+            <include name="weblogic/utils/collections/SlabPool$1.class" match-path="true"/>
+            <include name="weblogic/utils/collections/SlabPool$Slab.class" match-path="true"/>
+            <include name="weblogic/utils/collections/SlabPool.class" match-path="true"/>
+            <include name="weblogic/utils/collections/SoftHashMap$1.class" match-path="true"/>
+            <include name="weblogic/utils/collections/SoftHashMap$Entry.class" match-path="true"/>
+            <include name="weblogic/utils/collections/SoftHashMap$EntrySet$1.class" match-path="true"/>
+            <include name="weblogic/utils/collections/SoftHashMap$EntrySet.class" match-path="true"/>
+            <include name="weblogic/utils/collections/SoftHashMap$SoftValue.class" match-path="true"/>
+            <include name="weblogic/utils/collections/SoftHashMap.class" match-path="true"/>
+            <include name="weblogic/utils/collections/package-info.class" match-path="true"/>
+            <include name="weblogic/utils/compiler/ArgfileParser.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/CancellationException.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/CompletionListener.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/ExecutionException.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/Future.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/JDK15ConcurrentBlockingQueue.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/JDK15ConcurrentFactory.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/Latch.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/Semaphore$1.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/Semaphore.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/TimeoutException.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/atomic/JDK15AtomicFactory.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/atomic/JDK15AtomicInteger.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/atomic/JDK15AtomicLong.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/atomic/WeakAtomicLong.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/locks/Lock.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/locks/LockManager.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/locks/Mutex.class" match-path="true"/>
+            <include name="weblogic/utils/concurrent/locks/NullLock.class" match-path="true"/>
+            <include name="weblogic/utils/enumerations/CombinedEnumeration.class" match-path="true"/>
+            <include name="weblogic/utils/enumerations/DirectoryResourceEnumerator.class" match-path="true"/>
+            <include name="weblogic/utils/enumerations/EnumerationException.class" match-path="true"/>
+            <include name="weblogic/utils/enumerations/EnumerationUtils.class" match-path="true"/>
+            <include name="weblogic/utils/enumerations/JarResourceEnumerator.class" match-path="true"/>
+            <include name="weblogic/utils/enumerations/LineEnumerator.class" match-path="true"/>
+            <include name="weblogic/utils/enumerations/ResourceEnumerator$Matcher.class" match-path="true"/>
+            <include name="weblogic/utils/enumerations/ResourceEnumerator.class" match-path="true"/>
+            <include name="weblogic/utils/http/MimeTypes.class" match-path="true"/>
+            <include name="weblogic/utils/io/ClassLoaderResolver.class" match-path="true"/>
+            <include name="weblogic/utils/io/DoubleBufferedOutputStream$1.class" match-path="true"/>
+            <include name="weblogic/utils/io/DoubleBufferedOutputStream.class" match-path="true"/>
+            <include name="weblogic/utils/io/GlobFilenameFilter.class" match-path="true"/>
+            <include name="weblogic/utils/io/IndentingPrintWriter.class" match-path="true"/>
+            <include name="weblogic/utils/io/NullOutputStream.class" match-path="true"/>
+            <include name="weblogic/utils/io/OrFilter.class" match-path="true"/>
+            <include name="weblogic/utils/io/Resolver.class" match-path="true"/>
+            <include name="weblogic/utils/io/SearchReplaceStream.class" match-path="true"/>
+            <include name="weblogic/utils/io/XMLDeclaration.class" match-path="true"/>
+            <include name="weblogic/utils/io/XMLWriter.class" match-path="true"/>
+            <include name="weblogic/utils/jars/JarFileObject.class" match-path="true"/>
+            <include name="weblogic/utils/jars/JarMaker.class" match-path="true"/>
+            <include name="weblogic/utils/jars/Manifest.class" match-path="true"/>
+            <include name="weblogic/utils/jars/ManifestEntry.class" match-path="true"/>
+            <include name="weblogic/utils/localization/Localizer.class" match-path="true"/>
+            <include name="weblogic/utils/net/SocketResetException.class" match-path="true"/>
+            <include name="weblogic/utils/package-info.class" match-path="true"/>
+            <include name="weblogic/utils/reflect/DynamicProxyUtils.class" match-path="true"/>
+            <include name="weblogic/utils/reflect/Interceptor.class" match-path="true"/>
+            <include name="weblogic/utils/reflect/MethodKey.class" match-path="true"/>
+            <include name="weblogic/utils/reflect/MethodText.class" match-path="true"/>
+            <include name="weblogic/utils/reflect/ReflectUtils$1.class" match-path="true"/>
+            <include name="weblogic/utils/reflect/ReflectUtils$EnumerationImpl.class" match-path="true"/>
+            <include name="weblogic/utils/reflect/ReflectUtils$MKey.class" match-path="true"/>
+            <include name="weblogic/utils/reflect/ReflectUtils$SuperclassEnumerator.class" match-path="true"/>
+            <include name="weblogic/utils/reflect/ReflectUtils.class" match-path="true"/>
+            <include name="weblogic/utils/time/JDK15NanoTimer.class" match-path="true"/>
+            <include name="weblogic/utils/time/NativeTimer.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.workmanager.jar">
+            <include name="commonj/work/Work.class" match-path="true"/>
+            <include name="commonj/work/WorkEvent.class" match-path="true"/>
+            <include name="commonj/work/WorkException.class" match-path="true"/>
+            <include name="commonj/work/WorkItem.class" match-path="true"/>
+            <include name="commonj/work/WorkListener.class" match-path="true"/>
+            <include name="commonj/work/WorkManager.class" match-path="true"/>
+            <include name="weblogic/common/CompletionListener.class" match-path="true"/>
+            <include name="weblogic/common/CompletionRequest.class" match-path="true"/>
+            <include name="weblogic/common/ProxyAuthenticator.class" match-path="true"/>
+            <include name="weblogic/common/ResourceException.class" match-path="true"/>
+            <include name="weblogic/common/T3Exception.class" match-path="true"/>
+            <include name="weblogic/common/T3ExecuteException.class" match-path="true"/>
+            <include name="weblogic/common/WLObjectInput.class" match-path="true"/>
+            <include name="weblogic/common/WLObjectOutput.class" match-path="true"/>
+            <include name="weblogic/common/package-info.class" match-path="true"/>
+            <include name="weblogic/i18n/i18n.properties" match-path="true"/>
+            <include name="weblogic/kernel/AuditableThread.class" match-path="true"/>
+            <include name="weblogic/kernel/AuditableThreadLocal.class" match-path="true"/>
+            <include name="weblogic/kernel/AuditableThreadLocalFactory.class" match-path="true"/>
+            <include name="weblogic/kernel/FinalThreadLocal$1.class" match-path="true"/>
+            <include name="weblogic/kernel/FinalThreadLocal$FinalThreadStorage.class" match-path="true"/>
+            <include name="weblogic/kernel/FinalThreadLocal.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelInitializer.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelLogLocalizer.properties" match-path="true"/>
+            <include name="weblogic/kernel/KernelLogger$MessageLoggerInitializer.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelLogger.class" match-path="true"/>
+            <include name="weblogic/kernel/KernelStatus.class" match-path="true"/>
+            <include name="weblogic/kernel/QueueFullException.class" match-path="true"/>
+            <include name="weblogic/kernel/QueueThrottleException.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocal$1.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocal$ThreadStorage.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocal.class" match-path="true"/>
+            <include name="weblogic/kernel/ResettableThreadLocalStack.class" match-path="true"/>
+            <include name="weblogic/kernel/T3SrvrLogLocalizer.properties" match-path="true"/>
+            <include name="weblogic/kernel/T3SrvrLogger$MessageLoggerInitializer.class" match-path="true"/>
+            <include name="weblogic/kernel/T3SrvrLogger.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalInitialValue.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalStack$1.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalStack$StackInitialValue.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadLocalStack.class" match-path="true"/>
+            <include name="weblogic/kernel/ThreadStorage.class" match-path="true"/>
+            <include name="weblogic/work/AbstractStuckThreadAction.class" match-path="true"/>
+            <include name="weblogic/work/CICCapturingWork.class" match-path="true"/>
+            <include name="weblogic/work/CalendarQueue$1.class" match-path="true"/>
+            <include name="weblogic/work/CalendarQueue.class" match-path="true"/>
+            <include name="weblogic/work/ComponentInvocationContextHolder.class" match-path="true"/>
+            <include name="weblogic/work/ComponentWorkAdapter.class" match-path="true"/>
+            <include name="weblogic/work/ConcurrentCalendarQueue$1.class" match-path="true"/>
+            <include name="weblogic/work/ConcurrentCalendarQueue.class" match-path="true"/>
+            <include name="weblogic/work/ConstraintFullQueueException.class" match-path="true"/>
+            <include name="weblogic/work/DaemonTaskStatisticsCollector.class" match-path="true"/>
+            <include name="weblogic/work/Describable.class" match-path="true"/>
+            <include name="weblogic/work/ExecuteThread.class" match-path="true"/>
+            <include name="weblogic/work/ExecuteThreadLite.class" match-path="true"/>
+            <include name="weblogic/work/FairShareRequestClass.class" match-path="true"/>
+            <include name="weblogic/work/IDBasedConstraintEnforcement$RunnableWrapper.class" match-path="true"/>
+            <include name="weblogic/work/IDBasedConstraintEnforcement.class" match-path="true"/>
+            <include name="weblogic/work/IncrementAdvisor$SmoothedStats.class" match-path="true"/>
+            <include name="weblogic/work/IncrementAdvisor.class" match-path="true"/>
+            <include name="weblogic/work/IncrementAdvisor2$SmoothedStats.class" match-path="true"/>
+            <include name="weblogic/work/IncrementAdvisor2.class" match-path="true"/>
+            <include name="weblogic/work/IncrementAdvisorIntf.class" match-path="true"/>
+            <include name="weblogic/work/MaxThreadsConstraint$1.class" match-path="true"/>
+            <include name="weblogic/work/MaxThreadsConstraint.class" match-path="true"/>
+            <include name="weblogic/work/MinThreadsConstraint.class" match-path="true"/>
+            <include name="weblogic/work/ModuleWorkFilter.class" match-path="true"/>
+            <include name="weblogic/work/OverloadManager.class" match-path="true"/>
+            <include name="weblogic/work/PartitionAffinityThreadPool$PartitionedPoolEntry.class" match-path="true"/>
+            <include name="weblogic/work/PartitionAffinityThreadPool.class" match-path="true"/>
+            <include name="weblogic/work/PartitionFairShare.class" match-path="true"/>
+            <include name="weblogic/work/PartitionMaxThreadsConstraint.class" match-path="true"/>
+            <include name="weblogic/work/PartitionMinThreadsConstraint.class" match-path="true"/>
+            <include name="weblogic/work/PartitionUtility$1.class" match-path="true"/>
+            <include name="weblogic/work/PartitionUtility$FixedContextPartitionUtility.class" match-path="true"/>
+            <include name="weblogic/work/PartitionUtility.class" match-path="true"/>
+            <include name="weblogic/work/PriorityRequestQueue.class" match-path="true"/>
+            <include name="weblogic/work/RequestClass.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$1.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$2.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$3.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$4.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$ActivateRequest.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$BufferQueueDrainer.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$Callable.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$DefaultStuckThreadAction.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$ShutdownError.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$ShutdownRequest.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager$ThreadLocalForceCleanupRequest.class" match-path="true"/>
+            <include name="weblogic/work/RequestManager.class" match-path="true"/>
+            <include name="weblogic/work/ResponseTimeRequestClass.class" match-path="true"/>
+            <include name="weblogic/work/SelfTuningWorkManagerFactory$PartitionWorkManagersHolder.class" match-path="true"/>
+            <include name="weblogic/work/SelfTuningWorkManagerFactory.class" match-path="true"/>
+            <include name="weblogic/work/SelfTuningWorkManagerImpl$1.class" match-path="true"/>
+            <include name="weblogic/work/SelfTuningWorkManagerImpl$Logger.class" match-path="true"/>
+            <include name="weblogic/work/SelfTuningWorkManagerImpl$WorkAdapterImpl.class" match-path="true"/>
+            <include name="weblogic/work/SelfTuningWorkManagerImpl.class" match-path="true"/>
+            <include name="weblogic/work/ServiceClassStatsSupport.class" match-path="true"/>
+            <include name="weblogic/work/ServiceClassSupport.class" match-path="true"/>
+            <include name="weblogic/work/ServiceClassesStats.class" match-path="true"/>
+            <include name="weblogic/work/ShutdownCallback.class" match-path="true"/>
+            <include name="weblogic/work/StackableThreadContext.class" match-path="true"/>
+            <include name="weblogic/work/StuckThreadAction.class" match-path="true"/>
+            <include name="weblogic/work/StuckThreadManager.class" match-path="true"/>
+            <include name="weblogic/work/ThreadPriorityManager$1.class" match-path="true"/>
+            <include name="weblogic/work/ThreadPriorityManager$Factory.class" match-path="true"/>
+            <include name="weblogic/work/ThreadPriorityManager.class" match-path="true"/>
+            <include name="weblogic/work/Work.class" match-path="true"/>
+            <include name="weblogic/work/WorkAdapter$1.class" match-path="true"/>
+            <include name="weblogic/work/WorkAdapter$2.class" match-path="true"/>
+            <include name="weblogic/work/WorkAdapter$3.class" match-path="true"/>
+            <include name="weblogic/work/WorkAdapter.class" match-path="true"/>
+            <include name="weblogic/work/WorkFilter.class" match-path="true"/>
+            <include name="weblogic/work/WorkManager.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerDumper.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerFactory.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerImpl.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerLifecycle.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerLifecycleImpl.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerLite.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerLogLocalizer.properties" match-path="true"/>
+            <include name="weblogic/work/WorkManagerLogger$MessageLoggerInitializer.class" match-path="true"/>
+            <include name="weblogic/work/WorkManagerLogger.class" match-path="true"/>
+            <include name="weblogic/work/WorkRejectedException.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.debug.jar">
+            <include name="weblogic/diagnostics/debug/DebugContext.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLogger$1.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLogger.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLoggerRepository$1.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugLoggerRepository.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/PartitionContextProvider.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.jar">
+            <include name="com/bea/logging/LogLevel.class" match-path="true"/>
+            <include name="weblogic/diagnostics/debug/DebugScopeBean.class" match-path="true"/>
+            <include name="weblogic/logging/Severities.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.management.core.jar">
+            <include name="weblogic/management/DeploymentException.class" match-path="true"/>
+            <include name="weblogic/management/NoAccessRuntimeException.class" match-path="true"/>
+            <include name="weblogic/management/runtime/JTATransaction.class" match-path="true"/>
+            <include name="weblogic/management/visibility/MBeanType.class" match-path="true"/>
+            <include name="weblogic/management/visibility/MBeanVisibilityResult.class" match-path="true"/>
+            <include name="weblogic/management/visibility/WLSMBeanVisibility.class" match-path="true"/>
+            <include name="weblogic/management/visibility/utils/MBeanNameUtil.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.cssenv.jar">
+            <include name="com/bea/common/security/legacy/ServiceConfigCustomizer.class" match-path="true"/>
+            <include name="com/bea/common/security/legacy/spi/LegacyEncryptorSpi.class" match-path="true"/>
+            <include name="com/bea/common/security/legacy/spi/SAMLSingleSignOnServiceConfigInfoSpi.class" match-path="true"/>
+            <include name="com/bea/common/security/saml2/package-info.class" match-path="true"/>
+            <include name="weblogic/security/KeyPairCredential.class" match-path="true"/>
+            <include name="weblogic/security/PublicCertCredential.class" match-path="true"/>
+            <include name="weblogic/security/auth/callback/ContextHandlerCallback.class" match-path="true"/>
+            <include name="weblogic/security/auth/callback/GroupCallback.class" match-path="true"/>
+            <include name="weblogic/security/auth/callback/package-info.class" match-path="true"/>
+            <include name="weblogic/security/utils/AuditBaseEventImpl.class" match-path="true"/>
+            <include name="weblogic/security/utils/CacheStatistics$CacheCaller.class" match-path="true"/>
+            <include name="weblogic/security/utils/CacheStatistics.class" match-path="true"/>
+            <include name="weblogic/security/utils/Factory.class" match-path="true"/>
+            <include name="weblogic/security/utils/Pool$1.class" match-path="true"/>
+            <include name="weblogic/security/utils/Pool$Delegate.class" match-path="true"/>
+            <include name="weblogic/security/utils/Pool$IdleTimeoutDelegate.class" match-path="true"/>
+            <include name="weblogic/security/utils/Pool$NoIdleTimeoutDelegate.class" match-path="true"/>
+            <include name="weblogic/security/utils/Pool$Wrapper.class" match-path="true"/>
+            <include name="weblogic/security/utils/Pool.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.ffapi.jar">
+            <include name="weblogic/security/service/PrivilegedActions$SignPrincipalAction.class" match-path="true"/>
+            <include name="weblogic/security/service/PrivilegedActions.class" match-path="true"/>
+            <include name="weblogic/security/shared/LoggerAdapter.class" match-path="true"/>
+            <include name="weblogic/security/shared/LoggerWrapper.class" match-path="true"/>
+            <include name="weblogic/security/shared/RuntimeEnvironment$RuntimeUtilityHolder.class" match-path="true"/>
+            <include name="weblogic/security/shared/RuntimeEnvironment.class" match-path="true"/>
+            <include name="weblogic/security/shared/RuntimeUtilities.class" match-path="true"/>
+            <include name="weblogic/security/shared/SecurityPlatformID.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.sspi.jar">
+            <include name="weblogic/security/service/ContextElement.class" match-path="true"/>
+            <include name="weblogic/security/service/ContextElementMessageStream.class" match-path="true"/>
+            <include name="weblogic/security/service/ContextHandler.class" match-path="true"/>
+            <include name="weblogic/security/service/InvalidParameterException.class" match-path="true"/>
+            <include name="weblogic/security/service/ResourceBase$1.class" match-path="true"/>
+            <include name="weblogic/security/service/ResourceBase.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityServiceRuntimeException.class" match-path="true"/>
+            <include name="weblogic/security/spi/AuditEvent.class" match-path="true"/>
+            <include name="weblogic/security/spi/AuditSeverity.class" match-path="true"/>
+            <include name="weblogic/security/spi/AuditorService.class" match-path="true"/>
+            <include name="weblogic/security/spi/Direction.class" match-path="true"/>
+            <include name="weblogic/security/spi/IdentityAssertionException.class" match-path="true"/>
+            <include name="weblogic/security/spi/InvalidPrincipalException.class" match-path="true"/>
+            <include name="weblogic/security/spi/PrincipalValidator.class" match-path="true"/>
+            <include name="weblogic/security/spi/ProviderInitializationException.class" match-path="true"/>
+            <include name="weblogic/security/spi/Resource.class" match-path="true"/>
+            <include name="weblogic/security/spi/ResourceCreationException.class" match-path="true"/>
+            <include name="weblogic/security/spi/ResourceRemovalException.class" match-path="true"/>
+            <include name="weblogic/security/spi/SecurityServices.class" match-path="true"/>
+            <include name="weblogic/security/spi/SecuritySpiException.class" match-path="true"/>
+            <include name="weblogic/security/spi/SelfDescribingResource.class" match-path="true"/>
+            <include name="weblogic/security/spi/SelfDescribingResourceV2.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="wlstt3client" type="none" size="3068631">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.application.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.common.frag.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.lifecycle.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.server.jar"/>
+         <entry explode="true" include-parent="false" name="server/lib/pcl2.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.workarea.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.utils.full.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.workmanager.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.debug.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.management.core.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.cssenv.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.ffapi.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.sspi.jar"/>
+      </library>
+      <library name="wls_common_nodemanager_comp_lib" type="none" size="771426">
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.lifecycle.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.workmanager.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.debug.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.logging.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.management.core.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.cssenv.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.ffapi.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.service.sspi.jar"/>
+      </library>
+      <library name="jrf.wlst.classpath" type="manifest" suppress-version="true">
+         <entry explode="true" include-parent="false" name="server/lib/pcl2.jar"/>
+      </library>
+   </libraries>
+</component-def>

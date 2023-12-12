@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library name="Servlet Runtime" deployed="false" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <remediation-comments>remediation-comments.xml</remediation-comments>
+  <export-specification>Servlet_Runtime.exports</export-specification>
+  <classpath manifest="true" export="library">../../../../oracle_common/modules/javax.servlet.javax.servlet-api.jar</classpath>
+  <classpath manifest="true" export="library">../../../../oracle_common/modules/javax.servlet.jsp.javax.servlet.jsp-api.jar</classpath>
+  <classpath manifest="true" export="library">../../../../oracle_common/modules/org.glassfish.javax.el.jar</classpath>
+  <docpath>http://java.sun.com/j2ee/1.4/docs/api/</docpath>
+</library>

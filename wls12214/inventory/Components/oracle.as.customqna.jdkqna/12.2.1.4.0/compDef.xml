@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.as.customqna.jdkqna" version="12.2.1.4.0" description="Custom Queries and Actions" description-key="component.description" gdr-version="1.8.5.0" groupId="com.oracle.weblogic" patch-level="1" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="fmwconfig.common.symbol" source="filegroup1.jar" expanded="true" compacted="true"/>
+</component-def>

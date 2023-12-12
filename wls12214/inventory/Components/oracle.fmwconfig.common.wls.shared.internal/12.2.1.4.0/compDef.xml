@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.fmwconfig.common.wls.shared.internal" version="12.2.1.4.0" description="Oracle Fusion Middleware Common WLS Shared Config Internal" gdr-version="1.8.4.0" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="fmwconfig.common.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="" patchable="true">
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="10078065" pack="true" dest="com.oracle.cie.config-wls-schema_8.7.0.0.jar" mode="640"/>
+            <file size="9787" pack="true" dest="com.oracle.cie.config-wls-online_8.7.0.0.jar" mode="640"/>
+            <file size="3264443" pack="true" dest="com.oracle.cie.config-wls_8.7.0.0.jar" mode="640"/>
+            <file size="10802" pack="true" dest="com.oracle.cie.config-wls-external_8.7.0.0.jar" mode="640"/>
+         </directory>
+         <directory dest="common" mode="750" patchable="true">
+            <directory dest="util" mode="750" patchable="true">
+               <directory dest="modules" mode="750" patchable="true">
+                  <file size="95589" pack="true" dest="com.oracle.cie.template-repo_1.0.0.0.jar" mode="640"/>
+               </directory>
+               <directory dest="bin" mode="750" patchable="true">
+                  <file size="2312" dest="reconstruct.sh" mode="750"/>
+                  <file size="1459" dest="reconstruct.cmd" os-family="windows" mode="750"/>
+               </directory>
+            </directory>
+            <directory dest="lib" mode="750" patchable="true">
+               <file size="971" dest="internalpaths.txt" mode="640"/>
+               <file size="75" dest="config.properties" mode="640"/>
+               <file size="517" pack="true" dest="config-launch.jar" mode="640"/>
+               <file size="10537" dest="macrorules.xml" mode="640"/>
+            </directory>
+            <directory dest="images" mode="750" patchable="true">
+               <file size="38509" dest="web_logic_scripting_tool_16.ico" os-family="windows" mode="640"/>
+               <file size="42469" dest="configuration_wizard_16.ico" os-family="windows" mode="640"/>
+            </directory>
+            <directory dest="templates" mode="750" patchable="true">
+               <directory dest="wls" mode="750" patchable="true">
+                  <file size="991" pack="true" dest="oracle.cie.runtime_restricted_template.jar" mode="640"/>
+                  <file size="2010" pack="true" dest="oracle.cie.runtime_cs_template.jar" mode="640"/>
+                  <file size="3188" pack="true" dest="oracle.cie.runtime_template.jar" mode="640"/>
+               </directory>
+            </directory>
+            <directory dest="bin" mode="750" patchable="true">
+               <file size="1323" dest="config_internal.cmd" os-family="windows" mode="750"/>
+               <file size="986" dest="clonedunpack_internal.cmd" os-family="windows" mode="750"/>
+               <file size="1001" dest="clonedunpack_internal.sh" mode="750"/>
+               <file size="4123" dest="commExtEnv.sh" mode="750"/>
+               <file size="824" dest="setHomeDirs.sh" mode="750"/>
+               <file size="3149" dest="commExtEnv.cmd" os-family="windows" mode="750"/>
+               <file size="1138" dest="reconfig_internal.sh" mode="750"/>
+               <file size="928" dest="setHomeDirs.cmd" os-family="windows" mode="750"/>
+               <file size="943" dest="pack_internal.cmd" os-family="windows" mode="750"/>
+               <file size="958" dest="unpack_internal.sh" mode="750"/>
+               <file size="739" dest="commEnv.cmd" os-family="windows" mode="750"/>
+               <file size="1299" dest="reconfig_internal.cmd" os-family="windows" mode="750"/>
+               <file size="1109" dest="config_internal.sh" mode="750"/>
+               <file size="1282" dest="setWlstEnv_internal.sh" mode="750"/>
+               <file size="948" dest="unpack_internal.cmd" os-family="windows" mode="750"/>
+               <file size="1603" dest="shortenPaths.cmd" os-family="windows" mode="750"/>
+               <file size="20692" dest="commBaseEnv.sh" mode="750"/>
+               <file size="991" dest="pack_internal.sh" mode="750"/>
+               <file size="596" dest="wlst_internal.cmd" os-family="windows" mode="750"/>
+               <file size="610" dest="commEnv.sh" mode="750"/>
+               <file size="908" dest="configWallet_internal.cmd" os-family="windows" mode="750"/>
+               <file size="880" dest="configWallet_internal.sh" mode="750"/>
+               <file size="11011" dest="commBaseEnv.cmd" os-family="windows" mode="750"/>
+               <file size="991" dest="setWlstEnv_internal.cmd" os-family="windows" mode="750"/>
+               <file size="544" dest="wlst_internal.sh" mode="750"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.jar"/>
+            <permission mode="640" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.ico"/>
+            <permission mode="750" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.cmd"/>
+            <permission mode="750" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.sh"/>
+            <permission mode="640" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.txt"/>
+            <permission mode="640" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.xml"/>
+            <permission mode="640" regex="[a-zA-Z0-9_\.\- \(\)\[\]\{\}\$]*\.properties"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <artifact-pom-overrides>
+      <suppress-pom file="common/templates/wls/oracle.cie.runtime_template.jar" symbol="fmwconfig.common.symbol"/>
+      <suppress-pom file="common/templates/wls/oracle.cie.runtime_restricted_template.jar" symbol="fmwconfig.common.symbol"/>
+   </artifact-pom-overrides>
+   <libraries>
+      <library name="cie_common_wls_shared_entry" type="none" size="13353658">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.config-wls_8.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.config-wls-external_8.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.config-wls-schema_8.7.0.0.jar"/>
+      </library>
+      <library name="cie_common_wls_shared_external_entry" type="none" size="22565">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.config-wls-external_8.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.config-wls-online_8.7.0.0.jar"/>
+      </library>
+      <library name="cie_common_wls_shared_impl_entry" type="none" size="13342108">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.config-wls_8.7.0.0.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.cie.config-wls-schema_8.7.0.0.jar"/>
+      </library>
+   </libraries>
+   <stringsubs>
+      <ns2:group id="JavaHome">
+         <ns2:file-entry name="$fmwconfig.common.symbol.path$/common/bin/commBaseEnv.cmd"/>
+         <ns2:file-entry name="$fmwconfig.common.symbol.path$/common/bin/commBaseEnv.sh"/>
+         <ns2:file-entry name="$fmwconfig.common.symbol.path$/common/bin/setHomeDirs.cmd"/>
+         <ns2:file-entry name="$fmwconfig.common.symbol.path$/common/bin/setHomeDirs.sh"/>
+         <ns2:change-pair-ref name="JAVA_VENDOR"/>
+         <ns2:change-pair-ref name="JAVA_USE_64BIT"/>
+      </ns2:group>
+      <ns2:change-pair id="JAVA_VENDOR" before="@JAVA_VENDOR@" after="$JAVA_VENDOR$"/>
+      <ns2:change-pair id="JAVA_USE_64BIT" before="@JAVA_USE_64BIT@" after="$JAVA_64$"/>
+   </stringsubs>
+</component-def>

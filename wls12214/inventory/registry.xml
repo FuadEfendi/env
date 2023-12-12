@@ -1,0 +1,2588 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<registry home="c:\Users\xiaol\Downloads\wls\wls12214" platform="233" sessions="1" xmlns:ns2="http://xmlns.oracle.com/cie/gdr/dei" xmlns:ns3="http://xmlns.oracle.com/cie/gdr/nfo" xmlns="http://xmlns.oracle.com/cie/gdr/rgy">
+   <distributions>
+      <distribution status="installed" name="WebLogicServer_Quick_Slim" version="12.2.1.4.0">
+         <sessions>
+            <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+         </sessions>
+         <features>
+            <feature status="installed" name="cieCfg_wls_shared_external" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.fmwconfig.wls.shared" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="fmwconfig.wls.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.fmwconfig.common.wls.shared.external" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwconfig.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="cieCfg_wls_external" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.fmwconfig.common.wls.external" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwconfig.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="db_nlsoramapping" version="19.3.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.nlsoramapping.jrf" version="19.3.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="rdbms.jrf.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="db_nlsrtl" version="19.3.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.nlsrtl.jrf" version="19.3.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="rdbms.jrf.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="db_xdkNoJaxp" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.xdk.jrf.jaxp" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="rdbms.jrf.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="db_xdb" version="19.3.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.rdbms.jrf" version="19.3.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="rdbms.jrf.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="glcm_common_logging" version="13.9.4.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component patch-level="1" status="installed" name="oracle.glcm.logging" version="1.6.4.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="glcm.logging.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="glcm_common" version="13.9.4.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component patch-level="1" status="installed" name="oracle.glcm.comdev" version="7.8.4.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="oracle.glcm.comdev.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component patch-level="1" status="installed" name="oracle.glcm.dependency" version="1.8.4.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="oracle.glcm.dependency.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component patch-level="1" status="installed" name="oracle.glcm.xmldh" version="3.4.4.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="oracle.glcm.xmldh.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component patch-level="1" status="installed" name="oracle.glcm.wizard" version="7.8.4.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="oracle.glcm.wizard.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="thirdParty_antContribAntContribVb" version="1.0.0.0.3">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.ant.contrib.ant.contrib.vb" version="1.0.0.0.3">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_antContribAntContribVb" version="1.0.0.0.3">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_antContribAntContribVb3" version="1.0.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.ant.contrib.ant.contrib.vb3" version="1.0.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_antContribAntContribVb3" version="1.0.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_cglibCglibNodep" version="3.2.5.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.cglib.cglib.nodep" version="3.2.5.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_cglibCglibNodep" version="3.2.5.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comFasterxmlClassmate" version="1.3.1.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.fasterxml_classmate" version="1.3.1.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comFasterxmlClassmate" version="1.3.1.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comFasterxmlJacksonCoreJacksonAnnotations" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.fasterxml.jackson.core.jackson.annotations" version="2.9.9.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comFasterxmlJacksonCoreJacksonAnnotations" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comFasterxmlJacksonCoreJacksonCore" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.fasterxml.jackson.core.jackson.core" version="2.9.9.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comFasterxmlJacksonCoreJacksonCore" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comFasterxmlJacksonCoreJacksonDatabind" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.fasterxml.jackson.core.jackson.databind" version="2.9.9.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comFasterxmlJacksonCoreJacksonDatabind" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comFasterxmlJacksonDataformatJacksonDataformatXml" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.fasterxml.jackson.dataformat.jackson.dataformat.xml" version="2.9.9.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comFasterxmlJacksonDataformatJacksonDataformatXml" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comFasterxmlJacksonJaxrsJacksonJaxrsBase" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.fasterxml.jackson.jaxrs.jackson.jaxrs.base" version="2.9.9.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comFasterxmlJacksonJaxrsJacksonJaxrsBase" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comFasterxmlJacksonJaxrsJacksonJaxrsJsonProvider" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.fasterxml.jackson.jaxrs.jackson.jaxrs.json.provider" version="2.9.9.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comFasterxmlJacksonJaxrsJacksonJaxrsJsonProvider" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comFasterxmlJacksonModuleJacksonModuleJaxbAnnotations" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.fasterxml.jackson.module.jackson.module.jaxb.annotations" version="2.9.9.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comFasterxmlJacksonModuleJacksonModuleJaxbAnnotations" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comFasterxmlJacksonModuleJacksonModuleJsonschema" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.fasterxml.jackson.module.jackson.module.jsonschema" version="2.9.9.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comFasterxmlJacksonModuleJacksonModuleJsonschema" version="2.9.9.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comGoogleGuavaFailureaccess" version="1.0.1.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.google.guava.failureaccess" version="1.0.1.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comGoogleGuavaFailureaccess" version="1.0.1.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comGoogleGuavaGuava" version="27.1.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.google.guava.guava" version="27.1.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comGoogleGuavaGuava" version="27.1.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comIbmJbatchComIbmJbatchContainer" version="1.0.3.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.ibm.jbatch.com.ibm.jbatch.container" version="1.0.3.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comIbmJbatchComIbmJbatchContainer" version="1.0.3.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_comIbmJbatchComIbmJbatchSpi" version="1.0.3.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.com.ibm.jbatch.com.ibm.jbatch.spi" version="1.0.3.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_comIbmJbatchComIbmJbatchSpi" version="1.0.3.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_commonsFileuploadCommonsFileupload" version="1.4.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.commons.fileupload.commons.fileupload" version="1.4.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_commonsFileuploadCommonsFileupload" version="1.4.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_jodaTimeJodaTime" version="2.10.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.joda.time.joda.time" version="2.10.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_jodaTimeJodaTime" version="2.10.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_log4jLog4j" version="2.11.1.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.log4j.log4j" version="2.11.1.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_log4jLog4j" version="2.11.1.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_netSourceforgeNekohtmlNekohtml" version="1.9.16.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.net.sourceforge.nekohtml.nekohtml" version="1.9.16.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_netSourceforgeNekohtmlNekohtml" version="1.9.16.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgApacheAntAntBundle" version="1.10.5.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.apache.ant.ant.bundle" version="1.10.5.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="thirdPartyMain_orgApacheAntAntBundle" version="1.10.5.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgApacheCommonsCommonsCollections4" version="4.2.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.apache.commons.commons.collections4" version="4.2.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgApacheCommonsCommonsCollections4" version="4.2.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgApacheCommonsCommonsCompress" version="1.9.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.apache.commons.commons.compress" version="1.9.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgApacheCommonsCommonsCompress" version="1.9.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgApacheHttpcomponentsHttpclient" version="4.5.6.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.apache.httpcomponents.httpclient" version="4.5.6.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgApacheHttpcomponentsHttpclient" version="4.5.6.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgApacheHttpcomponentsHttpcore" version="4.4.10.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.apache.httpcomponents.httpcore" version="4.4.10.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgApacheHttpcomponentsHttpcore" version="4.4.10.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgApacheXmlgraphicsBatikAll" version="1.11.0.0.1">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.apache.xmlgraphics.batik.all" version="1.11.0.0.1">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgApacheXmlgraphicsBatikAll" version="1.11.0.0.1">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgBouncycastleBcpkixJdk15on" version="1.60.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.bouncycastle.bcpkix.jdk15on" version="1.60.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgBouncycastleBcpkixJdk15on" version="1.60.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgBouncycastleBcprovExtJdk15on" version="1.60.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.bouncycastle.bcprov.ext.jdk15on" version="1.60.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgBouncycastleBcprovExtJdk15on" version="1.60.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgBouncycastleBcprovJdk15on" version="1.60.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.bouncycastle.bcprov.jdk15on" version="1.60.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgBouncycastleBcprovJdk15on" version="1.60.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgCodehausJacksonJacksonCoreAsl" version="1.9.13.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.codehaus.jackson.jackson.core.asl" version="1.9.13.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgCodehausJacksonJacksonCoreAsl" version="1.9.13.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgCodehausJacksonJacksonJaxrs" version="1.9.13.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.codehaus.jackson.jackson.jaxrs" version="1.9.13.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgCodehausJacksonJacksonJaxrs" version="1.9.13.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgCodehausJacksonJacksonMapperAsl" version="1.9.13.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.codehaus.jackson.jackson.mapper.asl" version="1.9.13.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgCodehausJacksonJacksonMapperAsl" version="1.9.13.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgCodehausJacksonJacksonXc" version="1.9.13.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.codehaus.jackson.jackson.xc" version="1.9.13.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgCodehausJacksonJacksonXc" version="1.9.13.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgJbossLoggingJbossLoggingVfinal" version="3.3.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.jboss.logging.jboss.logging.vfinal" version="3.3.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgJbossLoggingJbossLoggingVfinal" version="3.3.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_orgOwaspEsapiEsapi" version="2.1.0.1.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.org.owasp.esapi.esapi" version="2.1.0.1.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_orgOwaspEsapiEsapi" version="2.1.0.1.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdParty_xercesXercesimpl" version="2.12.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.xerces.xercesimpl" version="2.12.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="thirdPartyMain_xercesXercesimpl" version="2.12.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdPartyModified_orgApacheHttpcomponentsHttpclient_For_451" version="4.5.6.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="thirdPartyModified_orgApacheHttpcomponentsHttpcore_For_443" version="4.4.10.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="wls_instOnly" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.inst.only" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_sharedWithInst" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.shared.with.inst" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="jrf_dmsJse" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.jse.dms" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="jrf_presoTools_core" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.bali.share" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jewt.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.bali.jewt" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="oracle.bali.jewt.dir" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.bali.ice" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="help.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.help.share" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="help.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.help.ohj" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="help.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="jrf_presoTools" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.fmw.common.wizard.resources" version="12.2.1.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="oracle.fmw.common.wizard.resources.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_securityCore_sharedLib" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.security.core.sharedlib" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+oracle_common" source="filegroup2.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_mtEEOnly_sharedLib" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.jrf.tenancy.ee.only.sharedlib" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="jrf_tenancy_ee_only" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="toplink_thirdparty" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.jrf.thirdparty.toplink" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="toplink.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_thirdparty_javaxjson" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.thirdparty.javax.json" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="toplink" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.jrf.toplink" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="toplink.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="orapki" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.rsa.crypto" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="rsa.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.pki" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="orapki.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.osdt.core" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="osdt.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="glcm_encryption" version="13.9.4.2.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component patch-level="1" status="installed" name="oracle.glcm.encryption" version="2.7.4.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="oracle.glcm.encryption.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="java_jaxws" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.java.jaxws" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="java_xml_bind" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.java.xml.bind" version="2.3.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="java_activation" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.java.activation" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="java_api" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature singleton="true" status="installed" name="glcm_opatch_common_api" version="13.9.4.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component patch-level="1" status="installed" name="oracle.glcm.opatch.common.api" version="13.9.4.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+OPatch" source="filegroup1.jar" symbol="oracle.glcm.opatch.common.api.symbol" location="OPatch" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="nginst_core" version="13.9.4.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component singleton="true" patch-level="1" status="installed" name="oracle.nginst.common" version="13.9.4.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oui" source="filegroup1.jar" symbol="oracle.nginst.common.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup3.jar+oui" source="filegroup3.jar" symbol="oracle.nginst.common.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component singleton="true" patch-level="1" status="installed" name="oracle.nginst.core" version="13.9.4.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oui" source="filegroup1.jar" symbol="oracle.nginst.core.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+oracle_common" source="filegroup2.jar" symbol="oracle.nginst.thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup3.jar+oui" source="filegroup3.jar" symbol="oracle.nginst.core.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component patch-level="1" status="installed" name="oracle.nginst.thirdparty" version="13.9.4.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="oracle.nginst.thirdparty.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="thirdParty_oracleJaxbRITools" version="2.3.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.jaxb.tools" version="2.3.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="thirdParty_oracleJaxbRIRuntime" version="2.3.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.jaxb.impl" version="2.3.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="thirdParty_oracleJaxbRICore" version="2.3.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.jaxb.core" version="2.3.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="thirdParty_oracleJaxbRI" version="2.3.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="toplink_coherence" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.toplink.coherence" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+coherence" source="filegroup1.jar" symbol="toplink.coherence.symbol" location="coherence" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_sharedClientComps" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.libraries" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+oracle_common" source="filegroup2.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="cieStb_rcu" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.rcu.ciestb" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwconfig.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="db_jdbc" version="19.3.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.javavm.jrf" version="19.3.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="rdbms.jrf.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="coherence_discovery" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.coherence.discovery" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+coherence" source="filegroup1.jar" symbol="coherence.symbol" location="coherence" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+coherence" source="filegroup2.jar" symbol="coherence.mavenplugins.symbol" location="coherence" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="coherence" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.coherence" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+coherence" source="filegroup1.jar" symbol="coherence.symbol" location="coherence" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+coherence" source="filegroup2.jar" symbol="coherence.mavenplugins.symbol" location="coherence" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="opatch" version="13.9.4.2.1">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.swd.opatch" version="13.9.4.2.1">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+OPatch" source="filegroup1.jar" symbol="oracle.swd.opatch.symbol" location="OPatch" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+OPatch" source="filegroup2.jar" symbol="oracle.swd.opatch.symbol" location="OPatch" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_mtCommon" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.jrf.tenancy.common" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="fmw_install_framework" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.as.install.common.help" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oui" source="filegroup1.jar" symbol="oracle.as.install.common.help.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+oui" source="filegroup2.jar" symbol="oracle.as.install.common.help.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component patch-level="1" status="installed" name="oracle.as.install.common.prerequisite.files" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oui" source="filegroup1.jar" symbol="asinst.framework.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component patch-level="1" status="installed" name="oracle.as.install.ui.framework" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oui" source="filegroup1.jar" symbol="asinst.framework.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+oui" source="filegroup2.jar" symbol="asinst.framework.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="thirdParty_orgCodehausWoodstox" version="4.2.0.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="org.codehaus.woodstox" version="4.2.0.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="orawsdl" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.webservices.orawsdl" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="httpclient" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.http_client" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="ws_base" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.webservices.base" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="fmw_install_wls" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component patch-level="1" status="installed" name="oracle.as.install.wls" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oui" source="filegroup1.jar" symbol="asinst.wls.install.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component patch-level="1" status="installed" name="oracle.as.install.wls.prerequisite" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oui" source="filegroup1.jar" symbol="asinst.wls.install.symbol" location="oui" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature singleton="true" status="installed" name="xmlbeans" version="2.6.0.6.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="com.bea.core.xml.xmlbeans" version="2.6.0.6.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="xmlbeans.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_securityCore" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.security.core" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_commonServices" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.common.cam" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.common.cam.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+oracle_common" source="filegroup2.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.wls.common.nodemanager" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.common.cam.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.wls.common.cam.wlst" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.common.cam.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.wls.shared.with.cam" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_ws" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.webservices.wls" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+wlserver" source="filegroup2.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="bouncyCastle_thirdparty" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="wls_sharedWithInst_sharedLib" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.shared.with.inst.sharedlib" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_mtCommon_sharedLib" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.jrf.tenancy.common.sharedlib" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+oracle_common" source="filegroup2.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="jrf_tenancy_wls_common" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature singleton="true" status="installed" name="glcm_opatchauto_core" version="13.9.4.2.1">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.glcm.opatchauto.core" version="13.9.4.2.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+OPatch" source="filegroup1.jar" symbol="oracle.glcm.opatchauto.core.symbol" location="OPatch" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="cieCfg_common" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.fmwconfig.common.shared" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwconfig.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="cieCfg_config_common" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.fmwconfig.common.config.shared" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwconfig.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="cieCfg_wls_shared" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.fmwconfig.common.wls.help" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wsdoc.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.fmwconfig.common.wls.shared.internal" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwconfig.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.fmw.upgrade.fmwconfig" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwconfig.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="owasp_thirdparty" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="owaspComp" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.owasp.jrf" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="owsap.jrf.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_rcu" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.rcu" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup2.jar+oracle_common" source="filegroup2.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_coreServerComp" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.core.app.server" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                        <target qualifier="filegroup6.jar+oracle_common" source="filegroup6.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="cieCfg_wls" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.fmwconfig.wls" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="fmwconfig.wls.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+                  <component status="installed" name="oracle.fmwconfig.common.wls.internal" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwconfig.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="java_servlet" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.java.servlet" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_sharedLibrariesWithoutPOMSlim" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="wls_sharedLibrariesSlim" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature status="installed" name="wls_portable_sharedWithCoh" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.shared.with.coh.standalone" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_portable" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.wlsportable.mod" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="fmw_platformProvisioningApi" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.fmwplatform.fmwprov" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwplatform.fmwprov.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="fmw_platformOcp" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.fmwplatform.ocp" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwplatform.ocp.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="fmw_platformGeneric" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+            </feature>
+            <feature singleton="true" status="installed" name="glcm_opatchauto_fmw" version="13.9.4.2.1">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.glcm.opatchauto.fmw" version="13.9.4.2.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+OPatch" source="filegroup1.jar" symbol="oracle.glcm.opatchauto.fmw.symbol" location="OPatch" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="mysql_jdbc" version="8.0.14.0.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.mysql" version="8.0.14.0.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="mysql.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="ons" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.ons.generic" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="oracle.ons.dir" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="oracleDiag_common" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.diagnostics.common" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_tier1nativeLib" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.core.app.server.tier1nativelib" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup4.jar+wlserver" source="filegroup4.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="thirdParty_apacheCommonsLang" version="2.6.0.0.2">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.apache.commons.lang.mod" version="2.6.0.0.2">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="thirdParty_apacheCommonsCollections" version="3.2.0.0.2">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.apache.commons.collections.mod" version="3.2.0.0.2">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="wls.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="wls_devServerSlim" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component status="installed" name="oracle.wls.workshop.code.completion.support" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+wlserver" source="filegroup1.jar" symbol="wls.server.symbol" location="wlserver" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+            <feature status="installed" name="properties_loader" version="12.2.1.4.0">
+               <sessions>
+                  <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+               </sessions>
+               <components>
+                  <component patch-level="1" status="installed" name="oracle.as.customqna.jdkqna" version="12.2.1.4.0">
+                     <sessions>
+                        <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                     </sessions>
+                     <targets>
+                        <target qualifier="filegroup1.jar+oracle_common" source="filegroup1.jar" symbol="fmwconfig.common.symbol" location="oracle_common" status="installed">
+                           <sessions>
+                              <session id="1" date="2023-08-16T11:59:39.000-04:00" action="install"/>
+                           </sessions>
+                        </target>
+                     </targets>
+                  </component>
+               </components>
+            </feature>
+         </features>
+      </distribution>
+   </distributions>
+</registry>

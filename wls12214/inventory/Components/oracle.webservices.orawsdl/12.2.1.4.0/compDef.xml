@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.webservices.orawsdl" version="12.2.1.4.0" description="Oracle WebServices OraWSDL" gdr-version="1.8.4.0" groupId="com.oracle.fmwshare" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="jrf.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <file size="379393" pack="true" dest="com.oracle.webservices.orawsdl-api.jar" id="com.oracle.webservices:orawsdl-api" patchable="true" group="com.oracle.webservices" artifact="orawsdl-api" version="1.5.0-190912.1619.1974694"/>
+      </directory>
+   </file-map>
+   <default-pom-override groupId="com.oracle.fmwshare"/>
+   <libraries>
+      <library name="oracle.webservices.orawsdl" type="none" visibility="none" suppress-version="true" size="385943">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.orawsdl-api.jar"/>
+      </library>
+      <library name="jrf.wlst.classpath" type="none" suppress-version="true" size="385943">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.orawsdl-api.jar"/>
+      </library>
+      <library name="webservices.orawsdl.foh.lib" type="none" visibility="none" suppress-version="true" size="385943">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.webservices.orawsdl-api.jar"/>
+      </library>
+   </libraries>
+</component-def>

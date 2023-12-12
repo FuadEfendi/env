@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.glcm.opatchauto.fmw" version="13.9.4.2.0" description="Oracle OPatch Auto FMW" gdr-version="1.8.4.0" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="oracle.glcm.opatchauto.fmw.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="auto" mode="750" patchable="true">
+         <directory dest="fmw" mode="750" patchable="true">
+            <directory dest="modules" mode="750" patchable="true">
+               <file size="155351" dest="com.oracle.glcm.patch.opatchauto-fmw-actions_13.9.4.2.jar" mode="640"/>
+            </directory>
+         </directory>
+      </directory>
+   </file-map>
+   <libraries>
+      <library name="oracle.glcm.opatchauto.fmw.actions.classpath" type="manifest" location="plugins/opatchauto/modules" visibility="public" suppress-version="true" suppress-prefix="true">
+         <entry explode="true" include-parent="false" name="auto/fmw/modules/com.oracle.glcm.patch.opatchauto-fmw-actions_13.9.4.2.jar"/>
+      </library>
+   </libraries>
+</component-def>

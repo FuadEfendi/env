@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<lib-exports owner="weblogic" xmlns="http://xmlns.oracle.com/ide/export">
+    <package name="javax.servlet.jsp.tagext"/>
+    <package name="javax.servlet.jsp.el"/>
+    <package name="javax.servlet.jsp"/>
+    <package name="javax.servlet.http"/>
+    <package name="javax.servlet.descriptor"/>
+    <package name="javax.servlet.annotation"/>
+    <package name="javax.servlet"/>
+    <package name="javax.el"/>
+</lib-exports>

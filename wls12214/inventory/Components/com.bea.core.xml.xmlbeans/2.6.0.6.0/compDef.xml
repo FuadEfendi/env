@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="com.bea.core.xml.xmlbeans" version="2.6.0.6.0" description="Apache XMLBeans" gdr-version="1.8.4.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="xmlbeans.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <file size="2626781" pack="true" dest="com.bea.core.xml.xmlbeans.jar" mode="640"/>
+      </directory>
+   </file-map>
+   <libraries>
+      <library name="wlstt3client" type="none" size="2687211">
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.xml.xmlbeans.jar"/>
+      </library>
+      <library name="com.oracle.webservices.wls.jaxrpc-client" type="none" version="12.2.1" visibility="none" size="2687211">
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.xml.xmlbeans.jar"/>
+      </library>
+   </libraries>
+</component-def>
