@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<library id="oracle.security.pki" name="Oracle PKI Design Time Library Extension" deployed="false" locked="true" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
-	<description/>         
-	<classpath export="embedded">../../../modules/oracle.pki/oraclepki.jar</classpath>     
-</library>

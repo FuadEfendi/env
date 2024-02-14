@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
-<lib-exports owner="weblogic" xmlns="http://xmlns.oracle.com/ide/export">
-    <package name="javax.transaction.xa"/>
-    <package name="javax.transaction"/>
-    <package name="javax.jms"/>
-</lib-exports>

@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<library name="EJB" deployed="false" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
-  <remediation-comments>remediation-comments.xml</remediation-comments>
-  <export-specification>EJB.exports</export-specification>
-  <classpath manifest="true" export="library">../../../../oracle_common/modules/javax.ejb.javax.ejb-api.jar</classpath>
-  <docpath>http://java.sun.com/javaee/6/docs/api/</docpath>
-</library>

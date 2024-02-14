@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
-<variables-info name="Clone" version="1.0" xmlns="http://xmlns.oracle.com/oui/variables">
-   <variables type="installer" resource="resources/Clone_1.0">
-      <variable name="PREREQ_LOG_LOCATION" value="C:\Users\xiaol\AppData\Local\Temp\OraInstall2023-08-16_11-59-39AM" type="string" helpid="VARIABLE_PREREQ_LOG_LOCATION_DESC" deprecated="true"/>
-      <variable name="INSTALL_TYPE" value="Distribution" type="string" helpid="VARIABLE_INSTALL_TYPE_DESC"/>
-   </variables>
-</variables-info>
