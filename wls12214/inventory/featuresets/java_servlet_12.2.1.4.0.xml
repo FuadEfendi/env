@@ -1,6 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
-<feature-set-def name="java_servlet" version="12.2.1.4.0" display-name="Oracle Java Servlet Modules" display-name-key="featureset.display.name" description-key="featureset.description" xmlns:ns2="http://xmlns.oracle.com/cie/gdr/dei" xmlns:ns3="http://xmlns.oracle.com/cie/gdr/nfo" xmlns:ns4="http://xmlns.oracle.com/cie/gdr/rgy" xmlns="http://xmlns.oracle.com/cie/gdr/ftr">
-   <components>
-      <component name="oracle.java.servlet" version="12.2.1.4.0"/>
-   </components>
-</feature-set-def>

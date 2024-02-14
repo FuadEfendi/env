@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
-<lib-exports owner="oracle.webservice" xmlns="http://xmlns.oracle.com/ide/export">
-  <package name="oracle.webservices">
-    <class name="SOAPUtil">
-      <method name="toSOAPElement(org.w3c.dom.Element)"/>
-    </class>
-  </package>
-</lib-exports>

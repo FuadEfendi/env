@@ -1,9 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
-<component-def name="oracle.nginst.thirdparty" version="13.9.4.0.0" description="Next Generation Installation Thirdparty" description-key="component.description" gdr-version="1.8.4.0" pom-gen="false" groupId="com.oracle.oui" patch-level="1" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
-   <file-map symbol="oracle.nginst.thirdparty.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
-      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
-      <directory dest="modules" mode="750" patchable="true">
-         <file size="280515" checksum="da3584329a263616e277e15462b387addd1b208d" dest="jsch-0.1.54.jar" mode="640"/>
-      </directory>
-   </file-map>
-</component-def>

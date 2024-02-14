@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
-<lib-exports owner="weblogic" xmlns="http://xmlns.oracle.com/ide/export">
-    <package name="javax.xml.rpc.handler"/>
-    <package name="javax.ejb.spi"/>
-    <package name="javax.ejb.embeddable"/>
-    <package name="javax.ejb"/>
-</lib-exports>
